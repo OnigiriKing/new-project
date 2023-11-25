@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 
-
 export default function Header() {
   return (
-    <div class="flex center w-full">
-      <div class="flex center">
-        <img>Logo</img>
+    <div class="fixed justify-center w-full top-0 bg-white opacity-95">
+      <div class="flex justify-between p-8">
+        <img src="" alt="logo" />
         <div>
           <a href="">Home</a>
           <a href="">About</a>
