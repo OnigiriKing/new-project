@@ -1,9 +1,9 @@
-
+import HomePage from "pages/Body/HomePage";
 
 export default function App() {
   return (
-    <div class="flex">
-
+    <div>
+    <HomePage />
     </div>
   );
 }
