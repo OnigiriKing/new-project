@@ -1,3 +1,3 @@
-import HeaderComp from "./HeaderComp";
+import Header from "./Header";
 
-export default HeaderComp;
+export default Header;

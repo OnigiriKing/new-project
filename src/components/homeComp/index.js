@@ -1,3 +1,3 @@
-import HomeComp from "./HomeComp";
+import Home from "./Home";
 
-export default HomeComp;
+export default Home;

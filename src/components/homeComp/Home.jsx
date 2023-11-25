@@ -1,9 +1,9 @@
 import gym from "./img/gym.jpg"
 
-export default function homeComp() {
+export default function Home() {
 
    return (
-     <div class="flex center ">
+     <div class="flex center">
        <img src={gym}/>
      </div>
    );
