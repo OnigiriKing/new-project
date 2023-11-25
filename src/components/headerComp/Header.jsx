@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div class="fixed justify-center w-full top-0 bg-white opacity-95">
-      <div class="flex justify-between p-8">
+    <div class="fixed flex justify-center w-full top-0 bg-black opacity-95  text-white">
+      <div class="flex items-center w-full max-w-7xl mx-20 justify-between py-8 ">
         <img src="" alt="logo" />
         <div>
           <a href="">Home</a>
