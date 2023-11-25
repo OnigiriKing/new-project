@@ -1,8 +1,10 @@
+import gym from "./img/gym.jpg"
+
 export default function homeComp() {
 
    return (
-       <div id="home-page">
-
-       </div>
-    );
+     <div class="flex center ">
+       <img src={gym}/>
+     </div>
+   );
 }
