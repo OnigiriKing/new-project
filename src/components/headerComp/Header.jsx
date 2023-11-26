@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import logo from "utils/img/logo.png"
+import logo from "utils/img/logo.png";
 
 export default function Header() {
   return (
     <div class="fixed flex justify-center w-full top-0 bg-black opacity-95  text-white">
-      <div class="flex items-center w-full max-w-7xl mx-20 justify-between py-8">
-        <img src={logo} alt="logo" class="w-24"/>
-        <div class="flex gap-6">
-          <a href="" class="hover:text-red-600">
+      <div class="flex items-center w-full max-w-7xl mx-20 justify-between py-2">
+        <img src={logo} alt="logo" class="w-20" />
+        <div class="flex gap-6 transition-all duration-1000 ease-in-out">
+          <a href="" class="hover:text-red-600 ">
             Home
           </a>
           <a href="" class="hover:text-red-600">
