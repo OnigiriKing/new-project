@@ -1,12 +1,15 @@
-
+import sportsMan from "./img/sportsMan.png"
 
 export default function Home() {
   return (
-    <div class="flex center h-screen justify-end items-center  bg-black pt-24 z-20 text-white">
+    <div class="flex center h-screen justify-end items-center  bg-black pt-24 text-white">
       <div>
-        <img />
-        <div class="flex gap-16 mr-[10rem]">
-          <div>
+        <img
+          src={sportsMan}
+          class="w-[30rem] absolute bottom-0 left-[10rem] z-[5]"
+        />
+        <div class="flex gap-16 mr-[10rem] items-center">
+          <div class="z-[10] flex flex-col gap-10">
             <div>FIND YOUR ENERGY</div>
             <div>
               <h2>MAKE YOUR BODY</h2>
