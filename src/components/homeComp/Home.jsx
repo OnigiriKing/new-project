@@ -1,4 +1,5 @@
 import sportsMan from "./img/sportsMan.png"
+import allSvg from "svg/allSvg";
 
 export default function Home() {
   return (
@@ -18,9 +19,13 @@ export default function Home() {
             <div>Our classes</div>
           </div>
           <div class="flex flex-col gap-7">
-            <h3 class=" -rotate-[90deg]">SHARE</h3>
-            <div class=" w-7 h-10 border-red-500 border-r-2"></div>
-            <div></div>
+            <h3 class=" -rotate-[90deg] font-bold text-[1.2rem]">SHARE</h3>
+            <div class=" w-[2.1rem] h-10 border-red-500 border-r-2"></div>
+            <div class="flex flex-col items-center gap-2">
+              <a class="cursor-pointer">{allSvg(25).linkedin}</a>
+              <a class="cursor-pointer">{allSvg(25).twitter}</a>
+              <a class="cursor-pointer">{allSvg(25).facebook}</a>
+            </div>
           </div>
         </div>
       </div>
