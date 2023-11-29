@@ -1,5 +1,6 @@
 import sportsMan from "./img/sportsMan.png"
 import allSvg from "svg/allSvg";
+import brush from "./img/brush.png"
 
 export default function Home() {
   return (
@@ -11,7 +12,12 @@ export default function Home() {
         />
         <div class="flex gap-16 mr-[10rem] items-center">
           <div class="z-[10] flex flex-col gap-10">
-            <div>FIND YOUR ENERGY</div>
+            <div class="relative flex items-center w-[14rem]">
+              <img src={brush} class="absolute z-[1] h-20 right-[1.8rem]" />
+              <h3 class="z-[2] relative text-black">
+                FIND YOUR ENERGY
+              </h3>
+            </div>
             <div>
               <h2>MAKE YOUR BODY</h2>
               <h2>FIT & PERFECT</h2>
