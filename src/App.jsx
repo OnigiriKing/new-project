@@ -4,8 +4,8 @@ import HomePage from "pages/Body/HomePage";
 export default function App() {
   return (
     <div>
-    <Header />
-    <HomePage />
+      <Header />
+      <HomePage />
     </div>
   );
 }

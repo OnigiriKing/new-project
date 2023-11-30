@@ -3,6 +3,7 @@ import allSvg from "svg/allSvg";
 import brush from "./img/brush.png"
 
 export default function Home() {
+
   return (
     <div class="flex center h-screen justify-end items-center  bg-black pt-24 text-white">
       <div>
