@@ -5,19 +5,38 @@ export default function Footer() {
     <div class="">
       <div>
         <img />
+        <div>
+          Revitalize your health journey on our one-year anniversary! Unleash
+          your full fitness potential with our tailored program. Elevate your
+          workouts, embrace nutritious plans, and achieve your goals with expert
+          guidance.
+        </div>
         <div></div>
-        <div></div>
-        <div></div>
+        <div>
+          <h3>Privacy Policy</h3>
+          <h3>© 2023</h3>
+        </div>
       </div>
       <div>
         <h2>Our Classes</h2>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
+        <ul>
+          <li>Fitness Classes</li>
+          <li>Groove Cardio</li>
+          <li>Core Harmony</li>
+          <li>Zen Flex</li>
+          <li>Strength & Sculpt</li>
+        </ul>
       </div>
-      <div></div>
+      <div>
+        <h2>Working Hours</h2>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </div>
   );
 }
