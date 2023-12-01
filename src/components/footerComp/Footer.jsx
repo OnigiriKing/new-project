@@ -1,16 +1,30 @@
 import logo from "utils/img/logo.png";
+import allSvg from "svg/allSvg";
 
 export default function Footer() {
   return (
     <div class="page-class">
       <div class="flex justify-between w-full max-w-[60rem] items-center mx-[2rem] py-[4rem]">
         <div class="flex flex-col w-[20rem] gap-4 items-center text-center text-gray-500">
-          <img src={logo} class="w-20 flex" />
+          <img src={logo} class="w-28 flex" />
           <div>
             Revitalize your health journey on our one-year anniversary! Unleash
             your full fitness potential with our tailored program.
           </div>
-          <div></div>
+          <div class="flex gap-4">
+            <div class="group cursor-pointer bg-gray-200 hover:bg-red-600 hover:text-[#fff] p-2 rounded-full duration-500">
+              {allSvg(20).inst}
+            </div>
+            <div class="group cursor-pointer bg-gray-200 hover:bg-red-600 hover:text-[#fff] p-2 rounded-full duration-500">
+              {allSvg(20).pint}
+            </div>
+            <div class="group cursor-pointer bg-gray-200 hover:bg-red-600 hover:text-[#fff] p-2 rounded-full duration-500">
+              {allSvg(20).twitter2}
+            </div>
+            <div class="group cursor-pointer bg-gray-200 hover:bg-red-600 hover:text-[#fff] p-2 rounded-full duration-500">
+              {allSvg(20).youTube}
+            </div>
+          </div>
           <div class="flex">
             <h3 class=" pr-2 border-r-[1.5px] border-r-[#000] cursor-pointer  transition-colors duration-500  hover:text-red-600">
               Privacy Policy
