@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div class="page-class">
       <div class="flex justify-between w-full max-w-[60rem] items-center mx-[2rem] py-[4rem]">
-        <div class="flex flex-col w-[20rem] gap-4 items-center text-center">
+        <div class="flex flex-col w-[20rem] gap-4 items-center text-center text-gray-500">
           <img src={logo} class="w-20 flex" />
           <div>
             Revitalize your health journey on our one-year anniversary! Unleash
@@ -19,23 +19,33 @@ export default function Footer() {
           </div>
         </div>
         <div class="flex flex-col gap-6">
-          <h2>Our Classes</h2>
-          <ul class="flex flex-col gap-4">
-            <li class="cursor-pointer">Fitness Classes</li>
-            <li class="cursor-pointer">Groove Cardio</li>
-            <li class="cursor-pointer">Core Harmony</li>
-            <li class="cursor-pointer">Zen Flex</li>
-            <li class="cursor-pointer">Strength & Sculpt</li>
+          <h2 class=" text-2xl font-bold">Our Classes</h2>
+          <ul class="flex flex-col gap-4 text-gray-500">
+            <li class="cursor-pointer  transition-colors duration-500  hover:text-red-600">
+              Fitness Classes
+            </li>
+            <li class="cursor-pointer  transition-colors duration-500  hover:text-red-600">
+              Groove Cardio
+            </li>
+            <li class="cursor-pointer  transition-colors duration-500  hover:text-red-600">
+              Core Harmony
+            </li>
+            <li class="cursor-pointer  transition-colors duration-500  hover:text-red-600">
+              Zen Flex
+            </li>
+            <li class="cursor-pointer  transition-colors duration-500  hover:text-red-600">
+              Strength & Sculpt
+            </li>
           </ul>
         </div>
-        <div>
-          <h2>Working Hours</h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <div class="flex gap-4 flex-col">
+          <h2 class=" text-2xl font-bold">Working Hours</h2>
+          <ul class="text-gray-500 flex flex-col gap-4">
+            <li class="font-extrabold">Monday - Friday:</li>
+            <li class="">7:00am - 23:00pm</li>
+            <li class="font-extrabold">Saturday:</li>
+            <li class="">8:00am - 21:00pm</li>
+            <li class="font-extrabold">Sunday - Closed</li>
           </ul>
         </div>
       </div>
