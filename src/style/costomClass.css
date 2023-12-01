@@ -6,3 +6,9 @@
     margin: 0 4rem;
     padding: .5rem 0;
 }
+
+.page-class {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
