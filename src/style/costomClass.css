@@ -1,0 +1,8 @@
+
+.common-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 4rem;
+    padding: .5rem 0;
+}

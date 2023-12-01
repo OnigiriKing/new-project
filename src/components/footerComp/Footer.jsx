@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div class="">
-      <div>
+      <div class="flex">
         <img />
         <div>
           Revitalize your health journey on our one-year anniversary! Unleash

@@ -5,7 +5,7 @@ import allSvg from "svg/allSvg";
 export default function Header() {
   return (
     <div class="fixed flex justify-center w-full top-0 bg-black opacity-95  text-white z-20">
-      <div class="flex items-center w-full mx-16 justify-between py-2">
+      <div class="justify-between  common-wrapper">
         <img src={logo} alt="logo" class="w-20" />
         <div class="flex gap-6">
           <Link href="" class="duration-500 hover:text-red-600 ">
