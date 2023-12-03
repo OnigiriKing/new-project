@@ -4,7 +4,7 @@ import brush from "../img/brush.png";
 
 export default function Welcome() {
   return (
-    <div class="flex center h-screen justify-end items-center  bg-black pt-24 text-white">
+    <div class="flex center h-[107vh] justify-end items-center  bg-black pt-24 text-white">
       <div>
         <img
           src={sportsMan}
