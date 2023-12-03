@@ -1,4 +1,5 @@
 import allSvg from "svg/allSvg";
+import run from "../img/run.png"
 
 export default function About() {
   return (
@@ -30,7 +31,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div>
+        <div class="flex">
           <div>
             <div>
               <h3>WHO WE ARE</h3>
@@ -54,8 +55,8 @@ export default function About() {
             </div>
             <button>TAKE A TOUR </button>
           </div>
-          <div>
-            <img />
+          <div class="w-[40rem]">
+            <img src={run} />
           </div>
         </div>
       </div>
