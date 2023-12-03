@@ -31,8 +31,32 @@ export default function About() {
           </div>
         </div>
         <div>
-          <div></div>
-          <div></div>
+          <div>
+            <div>
+              <h3>WHO WE ARE</h3>
+              <div></div>
+            </div>
+            <h3>Take Your Health And Body To Next Level</h3>
+            <p>
+              Take your health and body to the next level with our comprehensive
+              program designed to help you reach your fitness goals.
+            </p>
+            <div>
+              <div>
+                <h3>PROFESSIONAL TRAINERS</h3>
+              </div>
+              <div>
+                <h3>MODERN EQUIPMENTS</h3>
+              </div>
+              <div>
+                <h3>FANCY GYM MACHINES</h3>
+              </div>
+            </div>
+            <button>TAKE A TOUR </button>
+          </div>
+          <div>
+            <img />
+          </div>
         </div>
       </div>
     </div>
