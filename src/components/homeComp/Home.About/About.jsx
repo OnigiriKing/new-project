@@ -42,18 +42,18 @@ export default function About() {
               Take your health and body to the next level with our comprehensive
               program designed to help you reach your fitness goals.
             </p>
-            <div class="flex">
-              <div class="flex flex-col">
+            <div class="flex gap-4 text-center py-8">
+              <div class="flex flex-col items-center">
                 <div class="text-red-600">{allSvg(50).lifting}</div>
-                <h3>PROFESSIONAL TRAINERS</h3>
+                <h3 class="text-lg font-bold">PROFESSIONAL TRAINERS</h3>
               </div>
-              <div class="flex flex-col">
+              <div class="flex flex-col items-center">
                 <div class="text-red-600">{allSvg(50).weight}</div>
-                <h3>MODERN EQUIPMENTS</h3>
+                <h3 class="text-lg font-bold">MODERN EQUIPMENTS</h3>
               </div>
-              <div class="flex flex-col">
+              <div class="flex flex-col items-center">
                 <div class="text-red-600">{allSvg(50).gymBag}</div>
-                <h3>FANCY GYM MACHINES</h3>
+                <h3 class="text-lg font-bold">FANCY GYM MACHINES</h3>
               </div>
             </div>
             <button>TAKE A TOUR </button>
