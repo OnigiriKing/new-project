@@ -3,7 +3,7 @@ import run from "../img/run.png"
 
 export default function About() {
   return (
-    <div class="flex h-screen bg-gray-200 w-full justify-center">
+    <div class="flex h-[120vh] bg-gray-200 w-full justify-center">
       <div class="w-full max-w-[70rem]">
         <div class="flex gap-6  relative bottom-12 z-30">
           <div class=" bg-white p-10 rounded-3xl flex flex-col text-center items-center w-[45rem] gap-2">
@@ -31,7 +31,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div class="flex">
+        <div class="flex mx-[4rem]">
           <div class="flex gap-6 flex-col">
             <div>
               <h3>WHO WE ARE</h3>
@@ -62,7 +62,7 @@ export default function About() {
               TAKE A TOUR {allSvg(20).arrow}
             </button>
           </div>
-          <div class="w-[40rem]">
+          <div class="w-[70rem] flex items-center">
             <img src={run} />
           </div>
         </div>
