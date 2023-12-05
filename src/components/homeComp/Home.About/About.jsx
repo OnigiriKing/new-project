@@ -32,31 +32,33 @@ export default function About() {
           </div>
         </div>
         <div class="flex">
-          <div>
+          <div class="flex gap-6 flex-col">
             <div>
               <h3>WHO WE ARE</h3>
               <div></div>
             </div>
-            <h3>Take Your Health And Body To Next Level</h3>
+            <h3 class="text-3xl font-bold">
+              Take Your Health And Body To Next Level
+            </h3>
             <p>
               Take your health and body to the next level with our comprehensive
               program designed to help you reach your fitness goals.
             </p>
             <div class="flex gap-4 text-center py-8">
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center gap-2">
                 <div class="text-red-600">{allSvg(50).lifting}</div>
                 <h3 class="text-lg font-bold">PROFESSIONAL TRAINERS</h3>
               </div>
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center gap-2">
                 <div class="text-red-600">{allSvg(50).weight}</div>
                 <h3 class="text-lg font-bold">MODERN EQUIPMENTS</h3>
               </div>
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center gap-2">
                 <div class="text-red-600">{allSvg(50).gymBag}</div>
                 <h3 class="text-lg font-bold">FANCY GYM MACHINES</h3>
               </div>
             </div>
-            <button>TAKE A TOUR </button>
+            <button class="self-start ml-10">TAKE A TOUR </button>
           </div>
           <div class="w-[40rem]">
             <img src={run} />
