@@ -58,7 +58,9 @@ export default function About() {
                 <h3 class="text-lg font-bold">FANCY GYM MACHINES</h3>
               </div>
             </div>
-            <button class="self-start ml-10">TAKE A TOUR </button>
+            <button class="self-start ml-10 font-medium text-white bg-gray-700 px-8 py-4 group hover:bg-red-600 duration-500 flex items-center gap-2">
+              TAKE A TOUR {allSvg(20).arrow}
+            </button>
           </div>
           <div class="w-[40rem]">
             <img src={run} />
