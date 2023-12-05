@@ -4,7 +4,7 @@ import run from "../img/run.png"
 export default function About() {
   return (
     <div class="flex h-[120vh] bg-gray-200 w-full justify-center">
-      <div class="w-full max-w-[70rem]">
+      <div class="w-full max-w-[75rem] py-2">
         <div class="flex gap-6  relative bottom-12 z-30">
           <div class=" bg-white p-10 rounded-3xl flex flex-col text-center items-center w-[45rem] gap-2">
             <div class="text-red-600">{allSvg(60).time}</div>
@@ -31,7 +31,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div class="flex mx-[4rem]">
+        <div class="flex mx-[2rem]">
           <div class="flex gap-6 flex-col">
             <div>
               <h3>WHO WE ARE</h3>
@@ -40,7 +40,7 @@ export default function About() {
             <h3 class="text-3xl font-bold">
               Take Your Health And Body To Next Level
             </h3>
-            <p>
+            <p class="text-gray-500">
               Take your health and body to the next level with our comprehensive
               program designed to help you reach your fitness goals.
             </p>
