@@ -3,7 +3,7 @@ import allSvg from "svg/allSvg";
 
 export default function Footer() {
   return (
-    <div class="page-class">
+    <div class="page-class flex">
       <div class="flex justify-between w-full max-w-[60rem] items-center mx-[2rem] py-[4rem]">
         <div class="flex flex-col w-[20rem] gap-4 items-center text-center text-gray-500">
           <img src={logo} class="w-28 flex" />
