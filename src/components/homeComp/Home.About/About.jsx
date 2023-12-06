@@ -1,5 +1,6 @@
 import allSvg from "svg/allSvg";
 import run from "../img/run.png"
+import redBrush from "../img/redBrush.png"
 
 export default function About() {
   return (
@@ -33,9 +34,9 @@ export default function About() {
         </div>
         <div class="flex mx-[2rem]">
           <div class="flex gap-6 flex-col">
-            <div>
-              <h3>WHO WE ARE</h3>
-              <div></div>
+            <div class="relative">
+              <h3 class="text-white relative z-[10] ">WHO WE ARE</h3>
+              <img class="absolute w-[11rem] -top-2 -left-6 z-[5]" src={redBrush} />
             </div>
             <h3 class="text-3xl font-bold">
               Take Your Health And Body To Next Level
