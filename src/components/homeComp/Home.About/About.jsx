@@ -5,7 +5,7 @@ import redBrush from "../img/redBrush.png"
 export default function About() {
   return (
     <div class="flex h-[120vh] bg-gray-200 w-full justify-center">
-      <div class="w-full max-w-[75rem] py-2">
+      <div class="common-wrapper">
         <div class="flex gap-6  relative bottom-12 z-30">
           <div class=" bg-white p-10 rounded-3xl flex flex-col text-center items-center w-[45rem] gap-2">
             <div class="text-red-600">{allSvg(60).time}</div>

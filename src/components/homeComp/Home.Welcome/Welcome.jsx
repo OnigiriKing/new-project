@@ -8,7 +8,7 @@ export default function Welcome() {
       <div>
         <img
           src={sportsMan}
-          class="w-[30rem] absolute bottom-0 left-[10rem] z-[5]"
+          class="w-[30rem] absolute -bottom-3 left-[10rem] z-[5]"
         />
         <div class="flex gap-16 mr-[10rem] items-center">
           <div class="z-[10] flex flex-col gap-10">
