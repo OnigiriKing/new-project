@@ -10,9 +10,12 @@ export default function Classes() {
         </div>
         <h3>We Offer Top-notch Flexible Classes</h3>
         <div class="relative grid grid-cols-4 grid-flow-row grid-rows-2 gap-4 w-full h-full">
-          <div class=" md:col-span-2 h-[20rem]">
+          <div class=" md:col-span-2 h-[18rem] overflow-hidden group relative">
             <div class="absolute"></div>
-            <div class="bg-bg-class1 h-full w-full"></div>
+            <div
+              class=" class-item
+            bg-bg-class1 group-hover:scale-[1] group-hover:grayscale-[0]"
+            ></div>
           </div>
         </div>
       </div>
