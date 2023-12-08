@@ -11,7 +11,10 @@ export default function Classes() {
         <h3>We Offer Top-notch Flexible Classes</h3>
         <div class="relative grid grid-cols-4 grid-flow-row grid-rows-2 gap-4 w-full h-full">
           <div class="class-item-wrap md:col-span-2 group">
-            <div class="absolute"></div>
+            <div class="class-item-text">
+              <p class="text-2xl font-medium">Lifting</p>
+              <p class="bg-red-600">Wednesday: 9:00am-10:00am</p>
+            </div>
             <div
               class=" class-item
             bg-bg-class1 group-hover:scale-[1] group-hover:grayscale-[0]"
