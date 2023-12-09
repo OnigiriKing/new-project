@@ -35,8 +35,8 @@ export default function Classes() {
               </p>
             </div>
             <div class="class-item-text">
-              <p class="text-2xl font-medium">Lifting</p>
-              <p class="bg-red-600">Wednesday: 9:00am-10:00am</p>
+              <p class="text-2xl font-medium">Boxing</p>
+              <p class="bg-red-600">Friday: 10:00am-12:00am</p>
             </div>
             <div
               class=" class-item
@@ -51,8 +51,8 @@ export default function Classes() {
               </p>
             </div>
             <div class="class-item-text">
-              <p class="text-2xl font-medium">Lifting</p>
-              <p class="bg-red-600">Wednesday: 9:00am-10:00am</p>
+              <p class="text-2xl font-medium">Yoga</p>
+              <p class="bg-red-600">Monday: 8:00am-9:00am</p>
             </div>
             <div
               class=" class-item
@@ -67,8 +67,8 @@ export default function Classes() {
               </p>
             </div>
             <div class="class-item-text">
-              <p class="text-2xl font-medium">Lifting</p>
-              <p class="bg-red-600">Wednesday: 9:00am-10:00am</p>
+              <p class="text-2xl font-medium">Cardio</p>
+              <p class="bg-red-600">Thursday: 3:00pm-5:00pm</p>
             </div>
             <div
               class=" class-item
@@ -83,8 +83,8 @@ export default function Classes() {
               </p>
             </div>
             <div class="class-item-text">
-              <p class="text-2xl font-medium">Lifting</p>
-              <p class="bg-red-600">Wednesday: 9:00am-10:00am</p>
+              <p class="text-2xl font-medium">Power training</p>
+              <p class="bg-red-600">Saturday: 12:00am-1:00pm</p>
             </div>
             <div
               class=" class-item
@@ -99,8 +99,8 @@ export default function Classes() {
               </p>
             </div>
             <div class="class-item-text">
-              <p class="text-2xl font-medium">Lifting</p>
-              <p class="bg-red-600">Wednesday: 9:00am-10:00am</p>
+              <p class="text-2xl font-medium">Cycling</p>
+              <p class="bg-red-600">Tuesday: 6:00pm-7:00pm</p>
             </div>
             <div
               class=" class-item
