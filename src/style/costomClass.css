@@ -35,3 +35,16 @@
   bottom: 1.5rem;
   left: 1.5rem;
 }
+
+.class-item-side {
+  display:flex;
+  position: absolute;
+  z-index: 10;
+  background: hsla(0,0%,100%,.3);
+  width: 8rem;
+  top: 5.5rem;
+  left: -3rem;
+  justify-content: end;
+  border-radius: 9999px;
+  transform: rotate(30deg);
+}

@@ -12,7 +12,7 @@ export default function Classes() {
         <h3>We Offer Top-notch Flexible Classes</h3>
         <div class="relative grid grid-cols-4 grid-flow-row grid-rows-2 gap-4 w-full h-full">
           <div class="class-item-wrap md:col-span-2 group relative">
-            <div class="flex absolute z-[10] bg-[hsla(0,0%,100%,.3)] w-[8rem] top-[5.5rem] left-[-3rem] justify-end rounded-full rotate-[30deg] group-hover:bg-white duration-[0.4s]">
+            <div class="class-item-side group-hover:bg-white duration-[0.4s]">
               <p class="duration-[0.4s] px-3 py-2 rotate-[-30deg] text-white group-hover:text-red-600">
                 {allSvg(50).lifting}
               </p>
