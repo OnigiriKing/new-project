@@ -3,7 +3,7 @@ import allSvg from "svg/allSvg";
 
 export default function Classes() {
   return (
-    <div class="flex justify-center items-center  bg-white">
+    <div class="flex justify-center items-center  bg-white  my-6">
       <div class="flex flex-col common-wrapper items-center gap-8 mx-4">
         <div class="relative w-[11rem] flex flex-col items-center">
           <h3 class="text-white relative z-[10] ">WHO WE ARE</h3>
