@@ -662,16 +662,6 @@ video {
   margin-right: 2rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -917,24 +907,24 @@ video {
   background-image: url('utils/img/classesImg/class-1.png');
 }
 
-.bg-bg-class-6 {
-  background-image: url('utils/img/classesImg/class-6.png');
-}
-
-.bg-bg-class-5 {
-  background-image: url('utils/img/classesImg/class-5.png');
-}
-
-.bg-bg-class-4 {
-  background-image: url('utils/img/classesImg/class-4.png');
+.bg-bg-class-2 {
+  background-image: url('utils/img/classesImg/class-2.png');
 }
 
 .bg-bg-class-3 {
   background-image: url('utils/img/classesImg/class-3.png');
 }
 
-.bg-bg-class-2 {
-  background-image: url('utils/img/classesImg/class-2.png');
+.bg-bg-class-4 {
+  background-image: url('utils/img/classesImg/class-4.png');
+}
+
+.bg-bg-class-5 {
+  background-image: url('utils/img/classesImg/class-5.png');
+}
+
+.bg-bg-class-6 {
+  background-image: url('utils/img/classesImg/class-6.png');
 }
 
 .p-10 {
@@ -1033,6 +1023,10 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .text-black {
@@ -1141,11 +1135,11 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 }

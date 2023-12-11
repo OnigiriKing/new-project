@@ -243,6 +243,86 @@ export default function allSvg(width) {
         </g>
       </svg>
     ),
+    yoga: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={width}
+        height={width}
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="m12 11l-1 3l1 3h-1.5L9 14l.5-4.5L12 11Zm1-9L9 6v8l1 3H6l-3 5m17.5 0l-5-3.5L12 17l-1-3l1-3l3.5 2v5.5M14 8.5a1 1 0 1 1 0-2a1 1 0 0 1 0 2Zm-3 2L10 17v-3.5l1-3Z"
+        />
+      </svg>
+    ),
+    boxing: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={width}
+        height={width}
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="m19.8 2l-8.2 6.7l-1.21-1.04L14 5.58L9.41 1L8 2.41l2.74 2.74L5 8.46l-1.19 4.29L6.27 17L8 16l-2.03-3.5l.35-1.32L9.5 13l.5 9h2l.5-10L21 3.4L19.8 2M5 3a2 2 0 1 1 0 4c-1.11 0-2-.89-2-2s.9-2 2-2Z"
+        />
+      </svg>
+    ),
+    cardio: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={width}
+        height={width}
+        viewBox="0 0 48 48"
+      >
+        <g
+          fill="none"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="4"
+        >
+          <path d="M5.55469 23.194C5.3698 22.8031 5.19795 22.4068 5.04108 22.0056C4.39264 20.3473 4 18.6042 4 16.8C4 10.8353 8.88417 6 14.9091 6C18.7036 6 22.0456 7.91792 24 10.828C25.9544 7.91792 29.2964 6 33.0909 6C39.1158 6 44 10.8353 44 16.8C44 24.5647 36.7273 31.2 33.0909 34.8C30.6667 37.2 27.6364 39.6 24 42C20.3636 39.6 17.3333 37.2 14.9091 34.8C14.543 34.4376 14.1401 34.0444 13.7114 33.6224" />
+          <path d="M8 29.9734L19.1138 19.0396L25.5781 25.7059L35.2619 15.8188" />
+        </g>
+      </svg>
+    ),
+    power: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={width}
+        height={width}
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M20.57 14.86L22 13.43L20.57 12L17 15.57L8.43 7L12 3.43L10.57 2L9.14 3.43L7.71 2L5.57 4.14L4.14 2.71L2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57L3.43 12L7 8.43L15.57 17L12 20.57L13.43 22l1.43-1.43L16.29 22l2.14-2.14l1.43 1.43l1.43-1.43l-1.43-1.43L22 16.29l-1.43-1.43Z"
+        />
+      </svg>
+    ),
+    cycling: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={width}
+        height={width}
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M11 15.414V20h2v-4.586c0-.526-.214-1.042-.586-1.414l-2-2L13 9.414l2 2c.372.372.888.586 1.414.586H20v-2h-3.586l-3.707-3.707a.999.999 0 0 0-1.414 0L8 9.586c-.378.378-.586.88-.586 1.414s.208 1.036.586 1.414l3 3z"
+        />
+        <circle cx="16" cy="5" r="2" fill="currentColor" />
+        <path
+          fill="currentColor"
+          d="M18 14c-2.206 0-4 1.794-4 4s1.794 4 4 4s4-1.794 4-4s-1.794-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2s2 .897 2 2s-.897 2-2 2zM6 22c2.206 0 4-1.794 4-4s-1.794-4-4-4s-4 1.794-4 4s1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2s-2-.897-2-2s.897-2 2-2z"
+        />
+      </svg>
+    ),
   };
 
   return svg;

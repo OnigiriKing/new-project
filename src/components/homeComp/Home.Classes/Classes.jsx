@@ -6,10 +6,10 @@ export default function Classes() {
     <div class="flex justify-center items-center  bg-white  my-6">
       <div class="flex flex-col common-wrapper items-center gap-8 mx-4">
         <div class="relative w-[11rem] flex flex-col items-center">
-          <h3 class="text-white relative z-[10] ">WHO WE ARE</h3>
+          <h3 class="text-white relative z-[10] font-bold ">WHO WE ARE</h3>
           <img class="absolute -top-3  z-[5] " src={redBrush} />
         </div>
-        <h3>We Offer Top-notch Flexible Classes</h3>
+        <h3 class="text-2xl font-bold">We Offer Top-notch Flexible Classes</h3>
         <div class="relative grid grid-cols-4 grid-flow-row grid-rows-2 gap-4 w-full h-full">
           {/* classes */}
           <div class="class-item-wrap md:col-span-2 group relative">
