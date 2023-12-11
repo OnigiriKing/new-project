@@ -31,7 +31,7 @@ export default function Classes() {
           <div class="class-item-wrap md:col-span-1 group relative">
             <div class="class-item-side group-hover:bg-white duration-[0.4s]">
               <p class="duration-[0.4s] px-3 py-2 rotate-[-30deg] text-white group-hover:text-red-600">
-                {allSvg(50).lifting}
+                {allSvg(50).boxing}
               </p>
             </div>
             <div class="class-item-text">
@@ -47,7 +47,7 @@ export default function Classes() {
           <div class="class-item-wrap md:col-span-1 group relative">
             <div class="class-item-side group-hover:bg-white duration-[0.4s]">
               <p class="duration-[0.4s] px-3 py-2 rotate-[-30deg] text-white group-hover:text-red-600">
-                {allSvg(50).lifting}
+                {allSvg(50).yoga}
               </p>
             </div>
             <div class="class-item-text">
@@ -63,7 +63,7 @@ export default function Classes() {
           <div class="class-item-wrap md:col-span-1 group relative">
             <div class="class-item-side group-hover:bg-white duration-[0.4s]">
               <p class="duration-[0.4s] px-3 py-2 rotate-[-30deg] text-white group-hover:text-red-600">
-                {allSvg(50).lifting}
+                {allSvg(50).cardio}
               </p>
             </div>
             <div class="class-item-text">
@@ -79,7 +79,7 @@ export default function Classes() {
           <div class="class-item-wrap md:col-span-1 group relative">
             <div class="class-item-side group-hover:bg-white duration-[0.4s]">
               <p class="duration-[0.4s] px-3 py-2 rotate-[-30deg] text-white group-hover:text-red-600">
-                {allSvg(50).lifting}
+                {allSvg(50).power}
               </p>
             </div>
             <div class="class-item-text">
@@ -95,7 +95,7 @@ export default function Classes() {
           <div class="class-item-wrap md:col-span-2 group relative">
             <div class="class-item-side group-hover:bg-white duration-[0.4s]">
               <p class="duration-[0.4s] px-3 py-2 rotate-[-30deg] text-white group-hover:text-red-600">
-                {allSvg(50).lifting}
+                {allSvg(50).cycling}
               </p>
             </div>
             <div class="class-item-text">
