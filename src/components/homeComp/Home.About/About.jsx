@@ -56,7 +56,7 @@ export default function About() {
                 <h3 class="text-lg font-bold">MODERN EQUIPMENTS</h3>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div class="text-red-600">{allSvg(50).gymBag}</div>
+                <div class="text-red-600">{allSvg(50).bacycle}</div>
                 <h3 class="text-lg font-bold">FANCY GYM MACHINES</h3>
               </div>
             </div>
