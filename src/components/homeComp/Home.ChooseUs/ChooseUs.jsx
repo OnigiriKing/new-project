@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 
 export default function ChooseUs() {
   return (
-    <div class="flex center h-[107vh] justify-end items-center  bg-black pt-24 text-white">
-      <div class="flex flex-col common-wrapper items-center gap-8 mx-4">
-        <div>
-          <h3>We Are Always Providing Best Fitness Service For You</h3>
+    <div class="flex center justify-end items-center  bg-black pt-24 text-white">
+      <div class="flex flex-col common-wrapper items-center gap-8 mx-4 relative">
+        <div class="flex gap-10 items-center py-4 absolute bottom-[13rem] bg-red-600">
+          <h3 class="font-bold text-4xl w-[35rem]">
+            We Are Always Providing Best Fitness Service For You
+          </h3>
           <Link class="self-start ml-10 font-medium text-black bg-white px-8 py-4 group flex items-center gap-2 justify-center w-fit">
             JOIN US {allSvg(20).arrow}
           </Link>
