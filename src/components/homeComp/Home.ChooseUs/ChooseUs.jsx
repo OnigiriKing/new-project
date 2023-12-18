@@ -15,7 +15,17 @@ export default function ChooseUs() {
           </Link>
         </div>
         <div class="flex gap-10 justify-center mt-[6rem] mb-[4rem]">
-          <div>Video</div>
+          <div class="">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ruX4Le0kBng?si=pB-mbMkLmWOISZqg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
           <div class="flex flex-col w-[40%] gap-4">
             <h4>WHY CHOOSE US</h4>
             <h3>We Can Give A Shape Of Your Body Here!</h3>
