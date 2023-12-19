@@ -1,7 +1,6 @@
 import allSvg from "svg/allSvg";
 import { Link } from "react-router-dom";
 
-
 export default function ChooseUs() {
   return (
     <div class="flex center justify-end items-center  bg-black pt-24 text-white relative">
@@ -36,9 +35,13 @@ export default function ChooseUs() {
               you reach your specific goals.
             </p>
             <div>
-              <div>
-                <h5></h5>
-                <div></div>
+              <div class="grid grid-cols-2">
+                <div class="flex items-center gap-4">
+                  <div class="bg-gray-800 hover:bg-red-600 duration-[0.5s] p-2 rounded-full">
+                    {allSvg(35).muscle}
+                  </div>
+                  <h5 class="font-bold text-lg">Free Power Training</h5>
+                </div>
               </div>
               <Link class="self-start mt-[2rem] font-medium text-white bg-gray-700 px-8 py-4 group hover:bg-red-600 duration-500 flex items-center gap-2 justify-center w-fit">
                 OUR CLASSES {allSvg(20).arrow}
