@@ -974,6 +974,10 @@ video {
   gap: 2rem;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .self-start {
   align-self: flex-start;
 }
@@ -1227,6 +1231,14 @@ video {
 
 .duration-\[0\.5s\] {
   transition-duration: 0.5s;
+}
+
+.duration-\[\] {
+  transition-duration: ;
+}
+
+.duration-\[\.5sec\] {
+  transition-duration: .5sec;
 }
 
 .hover\:bg-red-600:hover {
