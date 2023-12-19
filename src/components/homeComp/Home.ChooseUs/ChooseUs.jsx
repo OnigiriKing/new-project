@@ -27,10 +27,10 @@ export default function ChooseUs() {
             ></iframe>
           </div>
           <div class="flex flex-col w-[40%] gap-4">
-            <h4 class="mb-4 relative w-[13rem] flex flex-col items-center">
+            <div class="mb-4 relative w-[13rem] flex flex-col items-center">
               <p class="z-[6] font-bold">WHY CHOOSE US</p>
               <img class="absolute -top-[1rem]  z-[5] " src={redBrush} />
-            </h4>
+            </div>
             <h3 class="text-3xl font-bold">
               We Can Give A Shape Of Your Body Here!
             </h3>

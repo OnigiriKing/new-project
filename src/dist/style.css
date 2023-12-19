@@ -783,6 +783,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mt-\[5rem\] {
+  margin-top: 5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -871,6 +875,10 @@ video {
 
 .w-\[13rem\] {
   width: 13rem;
+}
+
+.w-\[\] {
+  width: ;
 }
 
 .max-w-\[60rem\] {
