@@ -36,8 +36,8 @@ export default function About() {
         <div class="flex mx-[2rem]">
           <div class="flex gap-6 flex-col">
             <div class="relative">
-              <h3 class="text-white relative z-[10] ">WHO WE ARE</h3>
-              <img class="absolute w-[11rem] -top-2 -left-6 z-[5]" src={redBrush} />
+              <h3 class="text-white relative z-[10] font-bold ">WHO WE ARE</h3>
+              <img class="absolute w-[12rem] -top-[.9rem] -left-[2.3rem] z-[5]" src={redBrush} />
             </div>
             <h3 class="text-3xl font-bold">
               Take Your Health And Body To Next Level

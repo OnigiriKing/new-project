@@ -1,5 +1,6 @@
 import allSvg from "svg/allSvg";
 import { Link } from "react-router-dom";
+import redBrush from "../img/redBrush.png";
 
 export default function ChooseUs() {
   return (
@@ -13,7 +14,7 @@ export default function ChooseUs() {
             JOIN US {allSvg(20).arrow}
           </Link>
         </div>
-        <div class="flex gap-10 justify-center mt-[6rem] mb-[4rem]">
+        <div class="flex gap-10 justify-center items-center mt-[6rem] mb-[4rem]">
           <div class="">
             <iframe
               width="520"
@@ -26,8 +27,13 @@ export default function ChooseUs() {
             ></iframe>
           </div>
           <div class="flex flex-col w-[40%] gap-4">
-            <h4>WHY CHOOSE US</h4>
-            <h3>We Can Give A Shape Of Your Body Here!</h3>
+            <h4 class="mb-4 relative w-[13rem] flex flex-col items-center">
+              <p class="z-[6] font-bold">WHY CHOOSE US</p>
+              <img class="absolute -top-[1rem]  z-[5] " src={redBrush} />
+            </h4>
+            <h3 class="text-3xl font-bold">
+              We Can Give A Shape Of Your Body Here!
+            </h3>
             <p class=" text-gray-400">
               At Gymate, we are dedicated to helping you achieve the body of
               your dreams. Our expert trainers and nutritionists will work with

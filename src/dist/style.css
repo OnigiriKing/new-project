@@ -636,6 +636,70 @@ video {
   top: 0px;
 }
 
+.-top-\[3\] {
+  top: -3;
+}
+
+.-top-\[1rem\] {
+  top: -1rem;
+}
+
+.-top-\[2rem\] {
+  top: -2rem;
+}
+
+.top-\[1rem\] {
+  top: 1rem;
+}
+
+.-top-\[\.5rem\] {
+  top: -.5rem;
+}
+
+.-top-\[\.4rem\] {
+  top: -.4rem;
+}
+
+.-top-\[\.8rem\] {
+  top: -.8rem;
+}
+
+.-top-\[\.6rem\] {
+  top: -.6rem;
+}
+
+.-left-\[1rem\] {
+  left: -1rem;
+}
+
+.left-\[1rem\] {
+  left: 1rem;
+}
+
+.-left-\[\.5rem\] {
+  left: -.5rem;
+}
+
+.-left-\[\.6rem\] {
+  left: -.6rem;
+}
+
+.-left-\[2rem\] {
+  left: -2rem;
+}
+
+.-left-\[2\.3rem\] {
+  left: -2.3rem;
+}
+
+.-top-\[\.7rem\] {
+  top: -.7rem;
+}
+
+.-top-\[\.9rem\] {
+  top: -.9rem;
+}
+
 .z-30 {
   z-index: 30;
 }
@@ -658,6 +722,10 @@ video {
 
 .z-\[5\] {
   z-index: 5;
+}
+
+.z-\[6\] {
+  z-index: 6;
 }
 
 .mx-4 {
@@ -705,6 +773,14 @@ video {
 
 .mt-\[6rem\] {
   margin-top: 6rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .flex {
@@ -787,6 +863,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[12rem\] {
+  width: 12rem;
+}
+
+.w-\[13rem\] {
+  width: 13rem;
 }
 
 .max-w-\[60rem\] {
