@@ -16,7 +16,7 @@ export default function ChooseUs() {
         <div class="flex gap-10 justify-center mt-[6rem] mb-[4rem]">
           <div class="">
             <iframe
-              width="560"
+              width="520"
               height="315"
               src="https://www.youtube.com/embed/ruX4Le0kBng?si=pB-mbMkLmWOISZqg"
               title="YouTube video player"
@@ -35,12 +35,30 @@ export default function ChooseUs() {
               you reach your specific goals.
             </p>
             <div>
-              <div class="grid grid-cols-2">
+              <div class="grid grid-cols-2 gap-4">
                 <div class="flex items-center gap-4">
                   <div class="bg-gray-800 hover:bg-red-600 duration-[0.5s] p-2 rounded-full">
                     {allSvg(35).muscle}
                   </div>
                   <h5 class="font-bold text-lg">Free Power Training</h5>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div class="bg-gray-800 hover:bg-red-600 duration-[0.5s] p-2 rounded-full">
+                    {allSvg(35).cycling}
+                  </div>
+                  <h5 class="font-bold text-lg">Modern Gym Equipments</h5>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div class="bg-gray-800 hover:bg-red-600 duration-[0.5s] p-2 rounded-full">
+                    {allSvg(35).gymBag}
+                  </div>
+                  <h5 class="font-bold text-lg">Free Gym Bag</h5>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div class="bg-gray-800 hover:bg-red-600 duration-[0.5s] p-2 rounded-full">
+                    {allSvg(35).bottle}
+                  </div>
+                  <h5 class="font-bold text-lg">Fresh Bottle Watter</h5>
                 </div>
               </div>
               <Link class="self-start mt-[2rem] font-medium text-white bg-gray-700 px-8 py-4 group hover:bg-red-600 duration-500 flex items-center gap-2 justify-center w-fit">
