@@ -1,5 +1,6 @@
 import redBrush from "../img/redBrush.png";
 import allSvg from "svg/allSvg";
+import trainer1 from "utils/img/trainer/trainer1.png";
 
 export default function Trainers() {
   return (
@@ -15,11 +16,14 @@ export default function Trainers() {
           you in achieving your fitness goals.
         </p>
         <div class="grid justify-center">
-          <img></img>
-          <div class="flex flex-col gap-1">
+          <div class="flex justify-center">
+            <img class="w-[15rem]" src={trainer1}></img>
             <div></div>
-            <h4>Maxwell Rivera</h4>
-            <p>Bodybuilding</p>
+          </div>
+          <div class="flex flex-col gap-1 py-[2rem] px-[6rem] shadow-lg">
+            <div></div>
+            <h4 class="text-xl font-bold">Maxwell Rivera</h4>
+            <p class="text-gray-500">Bodybuilding</p>
             <div class="flex justify-center gap-2 text-gray-500">
               <div class="hover:text-red-600 duration-[.4s] cursor-pointer">
                 {allSvg(16).twitter}
@@ -29,9 +33,6 @@ export default function Trainers() {
               </div>
               <div class="hover:text-red-600 duration-[.4s] cursor-pointer">
                 {allSvg(16).inst}
-              </div>
-              <div class="hover:text-red-600 duration-[.4s] cursor-pointer">
-                {allSvg(16).linkedin}
               </div>
             </div>
           </div>
