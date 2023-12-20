@@ -20,8 +20,8 @@ export default function Trainers() {
             <img class="w-[15rem]" src={trainer1}></img>
             <div></div>
           </div>
-          <div class="flex flex-col gap-1 py-[2rem] px-[6rem] shadow-lg">
-            <div></div>
+          <div class="flex flex-col gap-1 py-[2rem] px-[6rem] shadow-lg relative ">
+            <div class="flex justify-center bg-white pt-2 pb-6 px-5 rounded-full absolute -top-[1.7rem] right-[42%]">{allSvg(20).arrowSmall}</div>
             <h4 class="text-xl font-bold">Maxwell Rivera</h4>
             <p class="text-gray-500">Bodybuilding</p>
             <div class="flex justify-center gap-2 text-gray-500">
