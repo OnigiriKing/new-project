@@ -17,15 +17,22 @@ export default function Trainers() {
         <div class="grid justify-center">
           <img></img>
           <div class="flex flex-col gap-1">
-          <div>
-          </div>
+            <div></div>
             <h4>Maxwell Rivera</h4>
             <p>Bodybuilding</p>
             <div class="flex justify-center gap-2 text-gray-500">
-              <div class="hover:text-red-600 duration-[.5sec] cursor-pointer">{allSvg(16).twitter}</div>
-              <div class="hover:text-red-600 duration-[.5sec] cursor-pointer">{allSvg(16).facebook}</div>
-              <div class="hover:text-red-600 duration-[.5sec] cursor-pointer">{allSvg(16).inst}</div>
-              <div class="hover:text-red-600 duration-[.5sec] cursor-pointer">{allSvg(16).linkedin}</div>
+              <div class="hover:text-red-600 duration-[.4s] cursor-pointer">
+                {allSvg(16).twitter}
+              </div>
+              <div class="hover:text-red-600 duration-[.4s] cursor-pointer">
+                {allSvg(16).facebook}
+              </div>
+              <div class="hover:text-red-600 duration-[.4s] cursor-pointer">
+                {allSvg(16).inst}
+              </div>
+              <div class="hover:text-red-600 duration-[.4s] cursor-pointer">
+                {allSvg(16).linkedin}
+              </div>
             </div>
           </div>
         </div>

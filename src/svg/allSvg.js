@@ -50,7 +50,6 @@ export default function allSvg(width) {
         xmlns="http://www.w3.org/2000/svg"
         width={width}
         height={width}
-        class="hover:text-red-500 duration-500"
         viewBox="0 0 16 16"
       >
         <path
@@ -66,7 +65,6 @@ export default function allSvg(width) {
         xmlns="http://www.w3.org/2000/svg"
         width={width}
         height={width}
-        class="hover:text-red-500 duration-500"
         viewBox="0 0 24 24"
       >
         <g fill="none">
@@ -83,7 +81,6 @@ export default function allSvg(width) {
         xmlns="http://www.w3.org/2000/svg"
         width={width}
         height={width}
-        class="hover:text-red-500 duration-500"
         viewBox="0 0 24 24"
       >
         <path
