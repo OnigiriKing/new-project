@@ -19,16 +19,16 @@ export default function Trainers() {
         </p>
         <div class="grid justify-center grid-flow-col gap-4">
           <Coach
-            img={trainer1}
-            name={"Maxwell Rivera"}
-            des={"Bodybuilding"}
-            width="w-[15rem]"
-          />
-          <Coach
             img={trainer2}
             name={"Yuki Tanaka"}
             des={"Zen Meditation"}
             width="w-[17rem]"
+          />
+          <Coach
+            img={trainer1}
+            name={"Maxwell Rivera"}
+            des={"Bodybuilding"}
+            width="w-[15rem]"
           />
           <Coach
             img={trainer3}
