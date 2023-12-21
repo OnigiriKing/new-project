@@ -13,14 +13,20 @@ export default function Testimonials() {
           <div></div>
           <div>
             <div></div>
-            <p></p>
+            <p>
+              Absolutely thrilled with BKK Gym! Great equipment, friendly staff,
+              and a variety of classes. It's a motivating environment for all
+              fitness levels. Highly recommend for anyone looking to improve
+              their fitness!
+            </p>
             <div>
-            <h2></h2>
-            <p></p>
+              <h2>Jackson Taylor</h2>
             </div>
           </div>
         </div>
-        <div></div>
+        <div class="flex w-[4rem] gap-6">
+
+        </div>
       </div>
     </div>
   );
