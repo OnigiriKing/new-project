@@ -12,14 +12,14 @@ export default function Testimonials() {
         </div>
         <div>
           <div></div>
-          <div class="flex relative text-white items-center">
-            <div class="relative">
-              <div class="flex relative items-center justify-center">
-                <img class="w-[20rem] absolute" src={people1}></img>
-                <div class="bg-red-700 w-[25rem] h-[37rem]" />
+          <div class="flex relative text-white items-end">
+            <div>
+              <div class="flex relative items-center justify-center left-4">
+                <img class="w-[15rem] absolute z-[5] top-[2.37rem]" src={people1}></img>
+                <div class=" w-[25rem] h-[30rem]  bg-red-700 rounded-tr-[15rem]" />
               </div>
             </div>
-            <div class="flex flex-col h-[13rem] w-full justify-center bg-black">
+            <div class="flex flex-col h-[20rem] w-full justify-center bg-black">
               <div class="ml-[3rem]">
                 <p>
                   Absolutely thrilled with BKK Gym! Great equipment, friendly
