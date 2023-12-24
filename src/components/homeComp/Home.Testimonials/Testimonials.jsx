@@ -1,3 +1,4 @@
+import allSvg from "svg/allSvg";
 import redBrush from "../img/redBrush.png";
 import people1 from "utils/img/people/people1.png"
 
@@ -5,7 +6,7 @@ import people1 from "utils/img/people/people1.png"
 export default function Testimonials() {
   return (
     <div class="flex justify-center items-center  bg-white  my-6">
-      <div class="flex flex-col common-wrapper items-center gap-8 text-center h-[100vh]">
+      <div class="flex flex-col common-wrapper items-center gap-8  h-[100vh]">
         <div class="mb-4 mt-[5rem] relative w-[13rem] flex flex-col items-center">
           <p class="z-[6] font-bold text-white">TESTIMONIALS</p>
           <img class="absolute -top-[1rem]  z-[5] " src={redBrush} />
@@ -15,20 +16,31 @@ export default function Testimonials() {
           <div class="flex relative text-white items-end">
             <div>
               <div class="flex relative items-center justify-center left-4">
-                <img class="w-[15rem] absolute z-[5] top-[2.37rem]" src={people1}></img>
-                <div class=" w-[25rem] h-[30rem]  bg-red-700 rounded-tr-[15rem]" />
+                <img
+                  class="w-[15rem] absolute z-[5] top-[2.37rem]"
+                  src={people1}
+                ></img>
+                <div class=" w-[25rem] h-[30rem]  bg-red-600 rounded-tr-[15rem]" />
               </div>
             </div>
-            <div class="flex flex-col h-[20rem] w-full justify-center bg-black">
-              <div class="ml-[3rem]">
+            <div class="flex flex-col h-[20rem] w-full justify-center bg-black relative">
+              <div class="mx-[7rem]">
                 <p>
-                  Absolutely thrilled with BKK Gym! Great equipment, friendly
+                  "Absolutely thrilled with BKK Gym! Great equipment, friendly
                   staff, and a variety of classes. It's a motivating environment
                   for all fitness levels. Highly recommend for anyone looking to
-                  improve their fitness!
+                  improve their fitness!"
                 </p>
                 <div>
-                  <h2 class="mt-[1rem]">Jackson Taylor</h2>
+                  <h2 class="mt-[1rem] font-bold">Jackson Taylor</h2>
+                </div>
+                <div class=" flex absolute right-[4rem]  bottom-[2rem] justify-end gap-2 text-black">
+                  <button class="rotate-180 p-2 bg-white hover:bg-red-600 hover:text-white duration-[.3s]">
+                    {allSvg(20).arrow}
+                  </button>
+                  <button class="p-2 bg-white hover:bg-red-600 hover:text-white duration-[.3s]">
+                    {allSvg(20).arrow}
+                  </button>
                 </div>
               </div>
             </div>

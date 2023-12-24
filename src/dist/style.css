@@ -696,6 +696,26 @@ video {
   top: 2.37rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.bottom-\[2re\2c \] {
+  bottom: 2re,;
+}
+
+.bottom-\[2rem\] {
+  bottom: 2rem;
+}
+
+.right-\[4rem\] {
+  right: 4rem;
+}
+
 .z-30 {
   z-index: 30;
 }
@@ -737,6 +757,21 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.mx-\[4rem\] {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.mx-\[6rem\] {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.mx-\[7rem\] {
+  margin-left: 7rem;
+  margin-right: 7rem;
 }
 
 .mb-4 {
@@ -785,6 +820,14 @@ video {
 
 .mt-\[6rem\] {
   margin-top: 6rem;
+}
+
+.ml-\[4rem\] {
+  margin-left: 4rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -949,6 +992,12 @@ video {
 
 .rotate-\[-30deg\] {
   --tw-rotate: -30deg;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-180 {
+  --tw-rotate: 180deg;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1179,6 +1228,14 @@ video {
   padding: .4rem;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1365,6 +1422,26 @@ video {
   transition-duration: 0.5s;
 }
 
+.duration-\[\.4sec\] {
+  transition-duration: .4sec;
+}
+
+.duration-\[0\.4sec\] {
+  transition-duration: 0.4sec;
+}
+
+.duration-\[4sec\] {
+  transition-duration: 4sec;
+}
+
+.duration-\[4s\] {
+  transition-duration: 4s;
+}
+
+.duration-\[\.3s\] {
+  transition-duration: .3s;
+}
+
 .hover\:bg-red-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
@@ -1378,6 +1455,11 @@ video {
 .hover\:text-red-600:hover {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:rotate-180 {
