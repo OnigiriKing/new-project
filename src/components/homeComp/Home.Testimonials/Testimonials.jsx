@@ -1,6 +1,6 @@
 import allSvg from "svg/allSvg";
 import redBrush from "../img/redBrush.png";
-import people1 from "utils/img/people/people1.png"
+import person1 from "utils/img/people/person1.png"
 
 
 export default function Testimonials() {
@@ -18,7 +18,7 @@ export default function Testimonials() {
               <div class="flex relative items-center justify-center left-4">
                 <img
                   class="w-[15rem] absolute z-[5] top-[2.37rem]"
-                  src={people1}
+                  src={person1}
                 ></img>
                 <div class=" w-[25rem] h-[30rem]  bg-red-800 rounded-tr-[15rem]" />
               </div>

@@ -1,7 +1,7 @@
 import redBrush from "../img/redBrush.png";
-import trainer1 from "utils/img/trainer/trainer1.png";
-import trainer2 from "utils/img/trainer/trainer2.png";
-import trainer3 from "utils/img/trainer/trainer3.png";
+import trainer1 from "./img/trainer1.png";
+import trainer2 from "./img/trainer2.png";
+import trainer3 from "./img/trainer3.png";
 import { Coach } from "./Trainers.Coach";
 
 export default function Trainers() {
