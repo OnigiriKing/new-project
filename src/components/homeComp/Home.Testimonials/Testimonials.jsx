@@ -20,11 +20,12 @@ export default function Testimonials() {
                   class="w-[15rem] absolute z-[5] top-[2.37rem]"
                   src={people1}
                 ></img>
-                <div class=" w-[25rem] h-[30rem]  bg-red-600 rounded-tr-[15rem]" />
+                <div class=" w-[25rem] h-[30rem]  bg-red-800 rounded-tr-[15rem]" />
               </div>
             </div>
             <div class="flex flex-col h-[20rem] w-full justify-center bg-black relative">
               <div class="mx-[7rem]">
+              {allSvg(40).quotes}
                 <p>
                   "Absolutely thrilled with BKK Gym! Great equipment, friendly
                   staff, and a variety of classes. It's a motivating environment
