@@ -1,6 +1,7 @@
 import allSvg from "svg/allSvg";
 import redBrush from "../img/redBrush.png";
 import person1 from "utils/img/people/person1.png"
+import reviews from "utils/data/reviews";
 
 
 export default function Testimonials() {
@@ -18,22 +19,17 @@ export default function Testimonials() {
               <div class="flex relative items-center justify-center left-4">
                 <img
                   class="w-[15rem] absolute z-[5] top-[2.37rem]"
-                  src={person1}
+                  src={reviews.person2.img}
                 ></img>
                 <div class=" w-[25rem] h-[30rem]  bg-red-800 rounded-tr-[15rem]" />
               </div>
             </div>
             <div class="flex flex-col h-[20rem] w-full justify-center bg-black relative">
               <div class="mx-[7rem]">
-              {allSvg(40).quotes}
-                <p>
-                  "Absolutely thrilled with BKK Gym! Great equipment, friendly
-                  staff, and a variety of classes. It's a motivating environment
-                  for all fitness levels. Highly recommend for anyone looking to
-                  improve their fitness!"
-                </p>
+                {allSvg(40).quotes}
+                <p>{`"${reviews.person2.text}"`}</p>
                 <div>
-                  <h2 class="mt-[1rem] font-bold">Jackson Taylor</h2>
+                  <h2 class="mt-[1rem] font-bold">{reviews.person2.name}</h2>
                 </div>
                 <div class=" flex absolute right-[4rem]  bottom-[2rem] justify-end gap-2 text-black">
                   <button class="rotate-180 p-2 bg-white hover:bg-red-600 hover:text-white duration-[.3s]">
