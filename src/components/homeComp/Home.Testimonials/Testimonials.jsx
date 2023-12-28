@@ -18,7 +18,7 @@ export default function Testimonials() {
             <div>
               <div class="flex relative items-center justify-center left-4">
                 <img
-                  class="w-[15rem] absolute z-[5] top-[2.37rem]"
+                  class={`w-[15rem] absolute z-[5] top-[${reviews.person1.position}]`}
                   src={reviews.person2.img}
                 ></img>
                 <div class=" w-[25rem] h-[30rem]  bg-red-800 rounded-tr-[15rem]" />

@@ -8,16 +8,19 @@ const reviews = {
     name: "Jackson Taylor",
     text: "Absolutely thrilled with BKK Gym! Great equipment, friendly staff, and a variety of classes. It's a motivating environment for all fitness levels. Highly recommend for anyone looking to improve their fitness!",
     img: person1,
+    position: "2.37rem",
   },
   person2: {
     name: "Yumi Nakamura",
     text: "This gym is truly wonderful! With its state-of-the-art facilities and friendly staff, I can recommend it to people of all levels. Personally, I love the Body Combat classes.",
     img: person2,
+    position: "2.37rem",
   },
   person3: {
     name: "Michael Thompson",
     text: "Joining this gym has been a game-changer for my fitness journey. The trainers are incredibly knowledgeable and supportive, and the equipment is always top-notch. I've seen a remarkable improvement in my strength and endurance since I started. Highly recommend!",
     img: person3,
+    position: "2.37rem",
   },
 };
 
