@@ -1,6 +1,5 @@
 import allSvg from "svg/allSvg";
 import redBrush from "../img/redBrush.png";
-import person1 from "utils/img/people/person1.png"
 import reviews from "utils/data/reviews";
 
 
