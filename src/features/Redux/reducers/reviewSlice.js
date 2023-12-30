@@ -23,4 +23,6 @@ const reviewSlice = createSlice({
     }
 })
 
-export default reviewSlice;
+
+export const { next, prev } = reviewSlice.actions;
+export default reviewSlice.reducer;
