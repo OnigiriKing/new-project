@@ -7,18 +7,19 @@ const reviewSlice = createSlice({
     initialState,
     reducers: {
         next: (state, action) => {
+            console.log(state, state < 3);
             if (state < 3) {
-                state++
-            } else {
-                state = 1;
+                return state + 1
             }
+                return 1;
         },
         prev: (state, action) => {
+                            console.log(state);
+
             if (state > 1) {
-                state--
-            } else {
-                state = 3;
-            }
+                return state - 1
+            } 
+                return 3;
         }
     }
 })
