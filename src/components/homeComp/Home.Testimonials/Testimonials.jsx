@@ -19,18 +19,16 @@ export default function Testimonials() {
           <p class="z-[6] font-bold text-white">TESTIMONIALS</p>
           <img class="absolute -top-[1rem]  z-[5] " src={redBrush} />
         </div>
-        <div>
+        <div class="w-[85%]">
           <div></div>
           <div class="flex relative text-white items-end">
             <div>
               <div class="flex relative items-center justify-center left-4">
                 <img
-                  class={
-                    reviews["person" + review].position
-                  }
+                  class={reviews["person" + review].position}
                   src={reviews["person" + review].img}
                 ></img>
-                <div class=" w-[25rem] h-[30rem]  bg-red-800 rounded-tr-[15rem]" />
+                <div class=" w-[20rem] h-[30rem]  bg-red-800 rounded-tr-[15rem]" />
               </div>
             </div>
             <div class="flex flex-col h-[20rem] w-full justify-center bg-black relative">
