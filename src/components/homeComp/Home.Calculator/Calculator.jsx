@@ -1,6 +1,5 @@
 export default function Calculator() {
-
-  return;
+  return (
   <div class="flex justify-center items-center  bg-white  my-6">
     <div class="flex flex-col common-wrapper items-center gap-8">
       <div>
@@ -22,5 +21,6 @@ export default function Calculator() {
       </div>
       <div></div>
     </div>
-  </div>;
+  </div>
+  )
 }
