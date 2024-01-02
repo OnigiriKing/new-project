@@ -5,7 +5,7 @@ import redBrush from "../img/redBrush.png";
 export default function ChooseUs() {
   return (
     <div class="flex center justify-end items-center  bg-black pt-24 text-white relative">
-      <div class="flex flex-col common-wrapper items-center gap-8 mx-4 h-full">
+      <div class="flex flex-col common-wrapper items-center gap-8 mx-4 h-full py-2">
         <div class="flex gap-10 items-center py-4 absolute -top-[3rem] bg-red-600 left-0">
           <h3 class="font-bold text-4xl w-[35rem] ml-[10rem]">
             We Are Always Providing Best Fitness Service For You
