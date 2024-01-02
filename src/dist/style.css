@@ -902,6 +902,18 @@ video {
   width: 100%;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[40rem\] {
+  width: 40rem;
+}
+
+.w-\[28rem\] {
+  width: 28rem;
+}
+
 .max-w-\[60rem\] {
   max-width: 60rem;
 }
@@ -1334,6 +1346,11 @@ video {
 .text-red-700 {
   --tw-text-opacity: 1;
   color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .opacity-95 {
