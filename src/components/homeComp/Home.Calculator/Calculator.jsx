@@ -1,9 +1,10 @@
 import allSvg from "svg/allSvg";
+import ibm from "../img/ibm.png"
 
 export default function Calculator() {
   return (
     <div class="flex justify-center items-center  bg-black text-white  my-6">
-      <div class="flex flex-col common-wrapper gap-8 py-14">
+      <div class="flex common-wrapper gap-8 py-14 relative">
         <div class="flex flex-col gap-5 w-[28rem]">
           <h3 class="text-4xl">
             Let's Calculate Your <b class="text-red-600">BMI</b>
@@ -38,7 +39,9 @@ export default function Calculator() {
             </button>
           </div>
         </div>
-        <div></div>
+        <div class="w-[50%] flex justify-end ">
+          <img class="h-[25rem] absolute top-3" src={ibm}></img>
+        </div>
       </div>
     </div>
   );
