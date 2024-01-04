@@ -12,17 +12,16 @@ const indexSlice = createSlice({
     calculate: (state, action) => {
       const { weight, height } = action.payload;
       const bmi = weight / (height / 100) ** 2;
+      let status = "Invalid BMI";
       if (bmi < 18.5) {
-        const status = "Underweight";
+         status = "Underweight";
       } else if (bmi >= 18.5 && bmi <= 24.9) {
-        const status = "Healthy Weight";
+         status = "Healthy Weight";
       } else if (bmi >= 25.0 && bmi <= 29.9) {
-        const status = "Overweight";
+         status = "Overweight";
       } else if (bmi >= 30.0) {
-        const status = "Obesity";
-      } else {
-        const status = "Invalid BMI";
-      }
+         status = "Obesity";
+      } 
 
       return {
         bmi: bmi,
@@ -32,5 +31,5 @@ const indexSlice = createSlice({
   },
 });
 
-export const { next, prev } = indexSlice.actions;
+export const { calculate } = indexSlice.actions;
 export default indexSlice.reducer;
