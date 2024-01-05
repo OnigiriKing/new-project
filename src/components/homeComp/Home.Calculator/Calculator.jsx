@@ -1,7 +1,12 @@
 import allSvg from "svg/allSvg";
 import ibm from "../img/ibm.png"
+import { useSelector, useDispatch } from "react-redux";
 
 export default function Calculator() {
+
+  const dispatch = useDispatch();
+  const bodyIndex = useSelector((state) => state.bodyIndex);
+
   return (
     <div class="flex justify-center items-center  bg-black text-white  my-6">
       <div class="flex common-wrapper gap-8 py-14 relative">
@@ -25,13 +30,13 @@ export default function Calculator() {
               ></input>
             </div>
             <div class="flex gap-4">
-              <div class="w-[50%]">
-                <h4>Your BMI is:</h4>
-                <b></b>
+              <div class="w-[50%] flex">
+                <h4>Your BMI is: </h4>
+                <b>{bodyIndex.bmi}</b>
               </div>
-              <div class="w-[50%]">
-                <h4>Your weight is:</h4>
-                <b></b>
+              <div class="w-[50%] flex">
+                <h4>Your weight is: </h4>
+                <b>{bodyIndex.weight}</b>
               </div>
             </div>
             <button class="self-start font-medium text-white bg-gray-700 px-8 py-4 group hover:bg-red-600 duration-500 flex items-center gap-2 justify-center w-fit">

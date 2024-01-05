@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  bmi: 0,
+  bmi: "",
   weight: "",
 };
 
