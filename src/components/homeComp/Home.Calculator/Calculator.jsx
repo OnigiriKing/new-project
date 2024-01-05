@@ -1,11 +1,15 @@
 import allSvg from "svg/allSvg";
 import ibm from "../img/ibm.png"
 import { useSelector, useDispatch } from "react-redux";
+import { useState } from "react";
 
 export default function Calculator() {
 
   const dispatch = useDispatch();
   const bodyIndex = useSelector((state) => state.bodyIndex);
+
+  const [weight, setWeight] = useState("");
+  const [height, setHeight] = useState("");
 
   return (
     <div class="flex justify-center items-center  bg-black text-white  my-6">
@@ -23,10 +27,14 @@ export default function Calculator() {
               <input
                 placeholder="Weight / kg"
                 class="px-4 py-2 bg-black border-neutral-500 border-2"
+                value={weight}
+                onChange={(e) => setWeight(e.target.value)}
               ></input>
               <input
                 placeholder="Height / cm"
                 class="px-4 py-2 bg-black border-neutral-500 border-2"
+                value={height}
+                onChange={(e) => setHeight(e.target.value)}
               ></input>
             </div>
             <div class="flex gap-4">
