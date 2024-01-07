@@ -27,30 +27,43 @@ export default function Calculator() {
             <div class="flex gap-4">
               <input
                 placeholder="Weight / kg"
-                class="px-4 py-2 bg-black border-neutral-500 border-2"
+                class={`px-4 py-2 bg-black border-neutral-500 border-2 ${
+                  /[a-zA-Z]/.test(weight) ? "border-red-600" : ""
+                }`}
                 value={weight}
                 onChange={(e) => setWeight(e.target.value)}
               ></input>
               <input
                 placeholder="Height / cm"
-                class="px-4 py-2 bg-black border-neutral-500 border-2"
+                class={`px-4 py-2 bg-black border-neutral-500 border-2 ${
+                  /[a-zA-Z]/.test(height) ? "border-red-600" : ""
+                }`}
                 value={height}
                 onChange={(e) => setHeight(e.target.value)}
               ></input>
             </div>
             <div class="flex gap-4">
               <div class="w-[50%] flex">
-                <h4>Your BMI is: </h4>
-                <b>{bodyIndex.bmi}</b>
+                <h4>
+                  Your BMI is: <b>{bodyIndex.bmi}</b>
+                </h4>
               </div>
               <div class="w-[50%] flex">
-                <h4>Your weight is: </h4>
-                <b>{bodyIndex.weight}</b>
+                <h4>
+                  Your weight is: <b>{bodyIndex.weight}</b>
+                </h4>
               </div>
             </div>
             <button
               class="self-start font-medium text-white bg-gray-700 px-8 py-4 group hover:bg-red-600 duration-500 flex items-center gap-2 justify-center w-fit"
-              onClick={() => dispatch(calculate(weight, height))}
+              onClick={() =>
+                dispatch(
+                  calculate({
+                    weight: parseInt(weight),
+                    height: parseInt(height),
+                  })
+                )
+              }
             >
               Calculate {allSvg(20).arrow}
             </button>
