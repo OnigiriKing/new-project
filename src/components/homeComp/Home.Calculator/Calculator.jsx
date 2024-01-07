@@ -9,8 +9,8 @@ export default function Calculator() {
   const dispatch = useDispatch();
   const bodyIndex = useSelector((state) => state.bodyIndex);
 
-  const [weight, setWeight] = useState();
-  const [height, setHeight] = useState();
+  const [weight, setWeight] = useState("");
+  const [height, setHeight] = useState("");
 
   return (
     <div class="flex justify-center items-center  bg-black text-white  my-6">
@@ -56,6 +56,11 @@ export default function Calculator() {
             </div>
             <button
               class="self-start font-medium text-white bg-gray-700 px-8 py-4 group hover:bg-red-600 duration-500 flex items-center gap-2 justify-center w-fit"
+              disabled={
+                /[a-zA-Z]/.test(height) ||
+                /[a-zA-Z]/.test(weight) || weight === "" ||
+                height === ""
+              }
               onClick={() =>
                 dispatch(
                   calculate({
