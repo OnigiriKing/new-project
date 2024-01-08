@@ -78,6 +78,7 @@
   box-sizing: border-box;
   transition: all 0.3s ease;
   z-index: 2;
+  pointer-events: none;
 }
 
 .button-class:hover {
@@ -122,6 +123,7 @@
   box-sizing: border-box;
   transition: all 0.3s ease;
   z-index: 2;
+  pointer-events: none;
 }
 
 .button-class-light:hover::after {
