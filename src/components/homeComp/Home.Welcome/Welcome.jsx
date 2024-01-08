@@ -1,6 +1,7 @@
 import sportsMan from "../img/sportsMan.png";
 import allSvg from "svg/allSvg";
 import brush from "../img/brush.png";
+import { Link } from "react-router-dom";
 
 export default function Welcome() {
   return (
@@ -20,15 +21,21 @@ export default function Welcome() {
               <h2>MAKE YOUR BODY</h2>
               <h2>FIT & PERFECT</h2>
             </div>
-            <div>Our classes</div>
+            <Link class="button-class-light">OUR CLASSES {allSvg(20).arrow}</Link>
           </div>
           <div class="flex flex-col gap-7">
             <h3 class=" -rotate-[90deg] font-bold text-[1.2rem]">SHARE</h3>
             <div class=" w-[2.1rem] h-10 border-red-500 border-r-2"></div>
             <div class="flex flex-col items-center gap-2">
-              <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">{allSvg(25).linkedin}</a>
-              <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">{allSvg(25).twitter}</a>
-              <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">{allSvg(25).facebook}</a>
+              <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">
+                {allSvg(25).linkedin}
+              </a>
+              <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">
+                {allSvg(25).twitter}
+              </a>
+              <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">
+                {allSvg(25).facebook}
+              </a>
             </div>
           </div>
         </div>
