@@ -1053,10 +1053,6 @@ video {
   border-width: 1px;
 }
 
-.border-\[3px\] {
-  border-width: 3px;
-}
-
 .border-r-2 {
   border-right-width: 2px;
 }
@@ -1189,6 +1185,11 @@ video {
   padding-right: 6rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .py-14 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -1217,11 +1218,6 @@ video {
 .py-\[4rem\] {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .pb-6 {

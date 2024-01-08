@@ -47,3 +47,25 @@
   border-radius: 9999px;
   transform: rotate(30deg);
 }
+
+
+.button-class {
+  align-self: flex-start;
+    font-weight: 500; 
+    color: white;
+    background-color: #4b5563; 
+    padding-left: 32px; 
+    padding-right: 32px; 
+    padding-top: 16px; 
+    padding-bottom: 16px; 
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    justify-content: center;
+    width: fit-content; 
+    transition-duration: 0.5s; 
+}
+
+.button-class:hover {
+    background-color: #dc2626; 
+}
