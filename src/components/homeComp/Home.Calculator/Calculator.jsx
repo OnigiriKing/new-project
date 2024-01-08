@@ -55,7 +55,7 @@ export default function Calculator() {
               </div>
             </div>
             <button
-              class="self-start font-medium text-white bg-gray-700 px-8 py-4 group hover:bg-red-600 duration-500 flex items-center gap-2 justify-center w-fit"
+              class="button-class"
               disabled={
                 /[a-zA-Z]/.test(height) ||
                 /[a-zA-Z]/.test(weight) || weight === "" ||

@@ -67,7 +67,7 @@ export default function ChooseUs() {
                   <h5 class="font-bold text-lg">Fresh Bottle Watter</h5>
                 </div>
               </div>
-              <Link class="self-start mt-[2rem] font-medium text-white bg-gray-700 px-8 py-4 group hover:bg-red-600 duration-500 flex items-center gap-2 justify-center w-fit">
+              <Link class="button-class mt-[2rem]">
                 OUR CLASSES {allSvg(20).arrow}
               </Link>
             </div>

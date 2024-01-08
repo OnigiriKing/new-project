@@ -37,7 +37,10 @@ export default function About() {
           <div class="flex gap-6 flex-col">
             <div class="relative">
               <h3 class="text-white relative z-[10] font-bold ">WHO WE ARE</h3>
-              <img class="absolute w-[12rem] -top-[.9rem] -left-[2.3rem] z-[5]" src={redBrush} />
+              <img
+                class="absolute w-[12rem] -top-[.9rem] -left-[2.3rem] z-[5]"
+                src={redBrush}
+              />
             </div>
             <h3 class="text-3xl font-bold">
               Take Your Health And Body To Next Level
@@ -60,9 +63,7 @@ export default function About() {
                 <h3 class="text-lg font-bold">FANCY GYM MACHINES</h3>
               </div>
             </div>
-            <Link class="self-start ml-10 font-medium text-white bg-gray-700 px-8 py-4 group hover:bg-red-600 duration-500 flex items-center gap-2">
-              TAKE A TOUR {allSvg(20).arrow}
-            </Link>
+            <Link class="button-class">TAKE A TOUR {allSvg(20).arrow}</Link>
           </div>
           <div class="w-[70rem] flex items-center">
             <img src={run} />
