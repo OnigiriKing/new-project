@@ -10,7 +10,7 @@ export default function ChooseUs() {
           <h3 class="font-bold text-4xl w-[35rem] ml-[10rem]">
             We Are Always Providing Best Fitness Service For You
           </h3>
-          <Link class="self-start ml-10 font-medium text-black bg-white px-8 py-4 group flex items-center gap-2 justify-center w-fit">
+          <Link class="button-class-light">
             JOIN US {allSvg(20).arrow}
           </Link>
         </div>
