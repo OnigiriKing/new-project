@@ -23,7 +23,7 @@ export default function Calculator() {
             Easily determine your body mass index with our accurate calculation
             tool.
           </p>
-          <div class="flex flex-col gap-6">
+          <div class="flex flex-col gap-6 z-10">
             <div class="flex gap-4">
               <input
                 placeholder="Weight / kg"

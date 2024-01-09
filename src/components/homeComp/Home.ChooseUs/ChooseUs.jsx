@@ -6,7 +6,7 @@ export default function ChooseUs() {
   return (
     <div class="flex center justify-end items-center  bg-black pt-24 text-white relative">
       <div class="flex flex-col common-wrapper items-center gap-8 mx-4 h-full py-2">
-        <div class="flex gap-10 items-center py-4 absolute -top-[3rem] bg-red-600 left-0">
+        <div class="flex gap-10 items-center py-4 absolute -top-[3rem] bg-red-600 left-0 z-10">
           <h3 class="font-bold text-4xl w-[35rem] ml-[10rem]">
             We Are Always Providing Best Fitness Service For You
           </h3>
@@ -40,7 +40,7 @@ export default function ChooseUs() {
               you to create a personalized fitness and nutrition plan that helps
               you reach your specific goals.
             </p>
-            <div>
+            <div class="z-10">
               <div class="grid grid-cols-2 gap-4">
                 <div class="flex items-center gap-4">
                   <div class="bg-gray-800 hover:bg-red-600 duration-[0.5s] p-2 rounded-full">

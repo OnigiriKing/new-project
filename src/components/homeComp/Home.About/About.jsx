@@ -34,7 +34,7 @@ export default function About() {
           </div>
         </div>
         <div class="flex mx-[2rem]">
-          <div class="flex gap-6 flex-col">
+          <div class="flex gap-6 flex-col z-10">
             <div class="relative">
               <h3 class="text-white relative z-[10] font-bold ">WHO WE ARE</h3>
               <img
