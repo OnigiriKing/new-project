@@ -15,10 +15,10 @@ export default function Welcome() {
           <div class="z-[10] flex flex-col gap-10">
             <div class="relative flex items-center w-[14rem]">
               <img src={brush} class="absolute z-[1] h-20 right-[1.8rem]" />
-              <h3 class="z-[2] relative text-black">FIND YOUR ENERGY</h3>
+              <h3 class="z-[2] relative text-black font-bold">FIND YOUR ENERGY</h3>
             </div>
-            <div>
-              <h2>MAKE YOUR BODY</h2>
+            <div class="text-5xl">
+              <b>MAKE YOUR BODY</b>
               <h2>FIT & PERFECT</h2>
             </div>
             <Link class="button-class-light">OUR CLASSES {allSvg(20).arrow}</Link>

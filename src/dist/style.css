@@ -684,6 +684,10 @@ video {
   top: 5.69rem;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .z-30 {
   z-index: 30;
 }
@@ -710,14 +714,6 @@ video {
 
 .z-\[6\] {
   z-index: 6;
-}
-
-.z-\[3\] {
-  z-index: 3;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .mx-4 {
@@ -1259,6 +1255,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold {
