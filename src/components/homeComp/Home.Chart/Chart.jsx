@@ -1,10 +1,6 @@
 import redBrush from "../img/redBrush.png";
-import trainer1 from "./img/trainer1.png";
-import trainer2 from "./img/trainer2.png";
-import trainer3 from "./img/trainer3.png";
-import { Coach } from "./Trainers.Coach";
 
-export default function Trainers() {
+export default function Chart() {
   return (
     <div class="flex justify-center items-center  bg-white  my-6">
       <div class="flex flex-col common-wrapper items-center gap-8 text-center py-2">
