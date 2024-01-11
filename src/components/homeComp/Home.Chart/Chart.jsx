@@ -14,21 +14,21 @@ export default function Chart() {
         <p></p>
         {/* Price */}
         <div class="flex items-center bg-red-50">
-          <div class="flex flex-col group relative w-[20rem] h-[30rem] z-[1]">
+          <div class="flex flex-col group relative w-[30rem] h-[40rem] z-[1]">
             <img
               src={test}
               class=" grayscale-[1] duration-[.4s]
             bg-bg-class-4 group-hover:grayscale-[0]"
             ></img>
-            <div class="flex flex-col w-full h-full">
-              <h3>Level</h3>
-              <div>
-                $ <b>40</b> p/m
+            <div class="flex flex-col w-full p-2 mt-5">
+              <h3 class="bg-white absolute top-[44%] right-[7rem] px-6 py-2 font-bold">
+                LEVEL
+              </h3>
+              <div class="text-3xl text-gray-600">
+                $ <b class="text-5xl text-black">40</b> p/m
               </div>
-              <div class="">
-                <p>Des</p>
-              </div>
-              <Link class="button-class absolute bottom-0">PURCHASE NOW</Link>
+              <p class="mt-4">For beginers</p>
+              <Link class="button-class">PURCHASE NOW</Link>
             </div>
           </div>
         </div>
