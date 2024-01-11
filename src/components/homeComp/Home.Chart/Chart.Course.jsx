@@ -7,11 +7,10 @@ export function Course({ img, Level, price, des }) {
       <img
         src={img}
         class=" class-item
-            bg-bg-class-4 group-hover:scale-[1] group-hover:grayscale-[0]"
+            bg-bg-class-4 group-hover:grayscale-[0]"
       ></img>
       <h3>{Level}</h3>
       <div>
-        {" "}
         $ <b>{price}</b> p/m
       </div>
       <div class="class-item-text">

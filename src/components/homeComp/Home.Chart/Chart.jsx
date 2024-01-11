@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import redBrush from "../img/redBrush.png";
+import test from "./img/Jogging.jpg"
 
 export default function Chart() {
   return (
@@ -10,8 +12,25 @@ export default function Chart() {
         </div>
         <h3></h3>
         <p></p>
-        <div class="flex items-center">
-            <div></div>
+        {/* Price */}
+        <div class="flex items-center bg-red-50">
+          <div class="flex flex-col group relative w-[20rem] h-[30rem] z-[1]">
+            <img
+              src={test}
+              class=" grayscale-[1] duration-[.4s]
+            bg-bg-class-4 group-hover:grayscale-[0]"
+            ></img>
+            <div class="flex flex-col w-full h-full">
+              <h3>Level</h3>
+              <div>
+                $ <b>40</b> p/m
+              </div>
+              <div class="">
+                <p>Des</p>
+              </div>
+              <Link class="button-class absolute bottom-0">PURCHASE NOW</Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
