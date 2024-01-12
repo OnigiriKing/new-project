@@ -1,31 +1,8 @@
-import { Link } from "react-router-dom";
+
 import redBrush from "../img/redBrush.png";
-import test from "./img/Jogging.jpg"
 
 export default function Chart() {
 
-  function TestComp() {
-
-    return (
-      <div class="flex flex-col group relative w-[25rem] h-[40rem] z-[1] shadow-lg">
-        <img
-          src={test}
-          class=" grayscale-[1] duration-[.4s]
-            bg-bg-class-4 group-hover:grayscale-[0]"
-        ></img>
-        <div class="flex flex-col w-full p-2 mt-5">
-          <h3 class="bg-white absolute top-[43%] right-1/2 translate-x-1/2 px-6 py-2 font-bold">
-            LEVEL
-          </h3>
-          <div class="text-3xl text-gray-600">
-            $ <b class="text-5xl text-black">40</b> p/m
-          </div>
-          <p class="mt-4 h-[6rem]">For beginners</p>
-          <Link class="button-class self-center mt-10">PURCHASE NOW</Link>
-        </div>
-      </div>
-    );
-  }
 
 
   return (
@@ -39,9 +16,7 @@ export default function Chart() {
         <p></p>
         {/* Price */}
         <div class="gap-10 grid grid-cols-3 items-center">
-          <TestComp />
-          <TestComp />
-          <TestComp />
+
         </div>
       </div>
     </div>
