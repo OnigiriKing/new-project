@@ -664,6 +664,10 @@ video {
   right: 4rem;
 }
 
+.right-\[7rem\] {
+  right: 7rem;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -680,68 +684,32 @@ video {
   top: 2.4rem;
 }
 
+.top-\[44\%\] {
+  top: 44%;
+}
+
 .top-\[5\.69rem\] {
   top: 5.69rem;
-}
-
-.bottom-1 {
-  bottom: 0.25rem;
-}
-
-.top-\[2rem\] {
-  top: 2rem;
-}
-
-.top-\[3rem\] {
-  top: 3rem;
-}
-
-.top-\[5rem\] {
-  top: 5rem;
-}
-
-.right-\[50\%\] {
-  right: 50%;
 }
 
 .top-\[50\%\] {
   top: 50%;
 }
 
-.top-\[55\%\] {
-  top: 55%;
-}
-
-.top-\[45\%\] {
-  top: 45%;
-}
-
-.right-\[54\%\] {
-  right: 54%;
-}
-
-.right-\[2rem\] {
-  right: 2rem;
-}
-
-.right-\[5rem\] {
-  right: 5rem;
-}
-
 .right-\[6rem\] {
   right: 6rem;
 }
 
-.right-\[7rem\] {
-  right: 7rem;
+.right-\[rem\] {
+  right: rem;
 }
 
-.top-\[44\%\] {
-  top: 44%;
+.right-\[8rem\] {
+  right: 8rem;
 }
 
-.top-4 {
-  top: 1rem;
+.right-\[10rem\] {
+  right: 10rem;
 }
 
 .z-10 {
@@ -820,6 +788,14 @@ video {
   margin-right: 10rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .mt-\[1rem\] {
   margin-top: 1rem;
 }
@@ -834,22 +810,6 @@ video {
 
 .mt-\[6rem\] {
   margin-top: 6rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .flex {
@@ -896,12 +856,12 @@ video {
   height: 30rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-\[40rem\] {
   height: 40rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-20 {
@@ -988,8 +948,8 @@ video {
   width: 100%;
 }
 
-.w-\[10rem\] {
-  width: 10rem;
+.w-\[25rem\] {
+  width: 25rem;
 }
 
 .max-w-\[60rem\] {
@@ -1039,8 +999,16 @@ video {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1105,14 +1073,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.self-end {
-  align-self: flex-end;
-}
-
-.self-center {
-  align-self: center;
 }
 
 .rounded-3xl {
@@ -1186,6 +1146,11 @@ video {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
+.bg-red-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+}
+
 .bg-red-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
@@ -1199,11 +1164,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-red-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
 }
 
 .bg-bg-class-1 {
@@ -1257,6 +1217,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-\[6rem\] {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -1295,11 +1260,6 @@ video {
 .py-\[4rem\] {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .pb-6 {
@@ -1391,6 +1351,11 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
@@ -1404,11 +1369,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .opacity-95 {
@@ -1439,14 +1399,6 @@ video {
   transition-duration: 150ms;
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .duration-0 {
   transition-duration: 0s;
 }
@@ -1469,14 +1421,6 @@ video {
 
 .duration-\[0\.5s\] {
   transition-duration: 0.5s;
-}
-
-.duration-\[\] {
-  transition-duration: ;
-}
-
-.duration-\[\.4sec\] {
-  transition-duration: .4sec;
 }
 
 .hover\:bg-red-600:hover {
