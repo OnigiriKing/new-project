@@ -1,5 +1,7 @@
 
 import redBrush from "../img/redBrush.png";
+import prices from "utils/data/prices";
+import Course from "./Chart.Course";
 
 export default function Chart() {
 
@@ -16,7 +18,18 @@ export default function Chart() {
         <p></p>
         {/* Price */}
         <div class="gap-10 grid grid-cols-3 items-center">
+          {Object.keys(prices).map((key)=> {
+            const price = prices[key]
 
+            return (
+              <Course
+                img={price.img}
+                level={price.level}
+                price={price.price}
+                des={price.des}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
