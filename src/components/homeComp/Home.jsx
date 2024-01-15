@@ -6,6 +6,7 @@ import Trainers from "./Home.Trainers/Trainers";
 import Testimonials from "./Home.Testimonials/Testimonials";
 import Calculator from "./Home.Calculator/Calculator";
 import Chart from "./Home.Chart/Chart";
+import Call from "./Home.Call/Call";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Testimonials />
       <Calculator />
       <Chart />
+      <Call />
     </div>
   );
 }

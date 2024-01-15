@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Call() {
   return (
     <div class="flex justify-center items-center  bg-black text-white  my-6">
-      <div class="flex flex-col common-wrapper items-center gap-8 text-center py-2">
+      <div class="flex common-wrapper items-center gap-8 text-center py-[4rem]">
         <div>
           <h3>Need a Fitness Trainer?</h3>
           <h3>
@@ -14,7 +14,6 @@ export default function Call() {
         <div>
 
         </div>
-        <div></div>
       </div>
     </div>
   );
