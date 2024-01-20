@@ -1093,6 +1093,10 @@ video {
   gap: 1rem;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
 .self-center {
   align-self: center;
 }
@@ -1221,6 +1225,30 @@ video {
 
 .p-\[\.4rem\] {
   padding: .4rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-\[2rem\] {
+  padding: 2rem;
+}
+
+.p-\[10rem\] {
+  padding: 10rem;
+}
+
+.p-\[3rem\] {
+  padding: 3rem;
+}
+
+.p-\[4rem\] {
+  padding: 4rem;
 }
 
 .px-3 {

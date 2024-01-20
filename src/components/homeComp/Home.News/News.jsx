@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+
 import redBrush from "../img/redBrush.png";
+import Article from "./News.Article/Article";
 
 export default function News() {
   return (
@@ -16,7 +17,9 @@ export default function News() {
             type specimen book.
           </p>
         </div>
-        <div></div>
+        <div class="grid grid-cols-3 gap-4">
+        <Article />
+        </div>
       </div>
     </div>
   );
