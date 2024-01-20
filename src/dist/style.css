@@ -864,6 +864,22 @@ video {
   height: 100%;
 }
 
+.h-\[2re\2c \] {
+  height: 2re,;
+}
+
+.h-\[2rem\] {
+  height: 2rem;
+}
+
+.h-\[5rem\] {
+  height: 5rem;
+}
+
+.h-\[7rem\] {
+  height: 7rem;
+}
+
 .w-20 {
   width: 5rem;
 }
@@ -1093,10 +1109,6 @@ video {
   gap: 1rem;
 }
 
-.gap-0 {
-  gap: 0px;
-}
-
 .self-center {
   align-self: center;
 }
@@ -1113,10 +1125,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded-tr-\[15rem\] {
   border-top-right-radius: 15rem;
 }
@@ -1127,14 +1135,6 @@ video {
 
 .border-\[1px\] {
   border-width: 1px;
-}
-
-.border {
-  border-width: 1px;
-}
-
-.border-\[2px\] {
-  border-width: 2px;
 }
 
 .border-r-2 {
@@ -1153,6 +1153,11 @@ video {
   border-color: rgb(255,255,255,0.6);
 }
 
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .border-neutral-500 {
   --tw-border-opacity: 1;
   border-color: rgb(115 115 115 / var(--tw-border-opacity));
@@ -1166,11 +1171,6 @@ video {
 .border-red-600 {
   --tw-border-opacity: 1;
   border-color: rgb(220 38 38 / var(--tw-border-opacity));
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-r-\[\#000\] {
@@ -1232,6 +1232,10 @@ video {
   background-image: url('utils/img/classesImg/class-6.png');
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -1244,32 +1248,17 @@ video {
   padding: .4rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
+.p-\[4rem\] {
+  padding: 4rem;
 }
 
 .p-\[2rem\] {
   padding: 2rem;
 }
 
-.p-\[10rem\] {
-  padding: 10rem;
-}
-
-.p-\[3rem\] {
-  padding: 3rem;
-}
-
-.p-\[4rem\] {
-  padding: 4rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-3 {
@@ -1332,11 +1321,6 @@ video {
   padding-bottom: 4rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -1355,6 +1339,10 @@ video {
 
 .pt-24 {
   padding-top: 6rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
