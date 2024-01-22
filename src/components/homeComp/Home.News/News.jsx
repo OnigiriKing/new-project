@@ -1,6 +1,7 @@
 
 import redBrush from "../img/redBrush.png";
 import Article from "./News.Article/Article";
+import news from "utils/data/news";
 
 export default function News() {
   return (
@@ -18,7 +19,10 @@ export default function News() {
           </p>
         </div>
         <div class="grid grid-cols-3 gap-4">
-        <Article />
+          {Object.keys(news).slice(0,3).map(key=>{
+            const obj = news[key];
+            return <Article date={obj.date} name={obj.name} des={obj.des} />;
+          })}
         </div>
       </div>
     </div>
