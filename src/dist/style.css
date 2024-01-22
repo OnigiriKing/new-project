@@ -864,22 +864,6 @@ video {
   height: 100%;
 }
 
-.h-\[2re\2c \] {
-  height: 2re,;
-}
-
-.h-\[2rem\] {
-  height: 2rem;
-}
-
-.h-\[5rem\] {
-  height: 5rem;
-}
-
-.h-\[7rem\] {
-  height: 7rem;
-}
-
 .min-h-\[6rem\] {
   min-height: 6rem;
 }
@@ -1250,10 +1234,6 @@ video {
 
 .p-\[\.4rem\] {
   padding: .4rem;
-}
-
-.p-\[4rem\] {
-  padding: 4rem;
 }
 
 .p-\[2rem\] {
