@@ -1,9 +1,9 @@
-
 import redBrush from "../img/redBrush.png";
 import Article from "./News.Article/Article";
 import news from "utils/data/news";
 
 export default function News() {
+  const random = Math.floor(Math.random() * 4) + 3;
   return (
     <div class="flex justify-center items-center  bg-white text-black  my-6">
       <div class="flex flex-col common-wrapper items-center gap-8 text-center py-[4rem]">
@@ -12,17 +12,19 @@ export default function News() {
           <img class="absolute -top-[1rem]  z-[5] " src={redBrush} />
         </div>
         <div>
-          <h3>Our Recent News</h3>
+          <h3>Our Recent News {random}</h3>
           <p>
             Gymat an unknown printer took a galley of type and scrambled make a
             type specimen book.
           </p>
         </div>
         <div class="grid grid-cols-3 gap-4">
-          {Object.keys(news).slice(0,3).map(key=>{
-            const obj = news[key];
-            return <Article date={obj.date} name={obj.name} des={obj.des} />;
-          })}
+          {Object.keys(news)
+            .slice(random-3, random)
+            .map((key) => {
+              const obj = news[key];
+              return <Article date={obj.date} name={obj.name} des={obj.des} />;
+            })}
         </div>
       </div>
     </div>
