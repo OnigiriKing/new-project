@@ -1,12 +1,17 @@
 import Header from "components/headerComp";
 import HomePage from "pages/Body/HomePage";
 import FooterPage from "pages/Footer/FooterPage";
+import { Route, Routes } from "react-router-dom";
+import AboutPage from "pages/About/AboutPage";
 
 export default function App() {
   return (
     <div>
       <Header />
-      <HomePage />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
       <FooterPage />
     </div>
   );
