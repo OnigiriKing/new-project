@@ -11,16 +11,16 @@ export default function News() {
           <p class="z-[6] font-bold text-white">LATEST BLOG</p>
           <img class="absolute -top-[1rem]  z-[5] " src={redBrush} />
         </div>
-        <div>
-          <h3>Our Recent News {random}</h3>
-          <p>
+        <div class="flex flex-col items-center">
+          <h3 class="text-3xl font-bold mb-3">Our Recent News</h3>
+          <p class="text-gray-600 w-[70%] text-center mb-2">
             Gymat an unknown printer took a galley of type and scrambled make a
             type specimen book.
           </p>
         </div>
         <div class="grid grid-cols-3 gap-4">
           {Object.keys(news)
-            .slice(random-3, random)
+            .slice(random - 3, random)
             .map((key) => {
               const obj = news[key];
               return <Article date={obj.date} name={obj.name} des={obj.des} />;
