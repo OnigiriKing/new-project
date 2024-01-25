@@ -888,6 +888,10 @@ video {
   height: 100%;
 }
 
+.h-\[18rem\] {
+  height: 18rem;
+}
+
 .min-h-\[6rem\] {
   min-height: 6rem;
 }
@@ -1218,6 +1222,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-bg-class-1 {
