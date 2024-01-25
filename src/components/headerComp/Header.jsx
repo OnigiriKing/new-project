@@ -8,28 +8,28 @@ export default function Header() {
       <div class="justify-between  common-wrapper items-center flex py-1">
         <img src={logo} alt="logo" class="w-20" />
         <div class="flex gap-6">
-          <Link href="" class="duration-500 hover:text-red-600 ">
+          <Link to="/" class="duration-500 hover:text-red-600 ">
             Home
           </Link>
-          <Link href="" class="duration-500 hover:text-red-600">
+          <Link to="/about" class="duration-500 hover:text-red-600">
             About
           </Link>
-          <Link href="" class="duration-500 hover:text-red-600">
+          <Link to="/galary" class="duration-500 hover:text-red-600">
             Gallary
           </Link>
-          <Link href="" class="duration-500 hover:text-red-600">
+          <Link to="/schedule" class="duration-500 hover:text-red-600">
             Schedule
           </Link>
-          <Link href="" class="duration-500 hover:text-red-600">
+          <Link to="/blog" class="duration-500 hover:text-red-600">
             Blog
           </Link>
-          <Link href="" class="duration-500 hover:text-red-600">
+          <Link to="/pricing" class="duration-500 hover:text-red-600">
             Pricing
           </Link>
-          <Link href="" class="duration-500 hover:text-red-600">
+          <Link to="/classes" class="duration-500 hover:text-red-600">
             Classes
           </Link>
-          <Link href="" class="duration-500 hover:text-red-600">
+          <Link to="/contact" class="duration-500 hover:text-red-600">
             Contact
           </Link>
         </div>
