@@ -1,4 +1,4 @@
-import redBrush from "../img/redBrush.png";
+import redBrush from "utils/img/redBrush.png";
 import trainer1 from "./img/trainer1.png";
 import trainer2 from "./img/trainer2.png";
 import trainer3 from "./img/trainer3.png";

@@ -1,5 +1,5 @@
 import allSvg from "svg/allSvg";
-import redBrush from "../img/redBrush.png";
+import redBrush from "utils/img/redBrush.png";
 import reviews from "utils/data/reviews";
 import { useDispatch, useSelector } from "react-redux";
 import { next, prev } from "features/Redux/reducers/reviewSlice";

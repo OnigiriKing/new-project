@@ -1,6 +1,6 @@
 import allSvg from "svg/allSvg";
 import run from "../img/run.png"
-import redBrush from "../img/redBrush.png"
+import redBrush from "utils/img/redBrush.png";
 import { Link } from "react-router-dom";
 
 export default function About() {

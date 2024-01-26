@@ -1,5 +1,5 @@
 
-import redBrush from "../img/redBrush.png";
+import redBrush from "utils/img/redBrush.png";
 import prices from "utils/data/prices";
 import Course from "./Chart.Course/Course";
 

@@ -1,4 +1,4 @@
-import redBrush from "../img/redBrush.png";
+import redBrush from "utils/img/redBrush.png";
 import Article from "./News.Article/Article";
 import news from "utils/data/news";
 
