@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div class="w-full flex flex-col items-center">
       <TopComp des="About" />
-      <div class="common-wrapper">
+      <div class="common-wrapper pt-[4rem]">
       <div class="flex mx-[2rem]">
         <div class="flex gap-6 flex-col z-10">
           <div class="relative">
@@ -27,7 +27,7 @@ export default function About() {
           </p>
           <Link class="button-class">TAKE A TOUR {allSvg(20).arrow}</Link>
         </div>
-        <div class="w-[70rem] flex items-center">
+        <div class="w-[60rem] flex items-center">
           <img src={run} />
         </div>
       </div>
