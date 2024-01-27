@@ -6,8 +6,9 @@ import { Link } from "react-router-dom";
 
 export default function About() {
   return (
-    <div class="">
+    <div class="w-full flex flex-col items-center">
       <TopComp des="About" />
+      <div class="common-wrapper">
       <div class="flex mx-[2rem]">
         <div class="flex gap-6 flex-col z-10">
           <div class="relative">
@@ -33,6 +34,7 @@ export default function About() {
       <div>
         <div></div>
         <div></div>
+      </div>
       </div>
     </div>
   );

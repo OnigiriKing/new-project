@@ -816,6 +816,10 @@ video {
   margin-top: 6rem;
 }
 
+.mt-\[3rem\] {
+  margin-top: 3rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1238,6 +1242,10 @@ video {
 
 .bg-bg-class-6 {
   background-image: url('utils/img/classesImg/class-6.png');
+}
+
+.object-center {
+  object-position: center;
 }
 
 .p-1 {
