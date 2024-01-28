@@ -33,21 +33,21 @@ export default function About() {
         </div>
         <div>
           {/* first */}
-          <div>
-            <div>
+          <div class="flex ">
+            <div class="w-[50%] flex flex-col gap-[1rem]">
               <div>{allSvg(20).goal}</div>
-              <h3>Our Goal</h3>
-              <p>
+              <h3 class="text-3xl">Our Goal</h3>
+              <p class="text-gray-500">
                 Elevating your health and happiness. We strive to help you
                 achieve a stronger body and a more fulfilling life.
               </p>
             </div>
-            <div>
+            <div class="w-[50%]">
               <img></img>
             </div>
           </div>
           {/* second */}
-          <div>
+          <div class="flex flex-row-reverse">
             <div>
               <div>{allSvg(20).achievement}</div>
               <h3>Our Achievements</h3>
