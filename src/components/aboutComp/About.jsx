@@ -3,6 +3,8 @@ import allSvg from "svg/allSvg";
 import redBrush from "utils/img/redBrush.png";
 import run from "utils/img/run.png";
 import { Link } from "react-router-dom";
+import ach from "utils/img/aboutImg/ach.png"
+import goal from "utils/img/aboutImg/goal.png";
 
 export default function About() {
   return (
@@ -43,7 +45,7 @@ export default function About() {
               </p>
             </div>
             <div class="w-[50%]">
-              <img></img>
+              <img src={goal}></img>
             </div>
           </div>
           {/* second */}
@@ -58,7 +60,7 @@ export default function About() {
               </p>
             </div>
             <div>
-              <img></img>
+              <img src={ach}></img>
             </div>
           </div>
         </div>
