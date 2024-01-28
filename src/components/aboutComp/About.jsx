@@ -35,10 +35,11 @@ export default function About() {
           {/* first */}
           <div>
             <div>
-              <div></div>
+              <div>{allSvg(20).goal}</div>
               <h3>Our Goal</h3>
               <p>
-                Elevating your health and happiness. We strive to help you achieve a stronger body and a more fulfilling life.
+                Elevating your health and happiness. We strive to help you
+                achieve a stronger body and a more fulfilling life.
               </p>
             </div>
             <div>
@@ -48,10 +49,12 @@ export default function About() {
           {/* second */}
           <div>
             <div>
-              <div></div>
+              <div>{allSvg(20).achievement}</div>
               <h3>Our Achievements</h3>
               <p>
-                Celebrating numerous fitness milestones and transformative wellness journeys, we stand as a testament to strength, health, and community success.
+                Celebrating numerous fitness milestones and transformative
+                wellness journeys, we stand as a testament to strength, health,
+                and community success.
               </p>
             </div>
             <div>
