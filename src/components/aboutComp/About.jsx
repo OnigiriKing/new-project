@@ -36,7 +36,7 @@ export default function About() {
         <div>
           {/* first */}
           <div class="flex ">
-            <div class="w-[50%] flex flex-col gap-[1rem]">
+            <div class="w-[50%] flex flex-col gap-[1rem] items-center text-center">
               <div>{allSvg(20).goal}</div>
               <h3 class="text-3xl">Our Goal</h3>
               <p class="text-gray-500">
@@ -45,7 +45,7 @@ export default function About() {
               </p>
             </div>
             <div class="w-[50%]">
-              <img src={goal}></img>
+              <img class="h-[25rem]" src={goal}></img>
             </div>
           </div>
           {/* second */}

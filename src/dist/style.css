@@ -880,16 +880,8 @@ video {
   height: 100%;
 }
 
-.h-\[10rem\] {
-  height: 10rem;
-}
-
 .min-h-\[6rem\] {
   min-height: 6rem;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .w-20 {
@@ -992,6 +984,10 @@ video {
   width: 100%;
 }
 
+.w-\[10rem\] {
+  width: 10rem;
+}
+
 .max-w-\[60rem\] {
   max-width: 60rem;
 }
@@ -1051,6 +1047,10 @@ video {
 
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 
 .flex-col {
