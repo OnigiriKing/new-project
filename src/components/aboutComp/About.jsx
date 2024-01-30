@@ -33,7 +33,8 @@ export default function About() {
             <img src={run} />
           </div>
         </div>
-        <div class="flex flex-col w-[80%]">
+        <div>
+        <div class="flex flex-col w-[80%] items-center">
           {/* first */}
           <div class="flex ">
             <div class="w-[50%] flex justify-center items-center">
@@ -67,6 +68,7 @@ export default function About() {
               <img class="h-[25rem]" src={ach}></img>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>
