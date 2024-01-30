@@ -33,12 +33,12 @@ export default function About() {
             <img src={run} />
           </div>
         </div>
-        <div>
-        <div class="flex flex-col w-[80%] items-center">
+        <div class="w-full flex items-center justify-center mt-[2rem]">
+        <div class="flex flex-col w-[90%] items-center">
           {/* first */}
           <div class="flex ">
             <div class="w-[50%] flex justify-center items-center">
-              <div class="flex flex-col gap-[1rem] items-center text-center justify-center w-[30rem]">
+              <div class="flex flex-col gap-[1rem] items-center text-center justify-center w-[50rem]">
                 <div class="text-red-600">{allSvg(60).goal}</div>
                 <h3 class="text-3xl">Our Goal</h3>
                 <p class="text-gray-500">
@@ -54,7 +54,7 @@ export default function About() {
           {/* second */}
           <div class="flex flex-row-reverse">
             <div class="w-[50%] flex justify-center items-center">
-              <div class="flex flex-col gap-[1rem] items-center text-center justify-center w-[30rem]">
+              <div class="flex flex-col gap-[1rem] items-center text-center justify-center w-[50rem]">
                 <div class="text-red-600">{allSvg(60).achievement}</div>
                 <h3 class="text-3xl">Our Achievements</h3>
                 <p class="text-gray-500">

@@ -976,6 +976,10 @@ video {
   width: 70rem;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .w-\[85\%\] {
   width: 85%;
 }
@@ -988,8 +992,12 @@ video {
   width: 90%;
 }
 
-.w-\[80\%\] {
-  width: 80%;
+.w-\[rem\] {
+  width: rem;
+}
+
+.w-\[50rem\] {
+  width: 50rem;
 }
 
 .max-w-\[60rem\] {
@@ -1131,10 +1139,6 @@ video {
 
 .gap-\[1rem\] {
   gap: 1rem;
-}
-
-.gap-\[2rem\] {
-  gap: 2rem;
 }
 
 .self-center {
