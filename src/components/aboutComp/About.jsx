@@ -33,12 +33,12 @@ export default function About() {
             <img src={run} />
           </div>
         </div>
-        <div>
+        <div class="flex flex-col w-[80%]">
           {/* first */}
           <div class="flex ">
             <div class="w-[50%] flex justify-center items-center">
               <div class="flex flex-col gap-[1rem] items-center text-center justify-center w-[30rem]">
-                <div>{allSvg(20).goal}</div>
+                <div class="text-red-600">{allSvg(60).goal}</div>
                 <h3 class="text-3xl">Our Goal</h3>
                 <p class="text-gray-500">
                   Elevating your health and happiness. We strive to help you
@@ -52,17 +52,19 @@ export default function About() {
           </div>
           {/* second */}
           <div class="flex flex-row-reverse">
-            <div>
-              <div>{allSvg(20).achievement}</div>
-              <h3>Our Achievements</h3>
-              <p>
-                Celebrating numerous fitness milestones and transformative
-                wellness journeys, we stand as a testament to strength, health,
-                and community success.
-              </p>
+            <div class="w-[50%] flex justify-center items-center">
+              <div class="flex flex-col gap-[1rem] items-center text-center justify-center w-[30rem]">
+                <div class="text-red-600">{allSvg(60).achievement}</div>
+                <h3 class="text-3xl">Our Achievements</h3>
+                <p class="text-gray-500">
+                  Celebrating numerous fitness milestones and transformative
+                  wellness journeys, we stand as a testament to strength,
+                  health, and community success.
+                </p>
+              </div>
             </div>
-            <div>
-              <img src={ach}></img>
+            <div class="w-[50%]">
+              <img class="h-[25rem]" src={ach}></img>
             </div>
           </div>
         </div>

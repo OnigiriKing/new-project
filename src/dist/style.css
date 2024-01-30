@@ -984,6 +984,14 @@ video {
   width: 100%;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .max-w-\[60rem\] {
   max-width: 60rem;
 }
@@ -1053,6 +1061,10 @@ video {
   flex-direction: column;
 }
 
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -1119,6 +1131,10 @@ video {
 
 .gap-\[1rem\] {
   gap: 1rem;
+}
+
+.gap-\[2rem\] {
+  gap: 2rem;
 }
 
 .self-center {
