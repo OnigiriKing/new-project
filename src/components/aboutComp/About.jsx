@@ -36,13 +36,15 @@ export default function About() {
         <div>
           {/* first */}
           <div class="flex ">
-            <div class="w-[50%] flex flex-col gap-[1rem] items-center text-center">
-              <div>{allSvg(20).goal}</div>
-              <h3 class="text-3xl">Our Goal</h3>
-              <p class="text-gray-500">
-                Elevating your health and happiness. We strive to help you
-                achieve a stronger body and a more fulfilling life.
-              </p>
+            <div class="w-[50%] flex justify-center items-center">
+              <div class="flex flex-col gap-[1rem] items-center text-center justify-center w-[30rem]">
+                <div>{allSvg(20).goal}</div>
+                <h3 class="text-3xl">Our Goal</h3>
+                <p class="text-gray-500">
+                  Elevating your health and happiness. We strive to help you
+                  achieve a stronger body and a more fulfilling life.
+                </p>
+              </div>
             </div>
             <div class="w-[50%]">
               <img class="h-[25rem]" src={goal}></img>
