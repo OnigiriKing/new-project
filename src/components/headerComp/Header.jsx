@@ -15,7 +15,7 @@ export default function Header() {
             About
           </Link>
           <Link to="/galary" class="duration-500 hover:text-red-600">
-            Gallary
+            Gallery
           </Link>
           <Link to="/schedule" class="duration-500 hover:text-red-600">
             Schedule

@@ -11,7 +11,7 @@ export default function About() {
     <div class="w-full flex flex-col items-center">
       <TopComp des="About" />
       <div class="common-wrapper pt-[4rem]">
-        <div class="flex mx-[2rem]">
+        <div class="flex mx-[2rem] items-center">
           <div class="flex gap-6 flex-col z-10">
             <div class="relative">
               <h3 class="text-white relative z-[10] font-bold ">WHO WE ARE</h3>
@@ -33,7 +33,7 @@ export default function About() {
             <img src={run} />
           </div>
         </div>
-        <div class="w-full flex items-center justify-center mt-[2rem]">
+        <div class="w-full flex items-center justify-center mt-[4rem]">
         <div class="flex flex-col w-[90%] items-center">
           {/* first */}
           <div class="flex ">
