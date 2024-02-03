@@ -12,12 +12,13 @@ export default function Schedule() {
         <div>
           <div></div>
         </div>
-        <div>
+        <div class="flex flex-col gap-[.5rem]">
           {Object.entries(scheduleList[day]).map(([key, data]) => (
-            <div key={key}>
+            <div key={key} class="flex bg-gray-200 justify-evenly">
               <h3>{data.name}</h3>
               <p>Time: {data.time}</p>
               <p>Trainer: {data.trainer}</p>
+              <button></button>
             </div>
           ))}
         </div>
