@@ -65,6 +65,50 @@
   transition-duration: 0.5s;
 }
 
+.button-class-day {
+  position: relative;
+  font-weight: 600;
+  border: solid rgb(180, 180, 180) 1px;
+  color: black;
+  background-color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+  width: fit-content;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.button-class-day:hover {
+  color: white;
+  background-color: #dc2626;
+  box-shadow: 0 5px 10px #aeaeae;
+}
+
+.button-class-day-active {
+  position: relative;
+  font-weight: 600;
+  border: solid rgb(180, 180, 180) 1px;
+  color: white;
+  background-color: #dc2626;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+  width: fit-content;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
 .button-class-schedule {
   position: relative;
   font-weight: 500;

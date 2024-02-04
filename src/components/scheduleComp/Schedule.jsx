@@ -10,12 +10,12 @@ export default function Schedule() {
       <TopComp des="Schedule" />
       <div class="common-wrapper pt-[4rem]">
         <div>
-          <div></div>
+          <div class={`button-class-day`}>Monday</div>
         </div>
         <div class="flex flex-col gap-[.5rem]">
           {Object.entries(scheduleList[day]).map(([key, data]) => (
             <div key={key} class="bg-gray-200">
-              <div class="flex justify-evenly w-full py-[1.5rem]">
+              <div class="flex justify-evenly w-full py-[1.7rem]">
                 <div class="text-center">
                   <p class="text-gray-500">Name</p>
                   <p class="font-bold">{data.name}</p>
