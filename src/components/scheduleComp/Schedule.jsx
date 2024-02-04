@@ -5,18 +5,34 @@ import scheduleList from "utils/data/chedule";
 export default function Schedule() {
   const [day, setDay] = React.useState("Monday");
 
+  const daysOfWeek = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+
   return (
     <div class="w-full flex flex-col items-center">
       <TopComp des="Schedule" />
       <div class="common-wrapper pt-[4rem]">
-        <div>
-          <div
-            class={
-              day == "Monday" ? "button-class-day-active" : "button-class-day"
-            }
-          >
-            Monday
-          </div>
+        <div class="flex gap-[2rem] justify-center">
+          {daysOfWeek.map((day) => {
+            return (
+              <div
+                class={
+                  day == "Monday"
+                    ? "button-class-day-active"
+                    : "button-class-day"
+                }
+              >
+                {day}
+              </div>
+            );
+          })}
         </div>
         <div class="flex flex-col gap-[.5rem]">
           {Object.entries(scheduleList[day]).map(([key, data]) => (
