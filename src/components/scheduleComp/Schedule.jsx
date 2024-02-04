@@ -15,7 +15,7 @@ export default function Schedule() {
         <div class="flex flex-col gap-[.5rem]">
           {Object.entries(scheduleList[day]).map(([key, data]) => (
             <div key={key} class="bg-gray-200">
-              <div class="flex justify-evenly w-full py-[1.8rem]">
+              <div class="flex justify-evenly w-full py-[1.5rem]">
                 <div class="text-center">
                   <p class="text-gray-500">Name</p>
                   <p class="font-bold">{data.name}</p>
@@ -28,7 +28,7 @@ export default function Schedule() {
                   <p class="text-gray-500">Trainer</p>
                   <p class="font-bold">{data.trainer}</p>
                 </div>
-                <button>Join Now</button>
+                <button class="button-class-schedule">Join Now</button>
               </div>
             </div>
           ))}
