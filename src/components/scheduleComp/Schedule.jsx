@@ -16,17 +16,17 @@ export default function Schedule() {
           {Object.entries(scheduleList[day]).map(([key, data]) => (
             <div key={key} class="bg-gray-200">
               <div class="flex justify-evenly w-full py-[1.8rem]">
-                <div class="">
-                  <p>Name</p>
+                <div class="text-center">
+                  <p class="text-gray-500">Name</p>
                   <p class="font-bold">{data.name}</p>
                 </div>
                 <div class="text-center">
-                  <p>Time</p>
-                  <p>{data.time}</p>
+                  <p class="text-gray-500">Time</p>
+                  <p class="font-bold">{data.time}</p>
                 </div>
                 <div class="text-center">
-                  <p>Trainer</p>
-                  <p>{data.trainer}</p>
+                  <p class="text-gray-500">Trainer</p>
+                  <p class="font-bold">{data.trainer}</p>
                 </div>
                 <button>Join Now</button>
               </div>
