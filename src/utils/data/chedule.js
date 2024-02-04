@@ -1,5 +1,5 @@
 const scheduleList = {
-  monday: {
+  Monday: {
     class1: {
       name: "Crossfit",
       time: "8:00am - 9:00am",
@@ -21,7 +21,7 @@ const scheduleList = {
       trainer: "Susan Clark",
     },
   },
-  tuesday: {
+  Tuesday: {
     class1: {
       name: "Crossfit",
       time: "9:00am - 10:00am",
@@ -38,7 +38,7 @@ const scheduleList = {
       trainer: "Derek Hale",
     },
   },
-  wednesday: {
+  Wednesday: {
     class1: {
       name: "Crossfit",
       time: "7:00am - 8:00am",
@@ -60,7 +60,7 @@ const scheduleList = {
       trainer: "Emily Wright",
     },
   },
-  thursday: {
+  Thursday: {
     class1: {
       name: "Crossfit",
       time: "8:00am - 9:00am",
@@ -82,7 +82,7 @@ const scheduleList = {
       trainer: "Aaron Smith",
     },
   },
-  friday: {
+  Friday: {
     class1: {
       name: "Crossfit",
       time: "6:00am - 7:00am",
