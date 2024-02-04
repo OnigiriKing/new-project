@@ -12,19 +12,17 @@ export default function Schedule() {
       <TopComp des="Schedule" />
       <div class="common-wrapper pt-[4rem]">
         <div class="flex gap-[2rem] justify-center">
-          {daysOfWeek.map((day) => {
+          {daysOfWeek.map((date) => {
             return (
               <div
                 class={
-                  day == "Monday"
-                    ? "button-class-day-active"
-                    : "button-class-day"
+                  date == day ? "button-class-day-active" : "button-class-day"
                 }
                 onClick={() => {
-                  setDay(day);
+                  setDay(date);
                 }}
               >
-                {day}
+                {date}
               </div>
             );
           })}
