@@ -5,15 +5,7 @@ import scheduleList from "utils/data/chedule";
 export default function Schedule() {
   const [day, setDay] = React.useState("Monday");
 
-  const daysOfWeek = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
+  const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
   return (
     <div class="w-full flex flex-col items-center">
@@ -28,13 +20,16 @@ export default function Schedule() {
                     ? "button-class-day-active"
                     : "button-class-day"
                 }
+                onClick={() => {
+                  setDay(day);
+                }}
               >
                 {day}
               </div>
             );
           })}
         </div>
-        <div class="flex flex-col gap-[.5rem]">
+        <div class="flex flex-col gap-[.5rem] mt-[2rem]">
           {Object.entries(scheduleList[day]).map(([key, data]) => (
             <div key={key} class="bg-gray-200">
               <div class="flex justify-evenly w-full py-[1.7rem]">
