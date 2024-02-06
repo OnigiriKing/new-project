@@ -20,9 +20,6 @@ export default function Header() {
           <Link to="/blog" class="duration-500 hover:text-red-600">
             Blog
           </Link>
-          <Link to="/pricing" class="duration-500 hover:text-red-600">
-            Pricing
-          </Link>
           <Link to="/classes" class="duration-500 hover:text-red-600">
             Classes
           </Link>
