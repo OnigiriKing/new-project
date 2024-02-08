@@ -1165,6 +1165,14 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-tr-\[15rem\] {
   border-top-right-radius: 15rem;
 }
@@ -1175,6 +1183,18 @@ video {
 
 .border-\[1px\] {
   border-width: 1px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-\[1rem\] {
+  border-width: 1rem;
+}
+
+.border-\[\.3rem\] {
+  border-width: .3rem;
 }
 
 .border-r-2 {

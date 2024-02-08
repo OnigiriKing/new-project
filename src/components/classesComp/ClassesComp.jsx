@@ -7,8 +7,8 @@ export default function ClassesComp() {
     <div class="w-full flex flex-col items-center">
       <TopComp des="Classes" />
       <div class="common-wrapper pt-[4rem]">
-        <div>
-          <div class=" flex bg-black text-white w-[20rem] h-[30rem] items-end z-10 relative">
+        <div class="">
+          <div class=" flex bg-black text-white w-[20rem] h-[30rem] items-end z-10 relative rounded-3xl">
             <img></img>
             <div class="flex flex-col p-[2rem] justify-end gap-[1rem]">
               <h3>Cycling</h3>
