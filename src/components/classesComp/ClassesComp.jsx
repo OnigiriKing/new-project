@@ -8,9 +8,12 @@ export default function ClassesComp() {
       <TopComp des="Classes" />
       <div class="common-wrapper pt-[4rem]">
         <div class="">
-          <div class=" flex bg-black text-white w-[20rem] h-[30rem] items-end z-10 relative rounded-3xl">
-            <img></img>
-            <div class="flex flex-col p-[2rem] justify-end gap-[1rem]">
+          <div class=" flex bg-black text-white w-[20rem] h-[30rem] items-end z-10 relative rounded-3xl overflow-hidden">
+            <img
+              src=""
+              class="absolute object-center object-cover w-full h-full"
+            ></img>
+            <div class="flex flex-col p-[2rem] justify-end gap-[1rem] z-20">
               <h3>Cycling</h3>
               <div class="flex gap-[1rem]">
                 <p>Dorian Yate</p>

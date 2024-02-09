@@ -700,6 +700,18 @@ video {
   top: 5.69rem;
 }
 
+.top-\[50\%\] {
+  top: 50%;
+}
+
+.top-\[-50\%\] {
+  top: -50%;
+}
+
+.bottom-\[50\%\] {
+  bottom: 50%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -730,6 +742,10 @@ video {
 
 .z-\[6\] {
   z-index: 6;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .mx-4 {
@@ -800,6 +816,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-\[\.5rem\] {
+  margin-top: .5rem;
+}
+
 .mt-\[1rem\] {
   margin-top: 1rem;
 }
@@ -818,10 +838,6 @@ video {
 
 .mt-\[6rem\] {
   margin-top: 6rem;
-}
-
-.mt-\[\.5rem\] {
-  margin-top: .5rem;
 }
 
 .flex {
@@ -886,6 +902,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[150\%\] {
+  height: 150%;
 }
 
 .min-h-\[6rem\] {
@@ -998,6 +1018,58 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[full\+2\] {
+  width: full+2;
+}
+
+.w-\[150\%\] {
+  width: 150%;
+}
+
+.w-\[250\%\] {
+  width: 250%;
+}
+
+.w-\[\%\] {
+  width: %;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-\[100rem\] {
+  width: 100rem;
+}
+
+.w-\[40rem\] {
+  width: 40rem;
+}
+
+.w-\[40px\] {
+  width: 40px;
+}
+
+.w-\[140px\] {
+  width: 140px;
+}
+
+.w-\[1040px\] {
+  width: 1040px;
+}
+
+.w-\[1400px\] {
+  width: 1400px;
+}
+
+.w-\[14000px\] {
+  width: 14000px;
+}
+
+.w-\[\] {
+  width: ;
 }
 
 .max-w-\[60rem\] {
@@ -1165,14 +1237,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
 .rounded-tr-\[15rem\] {
   border-top-right-radius: 15rem;
 }
@@ -1183,18 +1247,6 @@ video {
 
 .border-\[1px\] {
   border-width: 1px;
-}
-
-.border {
-  border-width: 1px;
-}
-
-.border-\[1rem\] {
-  border-width: 1rem;
-}
-
-.border-\[\.3rem\] {
-  border-width: .3rem;
 }
 
 .border-r-2 {
@@ -1296,6 +1348,18 @@ video {
   background-image: url('utils/img/classesImg/class-6.png');
 }
 
+.object-cover {
+  object-fit: cover;
+}
+
+.object-fill {
+  object-fit: fill;
+}
+
+.object-center {
+  object-position: center;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -1314,14 +1378,6 @@ video {
 
 .p-\[2rem\] {
   padding: 2rem;
-}
-
-.p-\[1rem\] {
-  padding: 1rem;
-}
-
-.p-\[1\.5rem\] {
-  padding: 1.5rem;
 }
 
 .px-2 {
