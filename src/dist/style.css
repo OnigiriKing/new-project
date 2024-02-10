@@ -1185,11 +1185,31 @@ video {
   border-top-right-radius: 15rem;
 }
 
+.rounded-br-xl {
+  border-bottom-right-radius: 0.75rem;
+}
+
+.rounded-br-full {
+  border-bottom-right-radius: 9999px;
+}
+
+.rounded-br-\[20rem\] {
+  border-bottom-right-radius: 20rem;
+}
+
+.rounded-br-\[30rem\] {
+  border-bottom-right-radius: 30rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
 
 .border-\[1px\] {
+  border-width: 1px;
+}
+
+.border {
   border-width: 1px;
 }
 
@@ -1199,6 +1219,10 @@ video {
 
 .border-r-\[1\.5px\] {
   border-right-width: 1.5px;
+}
+
+.border-l-2 {
+  border-left-width: 2px;
 }
 
 .border-solid {
