@@ -6,13 +6,11 @@ export default function ChooseUs() {
   return (
     <div class="flex center justify-end items-center  bg-black pt-24 text-white relative">
       <div class="flex flex-col common-wrapper items-center gap-8 mx-4 h-full py-2">
-        <div class="flex gap-10 items-center py-4 absolute -top-[3rem] bg-red-600 left-0 z-10">
+        <div class="flex gap-10 items-center py-4 absolute -top-[3rem] bg-red-600 left-0 z-10 w-[65rem] h-[8rem] ">
           <h3 class="font-bold text-4xl w-[35rem] ml-[10rem]">
             We Are Always Providing Best Fitness Service For You
           </h3>
-          <Link class="button-class-light">
-            JOIN US {allSvg(20).arrow}
-          </Link>
+          <Link class="button-class-light">JOIN US {allSvg(20).arrow}</Link>
         </div>
         <div class="flex gap-10 justify-center items-center mt-[6rem] mb-[4rem]">
           <div class="">
