@@ -5,7 +5,7 @@ import class4 from "utils/img/groupClasses/class-4.jpeg"
 import class5 from "utils/img/groupClasses/class-5.jpeg"
 import class6 from "utils/img/groupClasses/class-6.jpeg"
 
-const classes = {
+const classesList = {
   class1: {
     name: "Cycling",
     trainer: "Dorian Yates",
@@ -43,3 +43,5 @@ const classes = {
     img: class6,
   },
 };
+
+export default classesList;
