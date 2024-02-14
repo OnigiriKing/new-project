@@ -736,6 +736,10 @@ video {
   z-index: 6;
 }
 
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -826,6 +830,10 @@ video {
 
 .mt-\[6rem\] {
   margin-top: 6rem;
+}
+
+.mb-\[3rem\] {
+  margin-bottom: 3rem;
 }
 
 .flex {
@@ -1159,6 +1167,10 @@ video {
 
 .gap-\[2rem\] {
   gap: 2rem;
+}
+
+.gap-\[2\.5rem\] {
+  gap: 2.5rem;
 }
 
 .self-center {

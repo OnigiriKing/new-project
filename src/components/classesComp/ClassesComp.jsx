@@ -8,14 +8,14 @@ export default function ClassesComp() {
     <div class="w-full flex flex-col items-center">
       <TopComp des="Classes" />
       <div class="common-wrapper pt-[4rem]">
-        <div class="">
+        <div class="grid grid-cols-3 gap-[2.5rem] mb-[3rem]">
           {Object.keys(classesList).map((el) => {
             const gymClass = classesList[el];
 
             return (
               <div class=" flex bg-black text-white w-[20rem] h-[30rem] items-end z-10 relative rounded-3xl overflow-hidden">
                 <img
-                  src=""
+                  src={gymClass.img}
                   class="absolute object-center object-cover w-full h-full"
                 ></img>
                 <div class="flex flex-col p-[2rem] justify-end gap-[1rem] z-20">
