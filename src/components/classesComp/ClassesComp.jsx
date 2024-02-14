@@ -13,7 +13,7 @@ export default function ClassesComp() {
             const gymClass = classesList[el];
 
             return (
-              <div class=" flex bg-black text-white w-[20rem] h-[30rem] items-end z-10 relative rounded-3xl overflow-hidden">
+              <div class=" flex bg-black text-white w-[20rem] h-[30rem] items-end z-10 relative rounded-3xl overflow-hidden font-bold">
                 <img
                   src={gymClass.img}
                   class="absolute object-center object-cover w-full h-full"
