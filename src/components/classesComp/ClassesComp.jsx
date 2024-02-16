@@ -19,7 +19,7 @@ export default function ClassesComp() {
                   class="absolute object-center object-cover w-full h-full"
                 ></img>
                 <div class="flex flex-col p-[2rem] justify-end gap-[1rem] z-20">
-                  <div class="gap-[1rem] bg-opacity-50 bg-gray-700 w-fit">
+                  <div class="gap-[1rem] bg-opacity-30 bg-black w-fit">
                     <h3 class="">{gymClass.name}</h3>
                     <div class="flex gap-[1rem]">
                       <p>{gymClass.trainer}</p>

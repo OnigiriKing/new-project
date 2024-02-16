@@ -27,7 +27,7 @@ const classesList = {
   class4: {
     name: "Boxing Fundamentals",
     trainer: "Freddie Roach",
-    time: "Tuesday: 7:00 pm",
+    time: "Tue: 7:00 pm",
     img: class4,
   },
   class5: {
