@@ -1,11 +1,33 @@
 import { Link } from "react-router-dom";
 import logo from "utils/img/logo.png";
 import allSvg from "svg/allSvg";
+import React from "react";
 
 export default function Header() {
+  const [scrolled, setScroll] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY < 80) {
+        setScroll(true);
+        console.log(scrolled);
+      } else {
+        setScroll(false);
+        console.log(scrolled);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div class="fixed flex justify-center w-full top-0 bg-transparent opacity-95  text-white z-50">
-      <div class="justify-between  common-wrapper items-center flex py-1">
+    <div
+      class={`fixed flex justify-center w-full top-0 ${
+        scrolled ? "bg-transparent" : "bg-black"
+      } opacity-95  text-white z-50`}
+    >
+      <div class="justify-between  common-wrapper items-center flex py-2">
         <img src={logo} alt="logo" class="w-20" />
         <div class="flex gap-6">
           <Link to="/" class="duration-500 hover:text-red-600 ">
