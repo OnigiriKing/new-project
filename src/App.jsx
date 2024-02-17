@@ -4,6 +4,7 @@ import FooterPage from "pages/Footer/FooterPage";
 import { Route, Routes } from "react-router-dom";
 import SchedulePage from "pages/Schedule/SchedulePage";
 import ClassesPage from "pages/ClassesPage/ClassesPage";
+import ContactPage from "pages/Contact/ContactPage";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/schedule" element={<SchedulePage />} />
         <Route path="/classes" element={<ClassesPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <FooterPage />
     </div>
