@@ -1,6 +1,6 @@
 import TopComp from "components/topComp/TopComp";
 import React from "react";
-import allSvg from "svg/allSvg";
+import Links from "components/shared/Links";
 
 export default function ContactComp() {
   return (
@@ -31,18 +31,17 @@ export default function ContactComp() {
               </div>
               {/* 3 */}
               <div>
-                <h4>Opening Hours</h4>
+                <h4>Information</h4>
                 <div>
-                  <p>Mon to Fri: 7:30 am — 1:00 am</p>
-                  <p>Mon to Fri: 7:30 am — 1:00 am</p>
+                  <p>+66-000-000</p>
+                  <p>bbkgym@gmail.com</p>
                 </div>
               </div>
               {/* 4 */}
               <div>
-                <h4>Opening Hours</h4>
+                <h4>Follow Us On</h4>
                 <div>
-                  <p>Mon to Fri: 7:30 am — 1:00 am</p>
-                  <p>Mon to Fri: 7:30 am — 1:00 am</p>
+                  <Links />
                 </div>
               </div>
             </div>

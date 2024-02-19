@@ -1,5 +1,6 @@
 import logo from "utils/img/logo.png";
 import allSvg from "svg/allSvg";
+import Links from "components/shared/Links";
 
 export default function Footer() {
   return (
@@ -11,20 +12,7 @@ export default function Footer() {
             Revitalize your health journey on our one-year anniversary! Unleash
             your full fitness potential with our tailored program.
           </div>
-          <div class="flex gap-4">
-            <div class="group cursor-pointer bg-gray-200 hover:bg-red-600 hover:text-[#fff] p-2 rounded-full duration-500">
-              {allSvg(20).inst}
-            </div>
-            <div class="group cursor-pointer bg-gray-200 hover:bg-red-600 hover:text-[#fff] p-2 rounded-full duration-500">
-              {allSvg(20).pint}
-            </div>
-            <div class="group cursor-pointer bg-gray-200 hover:bg-red-600 hover:text-[#fff] p-2 rounded-full duration-500">
-              {allSvg(20).twitter2}
-            </div>
-            <div class="group cursor-pointer bg-gray-200 hover:bg-red-600 hover:text-[#fff] p-2 rounded-full duration-500">
-              {allSvg(20).youTube}
-            </div>
-          </div>
+          <Links />
           <div class="flex">
             <h3 class=" pr-2 border-r-[1.5px] border-r-[#000] cursor-pointer  transition-colors duration-500  hover:text-red-600">
               Privacy Policy
