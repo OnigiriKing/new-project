@@ -16,14 +16,14 @@ export default function ContactComp() {
             <div class="grid gap-5 grid-cols-2">
               {/* 1 */}
               <div>
-                <h4>Bangkok, Thailand</h4>
+                <h4 class="contact-header">Bangkok, Thailand</h4>
                 <div>
                   <p>100 N Sathon Rd, Khwaeng Silom, Bang Rak, Bangkok 10500</p>
                 </div>
               </div>
               {/* 2 */}
               <div>
-                <h4>Opening Hours</h4>
+                <h4 class="contact-header">Opening Hours</h4>
                 <div>
                   <p>Mon to Fri: 7:30 am — 1:00 am</p>
                   <p>Mon to Fri: 7:30 am — 1:00 am</p>
@@ -31,7 +31,7 @@ export default function ContactComp() {
               </div>
               {/* 3 */}
               <div>
-                <h4>Information</h4>
+                <h4 class="contact-header">Information</h4>
                 <div>
                   <p>+66-000-000</p>
                   <p>bbkgym@gmail.com</p>
@@ -39,7 +39,7 @@ export default function ContactComp() {
               </div>
               {/* 4 */}
               <div>
-                <h4>Follow Us On</h4>
+                <h4 class="contact-header">Follow Us On</h4>
                 <div>
                   <Links />
                 </div>

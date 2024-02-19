@@ -191,3 +191,21 @@
   bottom: 0;
   left: 0;
 }
+
+.contact-header {
+  font-weight: 600;
+  font-size: 1.5rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.contact-header::after {
+  content: "";
+  width: 3rem;
+  height: 2px;
+  border: 2px solid #dc2626;
+  box-sizing: border-box;
+  bottom: -0.5rem;
+  left: 0rem;
+  position: absolute;
+}
