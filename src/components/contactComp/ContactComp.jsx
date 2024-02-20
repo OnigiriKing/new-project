@@ -10,8 +10,15 @@ export default function ContactComp() {
         <div class="flex justify-center mb-[6rem]">
           <div class="w-[50%]">
             <div>
-              <h3></h3>
-              <p></p>
+              <h3 class="mb-[2rem] font-bold text-3xl">
+                We're here to assist you in sculpting your body!
+              </h3>
+              <p class="mb-[2rem] contact-page-text">
+                At BBKgym, we're committed to guiding you towards your ideal
+                physique. Our team of seasoned trainers and nutritionists will
+                collaborate closely with you to devise a customized fitness and
+                nutrition strategy tailored to your unique objectives.
+              </p>
             </div>
             <div class="grid gap-5 grid-cols-2">
               {/* 1 */}
@@ -46,12 +53,13 @@ export default function ContactComp() {
               </div>
             </div>
           </div>
-          <div class="w-[50%] bg-slate-600">
+          <div class="w-[50%] bg-slate-500">
             <form>
               <h3></h3>
               <input></input>
               <input></input>
               <text></text>
+              <buttom class="button-class">SUBMIT NOW</buttom>
             </form>
           </div>
         </div>
