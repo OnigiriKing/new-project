@@ -53,11 +53,21 @@ export default function ContactComp() {
               </div>
             </div>
           </div>
-          <div class="w-[50%] bg-slate-500">
-            <form>
-              <h3></h3>
-              <input></input>
-              <input></input>
+          <div class="w-[50%] bg-gray-100">
+            <form class="flex flex-col p-[2rem] gap-[1rem]">
+              <h3 class="contact-page-header">Provide Us With Your Details</h3>
+              <input
+                placeholder="Full Name*"
+                class="py-[.7rem] px-[1rem] border-gray-200 border-[1px]"
+              ></input>
+              <input
+                placeholder="Email Address*"
+                class="py-[.7rem] px-[1rem] border-gray-200 border-[1px]"
+              ></input>
+              <selec class="py-[.7rem] px-[1rem] border-gray-200 border-[1px]">
+              {}
+                <option>Select Class</option>
+              </selec>
               <text></text>
               <buttom class="button-class">SUBMIT NOW</buttom>
             </form>
