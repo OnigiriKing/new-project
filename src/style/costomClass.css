@@ -192,14 +192,14 @@
   left: 0;
 }
 
-.contact-header {
+.contact-page-header {
   font-weight: 600;
   font-size: 1.5rem;
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.contact-header::after {
+.contact-page-header::after {
   content: "";
   width: 3rem;
   height: 2px;
@@ -208,4 +208,8 @@
   bottom: -0.5rem;
   left: 0rem;
   position: absolute;
+}
+
+.contact-page-text {
+  color: #4b5563;
 }
