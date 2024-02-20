@@ -1,6 +1,7 @@
 import TopComp from "components/topComp/TopComp";
 import React from "react";
 import Links from "components/shared/Links";
+import classesList from "utils/data/classes";
 
 export default function ContactComp() {
   return (
@@ -64,10 +65,14 @@ export default function ContactComp() {
                 placeholder="Email Address*"
                 class="py-[.7rem] px-[1rem] border-gray-200 border-[1px]"
               ></input>
-              <selec class="py-[.7rem] px-[1rem] border-gray-200 border-[1px]">
-              {}
+              <select class="py-[.7rem] px-[1rem] border-gray-200 border-[1px] h-[3rem] w-full">
                 <option>Select Class</option>
-              </selec>
+                {Object.keys(classesList).map((el) => {
+                  const element = classesList[el];
+
+                  return <option>{element.name}</option>;
+                })}
+              </select>
               <text></text>
               <buttom class="button-class">SUBMIT NOW</buttom>
             </form>
