@@ -73,7 +73,10 @@ export default function ContactComp() {
                   return <option>{element.name}</option>;
                 })}
               </select>
-              <text></text>
+              <textarea
+                placeholder="Comment"
+                class="h-[8rem] p-[1rem] border-gray-200 border-[1px]"
+              ></textarea>
               <buttom class="button-class">SUBMIT NOW</buttom>
             </form>
           </div>
