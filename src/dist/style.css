@@ -904,10 +904,6 @@ video {
   height: 100%;
 }
 
-.h-\[10rem\] {
-  height: 10rem;
-}
-
 .min-h-\[6rem\] {
   min-height: 6rem;
 }
@@ -1356,12 +1352,12 @@ video {
   padding: .4rem;
 }
 
-.p-\[2rem\] {
-  padding: 2rem;
-}
-
 .p-\[1rem\] {
   padding: 1rem;
+}
+
+.p-\[2rem\] {
+  padding: 2rem;
 }
 
 .px-2 {
