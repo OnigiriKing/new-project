@@ -1,6 +1,5 @@
 import TopComp from "components/topComp/TopComp";
 import allSvg from "svg/allSvg";
-import { Link } from "react-router-dom";
 
 export default function Blog() {
   return (
@@ -11,10 +10,13 @@ export default function Blog() {
         <div class="w-[30%]">
           <div class="flex">
             <input
+              type="search"
               placeholder="Search..."
-              class="px-[.7rem] py-[1rem] w-[20rem] border-[1px] border-gray-200 rounded-md"
+              class="px-[1.2rem] py-[1rem] w-full border-[1px] border-gray-200 rounded-tl-md rounded-bl-md outline-none"
             ></input>
-            <button>search</button>
+            <button class="flex items-center bg-red-600 text-white px-[.7rem] rounded-tr-md rounded-br-md">
+              {allSvg(35).serach}
+            </button>
           </div>
           <div>Categories</div>
           <div>Recent Posts</div>
