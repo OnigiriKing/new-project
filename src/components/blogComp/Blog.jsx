@@ -34,7 +34,7 @@ export default function Blog() {
               const category = blogCat[el];
 
               return (
-                <div class="flex justify-between py-[1rem] border-b-[1px] text-gray-500 border-gray-300">
+                <div class="flex justify-between mt-[1rem] pb-[1rem] border-b-[1px] text-gray-500 border-gray-300 cursor-pointer hover:text-red-600 duration-[.4s]">
                   <h3 class="flex gap-[.6rem]">
                     <p class="rotate-90">{allSvg(14).arrowSmall}</p>
                     {category.name}
