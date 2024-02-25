@@ -15,7 +15,7 @@ export default function Blog() {
       <TopComp des="Blog" />
       <div class="common-wrapper pt-[4rem] flex">
         <div class="w-[70%]"></div>
-        <div class="w-[30%]">
+        <div class="w-[30%] flex flex-col gap-[2.5rem]">
           <div class="flex">
             <input
               type="search"
@@ -34,8 +34,11 @@ export default function Blog() {
               const category = blogCat[el];
 
               return (
-                <div class="flex justify-between">
-                  <h3>{category.name}</h3>
+                <div class="flex justify-between py-[1rem] border-b-[1px] text-gray-500 border-gray-300">
+                  <h3 class="flex gap-[.6rem]">
+                    <p class="rotate-90">{allSvg(14).arrowSmall}</p>
+                    {category.name}
+                  </h3>
                   <h4>({category.number})</h4>
                 </div>
               );
