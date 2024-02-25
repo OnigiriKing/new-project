@@ -24,14 +24,16 @@ export default function ContactComp() {
             <div class="grid gap-5 grid-cols-2">
               {/* 1 */}
               <div>
-                <h4 class="contact-page-header">Bangkok, Thailand</h4>
+                <h4 class="contact-page-header text-[1.3rem]">
+                  Bangkok, Thailand
+                </h4>
                 <div class="contact-page-text">
                   <p>100 N Sathon Rd, Khwaeng Silom, Bang Rak, Bangkok 10500</p>
                 </div>
               </div>
               {/* 2 */}
               <div>
-                <h4 class="contact-page-header">Opening Hours</h4>
+                <h4 class="contact-page-header text-[1.3rem]">Opening Hours</h4>
                 <div class="contact-page-text">
                   <p>Mon to Fri: 7:30 am — 10:00 pm</p>
                   <p>Sat to Sun: 9:30 am — 11:00 pm</p>
@@ -39,7 +41,7 @@ export default function ContactComp() {
               </div>
               {/* 3 */}
               <div>
-                <h4 class="contact-page-header">Information</h4>
+                <h4 class="contact-page-header text-[1.3rem]">Information</h4>
                 <div class="contact-page-text">
                   <p>+66-000-000</p>
                   <p>bbkgym@gmail.com</p>
@@ -47,7 +49,7 @@ export default function ContactComp() {
               </div>
               {/* 4 */}
               <div>
-                <h4 class="contact-page-header">Follow Us On</h4>
+                <h4 class="contact-page-header text-[1.3rem]">Follow Us On</h4>
                 <div>
                   <Links />
                 </div>
@@ -56,7 +58,9 @@ export default function ContactComp() {
           </div>
           <div class="w-[50%] bg-gray-100">
             <form class="flex flex-col p-[2rem] gap-[1rem]">
-              <h3 class="contact-page-header">Provide Us With Your Details</h3>
+              <h3 class="contact-page-header text-[1.4rem]">
+                Provide Us With Your Details
+              </h3>
               <input
                 placeholder="Full Name*"
                 class="py-[.7rem] px-[1rem] border-gray-200 border-[1px]"

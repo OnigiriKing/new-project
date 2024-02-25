@@ -1557,6 +1557,18 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[1\.5rem\] {
+  font-size: 1.5rem;
+}
+
+.text-\[1\.3rem\] {
+  font-size: 1.3rem;
+}
+
+.text-\[1\.4rem\] {
+  font-size: 1.4rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1567,6 +1579,10 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .text-black {
@@ -1602,6 +1618,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[1\.rem\] {
+  color: 1.rem;
 }
 
 .opacity-95 {

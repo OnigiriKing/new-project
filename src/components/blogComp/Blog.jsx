@@ -27,14 +27,16 @@ export default function Blog() {
             </button>
           </div>
           <div class="bg-gray-100 p-[2rem]">
-            <h3 class="mb-[1rem]">Categories</h3>
+            <h3 class="mb-[1rem] contact-page-header text-[1.2rem]">
+              Categories
+            </h3>
             {Object.keys(blogCat).map((el) => {
               const category = blogCat[el];
 
               return (
                 <div class="flex justify-between">
                   <h3>{category.name}</h3>
-                  <h4>{category.number}</h4>
+                  <h4>({category.number})</h4>
                 </div>
               );
             })}
