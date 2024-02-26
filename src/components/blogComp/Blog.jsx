@@ -61,7 +61,7 @@ export default function Blog() {
             <div class="flex flex-wrap gap-[.5rem] ">
               {tagsList.map((el) => {
                 return (
-                  <h3 class="text-gray-500 cursor-pointer hover:text-red-600 duration-[.4s] ">
+                  <h3 class="cursor-pointer hover:text-red-600 text-gray-600 duration-[.4s] bg-white px-[.4rem] py-[.2rem] ">
                     {el}
                   </h3>
                 );
