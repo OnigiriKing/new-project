@@ -10,6 +10,15 @@ export default function Blog() {
     cat5: { name: "Body Building", number: 3 },
     cat6: { name: "Crossfit", number: 2 },
   };
+
+  const tagsList = [
+    "#Fitness",
+    "#Yoga",
+    "#Meditation",
+    "#Boxing",
+    "#BodyBuilding",
+    "#Crossfit"
+  ];
   return (
     <div class="w-full flex flex-col items-center">
       <TopComp des="Blog" />
@@ -45,7 +54,19 @@ export default function Blog() {
             })}
           </div>
           <div>Recent Posts</div>
-          <div>Tags</div>
+          <div class="bg-gray-100 p-[2rem]">
+            <h3 class="mb-[1rem] contact-page-header text-[1.2rem]">
+              Popular Tags
+            </h3>
+            {tagsList.map((el) => {
+
+              return (
+                <div class="flex mt-[1rem] pb-[1rem] border-b-[1px] text-gray-500 border-gray-300 cursor-pointer hover:text-red-600 duration-[.4s]">
+                  <h3>{el}</h3>
+                </div>
+              );
+            })}
+          </div>
           <div>ad</div>
         </div>
       </div>
