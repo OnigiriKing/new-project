@@ -68,7 +68,14 @@ export default function Blog() {
               })}
             </div>
           </div>
-          <div>ad</div>
+          <div class="w-full h-[30rem] bg-gray-100">
+            <div>
+              <h3>BBG gym</h3>
+              <h2>20%</h2>
+              <h4>Big discount</h4>
+            </div>
+            <img></img>
+          </div>
         </div>
       </div>
     </div>

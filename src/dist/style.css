@@ -918,6 +918,10 @@ video {
   height: 2rem;
 }
 
+.h-\[10rem\] {
+  height: 10rem;
+}
+
 .min-h-\[6rem\] {
   min-height: 6rem;
 }
