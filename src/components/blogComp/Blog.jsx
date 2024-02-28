@@ -69,9 +69,9 @@ export default function Blog() {
             </div>
           </div>
           <div class="w-full h-[30rem] bg-gray-100">
-            <div>
-              <h3>BBG gym</h3>
-              <h2>20%</h2>
+            <div class="w-[11rem] flex flex-col text-center mt-[1rem] text-white font-bold">
+              <h3 class="bg-white text-black mb-[1rem] text-3xl">BKKgym</h3>
+              <h2 class="mb-[.5rem] text-4xl">20%</h2>
               <h4>Big discount</h4>
             </div>
             <img></img>

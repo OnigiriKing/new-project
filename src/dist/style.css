@@ -840,6 +840,10 @@ video {
   margin-top: 6rem;
 }
 
+.mb-\[\.5rem\] {
+  margin-bottom: .5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -906,20 +910,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-fit {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.h-\[2rem\] {
-  height: 2rem;
-}
-
-.h-\[10rem\] {
-  height: 10rem;
 }
 
 .min-h-\[6rem\] {
@@ -1046,6 +1036,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[3rem\] {
+  width: 3rem;
+}
+
+.w-\[10rem\] {
+  width: 10rem;
+}
+
+.w-\[8rem\] {
+  width: 8rem;
 }
 
 .max-w-\[60rem\] {
@@ -1217,10 +1219,6 @@ video {
 
 .self-center {
   align-self: center;
-}
-
-.overflow-auto {
-  overflow: auto;
 }
 
 .overflow-hidden {
@@ -1425,12 +1423,8 @@ video {
   padding: 2rem;
 }
 
-.p-\[\] {
-  padding: ;
-}
-
-.p-\[\.2rem\] {
-  padding: .2rem;
+.p-4 {
+  padding: 1rem;
 }
 
 .px-2 {
@@ -1456,6 +1450,11 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-\[\.4rem\] {
+  padding-left: .4rem;
+  padding-right: .4rem;
 }
 
 .px-\[\.7rem\] {
@@ -1498,6 +1497,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-\[\.2rem\] {
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+}
+
 .py-\[\.7rem\] {
   padding-top: .7rem;
   padding-bottom: .7rem;
@@ -1521,31 +1525,6 @@ video {
 .py-\[4rem\] {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.py-\[\.2rem\] {
-  padding-top: .2rem;
-  padding-bottom: .2rem;
-}
-
-.px-\[\.2rem\] {
-  padding-left: .2rem;
-  padding-right: .2rem;
-}
-
-.px-\[\.3rem\] {
-  padding-left: .3rem;
-  padding-right: .3rem;
-}
-
-.py-\[\] {
-  padding-top: ;
-  padding-bottom: ;
-}
-
-.px-\[\.4rem\] {
-  padding-left: .4rem;
-  padding-right: .4rem;
 }
 
 .pb-6 {
@@ -1630,14 +1609,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-\[1rem\] {
-  font-size: 1rem;
-}
-
-.text-\[1\.1rem\] {
-  font-size: 1.1rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -1683,11 +1654,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .opacity-95 {
