@@ -1,5 +1,6 @@
 import TopComp from "components/topComp/TopComp";
 import allSvg from "svg/allSvg";
+import discount from "utils/img/blogImg/test.jpeg";
 
 export default function Blog() {
   const blogCat = {
@@ -68,13 +69,16 @@ export default function Blog() {
               })}
             </div>
           </div>
-          <div class="w-full h-[30rem] bg-gray-100">
-            <div class="w-[11rem] flex flex-col text-center mt-[1rem] text-white font-bold">
+          <div class="flex w-full h-[30rem] bg-gray-100 relative">
+            <div class="w-[11rem] flex flex-col text-center mt-[3rem] text-white font-bold z-20">
               <h3 class="bg-white text-black mb-[1rem] text-3xl">BKKgym</h3>
               <h2 class="mb-[.5rem] text-4xl">20%</h2>
               <h4>Big discount</h4>
             </div>
-            <img></img>
+            <img
+              src={discount}
+              class="absolute object-center object-cover w-full h-full z-10"
+            ></img>
           </div>
         </div>
       </div>
