@@ -27,7 +27,7 @@ const blogPost = {
   post2: {
     date: "20.01.24",
     name: "Family Fitness Fun Day",
-    author: "Admin",
+    author: "Alex",
     type: "Fitness",
     des: "A day of fun and fitness for the whole family! Enjoy group activities, healthy snacks, and learn how to keep your family active and healthy together.",
   },
@@ -48,18 +48,18 @@ const blogPost = {
   post5: {
     date: "23.01.24",
     name: "Mindful Meditation and Movement",
-    author: "Admin",
+    author: "Felix",
     type: "Meditation",
     des: "Discover the power of mindfulness combined with gentle movement in this relaxing class. Ideal for stress relief and improving overall well-being.",
   },
   post6: {
     date: "24.01.24",
     name: "Nutrition for Optimal Performance",
-    author: "Admin",
+    author: "Takashi",
     type: "Fitness",
     des: "Our expert dietitian will guide you through the basics of sports nutrition, helping you fuel your body for your best performance yet.",
   },
 };
 
 
-export {blogCat, tagsList}
+export { blogCat, tagsList, blogPost };
