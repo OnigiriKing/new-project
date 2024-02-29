@@ -1,6 +1,6 @@
 import redBrush from "utils/img/redBrush.png";
 import Article from "./News.Article/Article";
-import news from "utils/data/news";
+import { blogPost } from "utils/data/blogData";
 
 export default function News() {
   const random = Math.floor(Math.random() * 4) + 3;
@@ -19,10 +19,10 @@ export default function News() {
           </p>
         </div>
         <div class="grid grid-cols-3 gap-4">
-          {Object.keys(news)
+          {Object.keys(blogPost)
             .slice(random - 3, random)
             .map((key) => {
-              const obj = news[key];
+              const obj = blogPost[key];
               return <Article date={obj.date} name={obj.name} des={obj.des} />;
             })}
         </div>

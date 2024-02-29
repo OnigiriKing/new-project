@@ -1,26 +1,10 @@
 import TopComp from "components/topComp/TopComp";
 import allSvg from "svg/allSvg";
 import discount from "utils/img/blogImg/test.jpeg";
+import { blogCat, tagsList, blogPost } from "utils/data/blogData";
 
 export default function Blog() {
-  const blogCat = {
-    cat1: { name: "Fitness", number: 3 },
-    cat2: { name: "Yoga", number: 4 },
-    cat3: { name: "Meditation", number: 2 },
-    cat4: { name: "Boxing", number: 5 },
-    cat5: { name: "Body Building", number: 3 },
-    cat6: { name: "Crossfit", number: 2 },
-  };
 
-  const tagsList = [
-    "#Fitness",
-    "#Yoga",
-    "#Meditation",
-    "#Boxing",
-    "#BodyBuilding",
-    "#Crossfit",
-  ];
-  
   return (
     <div class="w-full flex flex-col items-center">
       <TopComp des="Blog" />
@@ -64,7 +48,7 @@ export default function Blog() {
               {tagsList.map((el) => {
                 return (
                   <h3 class="cursor-pointer hover:text-red-600 text-gray-600 duration-[.4s] bg-white px-[.4rem] py-[.2rem] ">
-                    {el}
+                    {"#"+el}
                   </h3>
                 );
               })}
