@@ -1,5 +1,5 @@
 import redBrush from "utils/img/redBrush.png";
-import Article from "./News.Article/Article";
+import Article from "./News.Article";
 import { blogPost } from "utils/data/blogData";
 
 export default function News() {
