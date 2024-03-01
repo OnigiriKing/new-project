@@ -21,6 +21,7 @@ export default function Blog() {
               {allSvg(35).serach}
             </button>
           </div>
+          {/* Categories */}
           <div class="bg-gray-100 p-[2rem]">
             <h3 class="mb-[1rem] contact-page-header text-[1.2rem]">
               Categories
