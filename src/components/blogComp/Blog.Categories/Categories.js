@@ -1,4 +1,5 @@
 import { blogCat } from "utils/data/blogData";
+import allSvg from "svg/allSvg";
 
 export default function Categories() {
 
