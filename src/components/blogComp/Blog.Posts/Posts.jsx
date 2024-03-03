@@ -8,9 +8,9 @@ export default function Posts() {
         {Object.keys(blogPost).map((el) => {
           const post = blogPost[el];
           return (
-            <div class="h-[8rem] flex">
+            <div class="h-[8rem] flex items-center gap-[1rem]">
               <div>
-                <img></img>
+                <img scr={post.img} class="w-[2rem] h-[2rem]"></img>
               </div>
               <div class="flex flex-col gap-[.5rem] h-full justify-center">
                 <p class="text-gray-600">{post.date}</p>

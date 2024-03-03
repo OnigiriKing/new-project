@@ -1,7 +1,6 @@
 import TopComp from "components/topComp/TopComp";
 import allSvg from "svg/allSvg";
 import discount from "utils/img/blogImg/test.jpeg";
-import { blogCat, tagsList, blogPost } from "utils/data/blogData";
 import Categories from "./Blog.Categories/Categories";
 import Posts from "./Blog.Posts/Posts";
 import Tags from "./Blog.Tags/Tags";
