@@ -9,10 +9,10 @@ export default function Posts() {
           const post = blogPost[el];
           return (
             <div class="h-[8rem] flex items-center gap-[1rem]">
-              <div class="w-[5rem] cursor-pointer">
+              <div class="w-[10rem] cursor-pointer">
                 <img src={post.img}></img>
               </div>
-              <div class="flex flex-col gap-[.5rem] h-full justify-center">
+              <div class="flex flex-col gap-[.5rem] h-full w-full justify-center">
                 <p class="text-gray-600">{post.date}</p>
                 <h3 class="cursor-pointer hover:text-red-600 duration-[.4s]  font-bold">
                   {post.name}
