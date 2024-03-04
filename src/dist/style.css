@@ -892,6 +892,10 @@ video {
   height: 25rem;
 }
 
+.h-\[2rem\] {
+  height: 2rem;
+}
+
 .h-\[30rem\] {
   height: 30rem;
 }
@@ -914,10 +918,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[2rem\] {
-  height: 2rem;
 }
 
 .min-h-\[6rem\] {
@@ -974,6 +974,10 @@ video {
 
 .w-\[28rem\] {
   width: 28rem;
+}
+
+.w-\[2rem\] {
+  width: 2rem;
 }
 
 .w-\[30\%\] {
@@ -1046,8 +1050,12 @@ video {
   width: 100%;
 }
 
-.w-\[2rem\] {
-  width: 2rem;
+.w-\[5rem\] {
+  width: 5rem;
+}
+
+.w-\[6rem\] {
+  width: 6rem;
 }
 
 .max-w-\[60rem\] {

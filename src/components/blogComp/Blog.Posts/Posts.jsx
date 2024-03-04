@@ -9,8 +9,8 @@ export default function Posts() {
           const post = blogPost[el];
           return (
             <div class="h-[8rem] flex items-center gap-[1rem]">
-              <div>
-                <img scr={post.img} class="w-[2rem] h-[2rem]"></img>
+              <div class="w-[5rem] cursor-pointer">
+                <img src={post.img}></img>
               </div>
               <div class="flex flex-col gap-[.5rem] h-full justify-center">
                 <p class="text-gray-600">{post.date}</p>
