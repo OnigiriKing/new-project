@@ -2,7 +2,7 @@ import TopComp from "components/topComp/TopComp";
 import allSvg from "svg/allSvg";
 import discount from "utils/img/blogImg/test.jpeg";
 import Categories from "./Blog.Categories/Categories";
-import Posts from "./Blog.Posts/Posts";
+import Recent from "./Blog.Recent/Recent";
 import Tags from "./Blog.Tags/Tags";
 
 export default function Blog() {
@@ -24,7 +24,7 @@ export default function Blog() {
             </button>
           </div>
           <Categories />
-          <Posts />
+          <Recent />
           <Tags />
           <div class="flex w-full h-[30rem] bg-gray-100 relative">
             <div class="w-[11rem] flex flex-col text-center mt-[3rem] text-white font-bold z-20">
