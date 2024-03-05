@@ -916,6 +916,14 @@ video {
   height: 100%;
 }
 
+.h-\[10rem\] {
+  height: 10rem;
+}
+
+.h-\[15rem\] {
+  height: 15rem;
+}
+
 .min-h-\[6rem\] {
   min-height: 6rem;
 }
@@ -1389,6 +1397,10 @@ video {
 
 .object-cover {
   object-fit: cover;
+}
+
+.object-fill {
+  object-fit: fill;
 }
 
 .object-center {

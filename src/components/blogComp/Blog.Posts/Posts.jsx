@@ -7,10 +7,12 @@ export default function Posts() {
       {Object.keys(blogPost).map((el) => {
         const post = blogPost[el];
         return (
-          <div class="h-[8rem] flex items-center gap-[1rem]">
-            <img src={post.img}></img>
+          <div class="flex flex-col gap-[1rem]">
+            <div class="h-[30rem]">
+              <img class="h-full object-fill" src={post.img}></img>
+            </div>
             <p>
-              By {post.author} | {post.date} | {post.date}
+              By <b>{post.author}</b> | {post.date} | {post.type}
             </p>
             <h3>{post.name}</h3>
             <p>{post.des}</p>
