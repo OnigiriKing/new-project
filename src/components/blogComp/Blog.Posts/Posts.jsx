@@ -11,11 +11,11 @@ export default function Posts() {
             <div class="h-[25rem]">
               <img class="h-full object-cover w-full" src={post.img}></img>
             </div>
-            <p>
+            <p class="text-gray-600">
               By <b>{post.author}</b> | {post.date} | {post.type}
             </p>
-            <h3>{post.name}</h3>
-            <p>{post.des}</p>
+            <h3 class="text-3xl font-bold">{post.name}</h3>
+            <p class="text-gray-600">{post.des}</p>
             <button class="button-class mt-[1rem]">
               PURCHASE NOW {allSvg(20).arrow}
             </button>
