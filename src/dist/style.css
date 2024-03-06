@@ -848,6 +848,18 @@ video {
   margin-top: 6rem;
 }
 
+.mr-\[\.3rem\] {
+  margin-right: .3rem;
+}
+
+.mr-\[\.2rem\] {
+  margin-right: .2rem;
+}
+
+.mr-\[\.1rem\] {
+  margin-right: .1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1211,6 +1223,10 @@ video {
 
 .gap-\[2rem\] {
   gap: 2rem;
+}
+
+.gap-\[\.2rem\] {
+  gap: .2rem;
 }
 
 .self-center {
