@@ -1,10 +1,10 @@
+import topImg from "utils/img/topImg.jpeg";
 
-
-export default function TopComp({des}) {
+export default function TopComp({ des }) {
   return (
     <div class="w-full">
       <div class="bg-black text-white h-[20rem] w-full flex flex-col items-center justify-end">
-        <img></img>
+        <img src={topImg}></img>
         <h3 class="mb-8 text-3xl font-bold">{des}</h3>
       </div>
     </div>
