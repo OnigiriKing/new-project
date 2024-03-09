@@ -1,11 +1,10 @@
 import allSvg from "svg/allSvg";
-import ibm from "../img/ibm.png"
+import bmi from "../img/bmi.png";
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import { calculate } from "features/Redux/reducers/indexSlice";
 
 export default function Calculator() {
-
   const dispatch = useDispatch();
   const bodyIndex = useSelector((state) => state.bodyIndex);
 
@@ -58,7 +57,8 @@ export default function Calculator() {
               class="button-class"
               disabled={
                 /[a-zA-Z]/.test(height) ||
-                /[a-zA-Z]/.test(weight) || weight === "" ||
+                /[a-zA-Z]/.test(weight) ||
+                weight === "" ||
                 height === ""
               }
               onClick={() =>
@@ -75,7 +75,7 @@ export default function Calculator() {
           </div>
         </div>
         <div class="w-[50%] flex justify-end ">
-          <img class="h-[25rem] absolute top-3" src={ibm}></img>
+          <img class="h-[25rem] absolute top-0" src={bmi}></img>
         </div>
       </div>
     </div>
