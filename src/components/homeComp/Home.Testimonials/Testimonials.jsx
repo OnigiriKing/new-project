@@ -4,14 +4,10 @@ import reviews from "utils/data/reviews";
 import { useDispatch, useSelector } from "react-redux";
 import { next, prev } from "features/Redux/reducers/reviewSlice";
 
-
-
 export default function Testimonials() {
-
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const review = useSelector((state) => state.review);
 
-  
   return (
     <div class="flex justify-center items-center  bg-white  my-6">
       <div class="flex flex-col common-wrapper items-center gap-8  h-[100vh] py-2">
@@ -25,7 +21,7 @@ export default function Testimonials() {
             <div>
               <div class="flex relative items-center justify-center left-4">
                 <img
-                  class={reviews["person" + review].position}
+                  class="w-[15rem] absolute z-[5] top-[2.4rem]"
                   src={reviews["person" + review].img}
                 ></img>
                 <div class=" w-[20rem] h-[30rem]  bg-red-800 rounded-tr-[15rem]" />
