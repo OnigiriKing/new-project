@@ -680,24 +680,12 @@ video {
   top: 0px;
 }
 
-.top-3 {
-  top: 0.75rem;
-}
-
-.top-\[2\.2rem\] {
-  top: 2.2rem;
-}
-
 .top-\[2\.4rem\] {
   top: 2.4rem;
 }
 
 .top-\[35\%\] {
   top: 35%;
-}
-
-.top-\[5\.69rem\] {
-  top: 5.69rem;
 }
 
 .z-10 {
@@ -918,10 +906,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[26rem\] {
-  height: 26rem;
 }
 
 .min-h-\[6rem\] {
