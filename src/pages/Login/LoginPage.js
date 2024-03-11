@@ -1,4 +1,4 @@
-import Login from "components/loginComp";
+import Login from "components/headerComp/loginComp";
 
 export default function HeaderPage() {
   return (
