@@ -10,8 +10,13 @@ export default function Login() {
           </div>
           <button>Sign Up</button>
           <div>
-            <h3></h3>
-            <p></p>
+            <h3>
+              Already have account? <b class="text-red-600">Sign In</b>
+            </h3>
+            <h4 class="flex gap-[.3rem]">
+              (Make <p class="text-red-600">new Accout</p> or go to
+              <p class="text-red-600">Sign In</p> Page for Test Account)
+            </h4>
           </div>
         </div>
       </div>
