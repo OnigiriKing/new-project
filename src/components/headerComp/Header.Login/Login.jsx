@@ -11,11 +11,14 @@ export default function Login() {
           <button class="bg-red-600 text-white py-[.6rem]">Sign Up</button>
           <div>
             <h3>
-              Already have account? <b class="text-red-600">Sign In</b>
+              Already have account?{" "}
+              <b class="text-red-600 cursor-pointer">Sign In</b>
             </h3>
-            <h4 class="flex gap-[.3rem]">
-              (Make <p class="text-red-600">new Accout</p> or go to
-              <p class="text-red-600">Sign In</p> Page for Test Account)
+            <h4 class="flex gap-[.3rem] mt-[0.5rem]">
+              (Make <p class="text-red-600 cursor-pointer">new Accout</p> or go
+              to
+              <p class="text-red-600 cursor-pointer">Sign In</p> Page for Test
+              Account)
             </h4>
           </div>
         </div>

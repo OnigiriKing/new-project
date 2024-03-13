@@ -748,16 +748,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mx-\[1rem\] {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.my-\[1rem\] {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -852,6 +842,10 @@ video {
 
 .mt-\[6rem\] {
   margin-top: 6rem;
+}
+
+.mt-\[0\.5rem\] {
+  margin-top: 0.5rem;
 }
 
 .flex {
@@ -1117,10 +1111,6 @@ video {
 
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-row-reverse {
@@ -1481,11 +1471,6 @@ video {
   padding-right: 1.2rem;
 }
 
-.px-\[1rem\] {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-\[6rem\] {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -1516,9 +1501,9 @@ video {
   padding-bottom: .2rem;
 }
 
-.py-\[\.7rem\] {
-  padding-top: .7rem;
-  padding-bottom: .7rem;
+.py-\[\.6rem\] {
+  padding-top: .6rem;
+  padding-bottom: .6rem;
 }
 
 .py-\[1\.7rem\] {
@@ -1539,11 +1524,6 @@ video {
 .py-\[4rem\] {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.py-\[\.6rem\] {
-  padding-top: .6rem;
-  padding-bottom: .6rem;
 }
 
 .pb-6 {
