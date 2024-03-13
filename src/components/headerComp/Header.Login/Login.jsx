@@ -1,12 +1,24 @@
 export default function Login() {
   return (
     <div class="w-[30rem] flex flex-col items-center absolute h-[100vh] bg-white right-0">
-      <div class=" pt-[4rem] text-black ">
-        <h3 class="text-black text-center">Sign Up</h3>
-        <div class="flex flex-col gap-[1rem]">
+      <div class=" pt-[6rem] text-black ">
+        <h3 class="text-black text-center font-bold text-2xl mb-[2rem]">
+          Sign Up
+        </h3>
+        <div class="flex flex-col gap-[1.5rem]">
           <div class="flex flex-col">
-            <label>Email</label>
-            <input placeholder="bbkGym@gmail.com" class="input-style"></input>
+            <label class="text-lg">Email</label>
+            <input
+              placeholder="BbkGym@gmail.com"
+              class="input-style mt-[0.4rem]"
+            ></input>
+          </div>
+          <div class="flex flex-col">
+            <label class="text-lg">Password</label>
+            <input
+              placeholder="Password"
+              class="input-style mt-[0.4rem]"
+            ></input>
           </div>
           <button class="bg-red-600 text-white py-[.6rem]">Sign Up</button>
           <div>
