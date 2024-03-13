@@ -6,7 +6,7 @@ export default function Login() {
         <div class="flex flex-col gap-[1rem]">
           <div class="flex flex-col">
             <label>Email</label>
-            <input placeholder="bbkGym@gmail.com"></input>
+            <input placeholder="bbkGym@gmail.com" class="input-style"></input>
           </div>
           <button class="bg-red-600 text-white py-[.6rem]">Sign Up</button>
           <div>

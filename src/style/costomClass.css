@@ -215,3 +215,11 @@
 
 
 
+.input-style {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-color: #e2e8f0; /* This is the color code for gray-200 */
+  border-width: 1px;
+}

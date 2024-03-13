@@ -61,15 +61,9 @@ export default function ContactComp() {
               <h3 class="contact-page-header text-[1.4rem]">
                 Provide Us With Your Details
               </h3>
-              <input
-                placeholder="Full Name*"
-                class="py-[.7rem] px-[1rem] border-gray-200 border-[1px]"
-              ></input>
-              <input
-                placeholder="Email Address*"
-                class="py-[.7rem] px-[1rem] border-gray-200 border-[1px]"
-              ></input>
-              <select class="py-[.7rem] px-[1rem] border-gray-200 border-[1px] h-[3rem] w-full">
+              <input placeholder="Full Name*" class="input-style"></input>
+              <input placeholder="Email Address*" class="input-style"></input>
+              <select class="input-style h-[3rem] w-full">
                 <option>Select Class</option>
                 {Object.keys(classesList).map((el) => {
                   const element = classesList[el];
