@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 export default function Login() {
-  const [open, setOpen] = useState(false);
-
+  const openState = useSelector((state) => state.openState)
+  
   return (
     <div
       class={`w-[30rem] flex flex-col items-center absolute h-[100vh] bg-white ${
-        open ? "right-0" : "right-[-100%]"
+        openState ? "right-0" : "right-[-100%]"
       }`}
     >
       <div class=" pt-[6rem] text-black ">
