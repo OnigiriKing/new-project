@@ -1,6 +1,14 @@
+import { useState } from "react";
+
 export default function Login() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div class="w-[30rem] flex flex-col items-center absolute h-[100vh] bg-white right-0">
+    <div
+      class={`w-[30rem] flex flex-col items-center absolute h-[100vh] bg-white ${
+        open ? "right-0" : "right-[-100%]"
+      }`}
+    >
       <div class=" pt-[6rem] text-black ">
         <h3 class="text-black text-center font-bold text-2xl mb-[2rem]">
           Sign Up
