@@ -6,14 +6,9 @@ const loginWindowSlice = createSlice({
   name: "loginWindow",
   initialState,
   reducers: {
-    setLoginOpen: (state, action) => {
-      return true;
-    },
-    setLoginClose: (state, action) => {
-      return false;
-    },
+    setLogin: (state, action) => action.payload,
   },
 });
 
-export const { setLoginOpen, setLoginClose } = loginWindowSlice.actions;
+export const { setLogin } = loginWindowSlice.actions;
 export default loginWindowSlice.reducer;

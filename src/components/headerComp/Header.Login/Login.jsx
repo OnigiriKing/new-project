@@ -1,3 +1,4 @@
+import { setLogin, setLoginClose } from "features/Redux/reducers/loginWindowSlice";
 import { useReducer } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import allSvg from "svg/allSvg";
@@ -14,7 +15,7 @@ export default function Login() {
     >
       <div
         class="cursor-pointer hover:text-red-600 duration-[.3s] ease-in-out text-black absolute left-[1.5rem] top-[1.5rem]"
-        onClick={() => dispatcher()}
+        onClick={() => dispatcher(setLogin(false))}
       >
         {allSvg(35).close}
       </div>
