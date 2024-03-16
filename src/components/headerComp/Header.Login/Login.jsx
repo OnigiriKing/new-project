@@ -1,4 +1,7 @@
-import { setLogin, setLoginClose } from "features/Redux/reducers/loginWindowSlice";
+import {
+  setLogin,
+  setLoginClose,
+} from "features/Redux/reducers/loginWindowSlice";
 import { useReducer } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import allSvg from "svg/allSvg";
@@ -9,7 +12,7 @@ export default function Login() {
 
   return (
     <div
-      class={`w-[30rem] flex flex-col items-center absolute h-[100vh] bg-white ${
+      class={`w-[30rem] flex flex-col items-center absolute h-[100vh] bg-white duration-[1s] ${
         loginWindow ? "right-0" : "right-[-100%]"
       }`}
     >
