@@ -668,6 +668,10 @@ video {
   right: 50%;
 }
 
+.right-\[-100\%\] {
+  right: -100%;
+}
+
 .right-\[1\.8rem\] {
   right: 1.8rem;
 }
@@ -692,80 +696,28 @@ video {
   top: 35%;
 }
 
-.right-10 {
-  right: 2.5rem;
+.left-\[1rem\] {
+  left: 1rem;
 }
 
-.right-\[\] {
-  right: ;
+.top-\[1rem\] {
+  top: 1rem;
 }
 
-.right-\[-10rem\] {
-  right: -10rem;
+.top-\[2rem\] {
+  top: 2rem;
 }
 
-.right-\[-2rem\] {
-  right: -2rem;
+.left-\[2rem\] {
+  left: 2rem;
 }
 
-.right-\[-20rem\] {
-  right: -20rem;
+.left-\[1\.5rem\] {
+  left: 1.5rem;
 }
 
-.right-\[-30rem\] {
-  right: -30rem;
-}
-
-.right-\[-50rem\] {
-  right: -50rem;
-}
-
-.right-\[-50rm\] {
-  right: -50rm;
-}
-
-.right-\[-50vv\] {
-  right: -50vv;
-}
-
-.right-\[-50vw\] {
-  right: -50vw;
-}
-
-.right-\[-60vw\] {
-  right: -60vw;
-}
-
-.right-\[-10vw\] {
-  right: -10vw;
-}
-
-.right-\[-20vw\] {
-  right: -20vw;
-}
-
-.right-\[-30vw\] {
-  right: -30vw;
-}
-
-.right-\[-40vw\] {
-  right: -40vw;
-}
-
-.right-\[-40\%\] {
-  right: -40%;
-}
-
-.right-\[-50\%\] {
-  right: -50%;
-}
-
-.right-\[-60\%\] {
-  right: -60%;
-}
-
-.right-\[-100\%\] {
-  right: -100%;
+.top-\[1\.5rem\] {
+  top: 1.5rem;
 }
 
 .z-10 {
@@ -1794,6 +1746,26 @@ video {
 
 .duration-\[0\.5s\] {
   transition-duration: 0.5s;
+}
+
+.duration-150 {
+  transition-duration: 150ms;
+}
+
+.duration-\[\] {
+  transition-duration: ;
+}
+
+.duration-\[\.\] {
+  transition-duration: .;
+}
+
+.duration-\[\.75s\] {
+  transition-duration: .75s;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover\:bg-red-600:hover {

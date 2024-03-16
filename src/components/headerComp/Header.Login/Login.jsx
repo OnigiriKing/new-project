@@ -1,14 +1,18 @@
 import { useSelector, useDispatch } from "react-redux";
+import allSvg from "svg/allSvg";
 
 export default function Login() {
-  const openState = useSelector((state) => state.openState)
-  
+  const openState = useSelector((state) => state.openState);
+
   return (
     <div
       class={`w-[30rem] flex flex-col items-center absolute h-[100vh] bg-white ${
         openState ? "right-0" : "right-[-100%]"
       }`}
     >
+      <div class="cursor-pointer hover:text-red-600 duration-[.3s] ease-in-out text-black absolute left-[1.5rem] top-[1.5rem]">
+        {allSvg(35).close}
+      </div>
       <div class=" pt-[6rem] text-black ">
         <h3 class="text-black text-center font-bold text-2xl mb-[2rem]">
           Sign Up
