@@ -1,8 +1,10 @@
+import { useReducer } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import allSvg from "svg/allSvg";
 
 export default function Login() {
   const openState = useSelector((state) => state.openState);
+  const dispatcher = useDispatch();
 
   return (
     <div
@@ -10,7 +12,10 @@ export default function Login() {
         openState ? "right-0" : "right-[-100%]"
       }`}
     >
-      <div class="cursor-pointer hover:text-red-600 duration-[.3s] ease-in-out text-black absolute left-[1.5rem] top-[1.5rem]">
+      <div
+        class="cursor-pointer hover:text-red-600 duration-[.3s] ease-in-out text-black absolute left-[1.5rem] top-[1.5rem]"
+        onClick={() => dispatcher()}
+      >
         {allSvg(35).close}
       </div>
       <div class=" pt-[6rem] text-black ">
