@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = true;
 
 const loginWindowSlice = createSlice({
-  name: "openSlice",
+  name: "loginWindow",
   initialState,
   reducers: {
     setLoginOpen: (state, action) => {

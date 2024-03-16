@@ -3,13 +3,13 @@ import { useSelector, useDispatch } from "react-redux";
 import allSvg from "svg/allSvg";
 
 export default function Login() {
-  const openState = useSelector((state) => state.openState);
+  const loginWindow = useSelector((state) => state.loginWindow);
   const dispatcher = useDispatch();
 
   return (
     <div
       class={`w-[30rem] flex flex-col items-center absolute h-[100vh] bg-white ${
-        openState ? "right-0" : "right-[-100%]"
+        loginWindow ? "right-0" : "right-[-100%]"
       }`}
     >
       <div
