@@ -3,9 +3,13 @@ import logo from "utils/img/logo.png";
 import allSvg from "svg/allSvg";
 import React from "react";
 import Login from "./Header.Login/Login";
+import { useDispatch } from "react-redux";
+import { setLogin } from "features/Redux/reducers/loginWindowSlice";
 
 export default function Header() {
   const [scrolled, setScroll] = React.useState(false);
+
+  const dispatcher = useDispatch();
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -52,7 +56,9 @@ export default function Header() {
             </Link>
           </div>
           <div class="flex gap-3 items-center">
-            <Link class="group">{allSvg(25).user}</Link>
+            <Link class="group" onClick={() => dispatcher(setLogin(true))}>
+              {allSvg(25).user}
+            </Link>
             <div class="group cursor-pointer">{allSvg(25).about}</div>
             <Link class="group ml-4 flex gap-2 items-center p-[.4rem] border-[1px] border-solid border-[rgb(255,255,255,0.6)]">
               <div class="duration-0 group-hover:rotate-180 group-hover:duration-500">
