@@ -3,13 +3,14 @@ import logo from "utils/img/logo.png";
 import allSvg from "svg/allSvg";
 import React from "react";
 import Login from "./Header.Login/Login";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setLogin } from "features/Redux/reducers/loginWindowSlice";
 
 export default function Header() {
   const [scrolled, setScroll] = React.useState(false);
 
   const dispatcher = useDispatch();
+  const loginWindow = useSelector((store) => store.loginWindow);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -33,6 +34,11 @@ export default function Header() {
           scrolled ? "bg-transparent" : "bg-black"
         }  text-white z-50`}
       >
+        {loginWindow ? (
+          <div class="bg-black absolute w-[100vw] opacity-[20%] h-[100vh] z-[1]"></div>
+        ) : (
+          ""
+        )}
         <Login />
         <div class="justify-between  common-wrapper items-center flex py-2">
           <Link to="/">

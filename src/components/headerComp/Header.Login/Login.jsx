@@ -8,7 +8,7 @@ export default function Login() {
 
   return (
     <div
-      class={`w-[30rem] flex flex-col items-center absolute h-[100vh] bg-white duration-[.5s] ease-in-out ${
+      class={`w-[30rem] flex flex-col items-center absolute h-[100vh] bg-white duration-[.5s] ease-in-out z-[100] ${
         loginWindow ? "right-0" : "right-[-100%]"
       }`}
     >
