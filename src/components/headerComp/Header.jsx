@@ -9,7 +9,7 @@ import { setLogin } from "features/Redux/reducers/loginWindowSlice";
 export default function Header() {
   const [scrolled, setScroll] = React.useState(false);
 
-  const dispatcher = useDispatch();
+  const dispatch = useDispatch();
   const loginWindow = useSelector((store) => store.loginWindow);
 
   React.useEffect(() => {
@@ -62,7 +62,7 @@ export default function Header() {
             </Link>
           </div>
           <div class="flex gap-3 items-center">
-            <Link class="group" onClick={() => dispatcher(setLogin(true))}>
+            <Link class="group" onClick={() => dispatch(setLogin(true))}>
               {allSvg(25).user}
             </Link>
             <div class="group cursor-pointer">{allSvg(25).about}</div>

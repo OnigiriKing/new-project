@@ -4,7 +4,7 @@ import allSvg from "svg/allSvg";
 
 export default function Login() {
   const loginWindow = useSelector((state) => state.loginWindow);
-  const dispatcher = useDispatch();
+  const dispatch = useDispatch();
 
   return (
     <div
@@ -14,7 +14,7 @@ export default function Login() {
     >
       <div
         class="cursor-pointer hover:text-red-600 duration-[.3s] ease-in-out text-black absolute left-[1.5rem] top-[1.5rem]"
-        onClick={() => dispatcher(setLogin(false))}
+        onClick={() => dispatch(setLogin(false))}
       >
         {allSvg(35).close}
       </div>
