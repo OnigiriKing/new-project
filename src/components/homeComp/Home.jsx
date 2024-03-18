@@ -9,7 +9,10 @@ import Chart from "./Home.Chart/Chart";
 import Call from "./Home.Call/Call";
 import News from "./Home.News/News";
 
+
 export default function Home() {
+
+
   return (
     <div class="">
       <Welcome />

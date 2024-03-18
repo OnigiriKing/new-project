@@ -32,10 +32,10 @@ export default function Header() {
       <div
         class={`fixed flex justify-center w-full top-0 ${
           scrolled ? "bg-transparent" : "bg-black"
-        }  text-white z-50`}
+        }  text-white z-[100]`}
       >
         {loginWindow ? (
-          <div class="bg-black absolute w-[100vw] opacity-[20%] h-[100vh] z-[1]"></div>
+          <div class="bg-black absolute w-[100vw] opacity-[20%] h-[100vh] z-[90]"></div>
         ) : (
           ""
         )}
