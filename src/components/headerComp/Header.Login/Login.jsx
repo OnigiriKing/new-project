@@ -9,6 +9,96 @@ export default function Login() {
 
   const [lognState, setLoginState] = useState("Sign Up");
 
+  function SignUpFooter() {
+    return (
+      <div>
+        <h3>
+          Already have account?{" "}
+          <b
+            class="text-red-600 cursor-pointer"
+            onClick={() => setLoginState("Sign In")}
+          >
+            Sign In
+          </b>
+        </h3>
+        <h4 class="flex gap-[.3rem] mt-[0.5rem]">
+          (Make <p class="text-red-600 cursor-pointer">new Accout</p> or go to
+          <p
+            class="text-red-600 cursor-pointer"
+            onClick={() => setLoginState("Sign In")}
+          >
+            Sign In
+          </p>
+          Page for Test Account)
+        </h4>
+      </div>
+    );
+  }
+
+  function SignInFooter() {
+    return (
+      <div>
+        <h3>
+          Create a new account:{" "}
+          <b
+            class="text-red-600 cursor-pointer"
+            onClick={() => setLoginState("Sign Up")}
+          >
+            Sign Up
+          </b>
+        </h3>
+        <h4 class="flex gap-[.3rem] mt-[0.5rem]">
+          Test account: (Login: admin, password: admin12)
+        </h4>
+      </div>
+    );
+  }
+
+  function LoginFooter({ state }) {
+    if (state === "Sign In") {
+      return (
+        <div>
+          <h3>
+            Create a new account:{" "}
+            <b
+              class="text-red-600 cursor-pointer"
+              onClick={() => setLoginState("Sign Up")}
+            >
+              Sign Up
+            </b>
+          </h3>
+          <h4 class="flex gap-[.3rem] mt-[0.5rem]">
+            Test account: (Login: admin, password: admin12)
+          </h4>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <h3>
+            Already have account?{" "}
+            <b
+              class="text-red-600 cursor-pointer"
+              onClick={() => setLoginState("Sign In")}
+            >
+              Sign In
+            </b>
+          </h3>
+          <h4 class="flex gap-[.3rem] mt-[0.5rem]">
+            (Make <p class="text-red-600 cursor-pointer">new Accout</p> or go to
+            <p
+              class="text-red-600 cursor-pointer"
+              onClick={() => setLoginState("Sign In")}
+            >
+              Sign In
+            </p>
+            Page for Test Account)
+          </h4>
+        </div>
+      );
+    }
+  }
+
   return (
     <div
       class={`w-[30rem] flex flex-col items-center absolute h-[100vh] bg-white duration-[.5s] ease-in-out z-[100] ${
@@ -41,28 +131,7 @@ export default function Login() {
             ></input>
           </div>
           <button class="bg-red-600 text-white py-[.6rem]">{lognState}</button>
-          <div>
-            <h3>
-              Already have account?{" "}
-              <b
-                class="text-red-600 cursor-pointer"
-                onClick={() => setLoginState("Sign In")}
-              >
-                Sign In
-              </b>
-            </h3>
-            <h4 class="flex gap-[.3rem] mt-[0.5rem]">
-              (Make <p class="text-red-600 cursor-pointer">new Accout</p> or go
-              to
-              <p
-                class="text-red-600 cursor-pointer"
-                onClick={() => setLoginState("Sign In")}
-              >
-                Sign In
-              </p>
-              Page for Test Account)
-            </h4>
-          </div>
+          <LoginFooter state={lognState} />
         </div>
       </div>
     </div>

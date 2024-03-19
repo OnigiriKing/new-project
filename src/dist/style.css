@@ -716,10 +716,6 @@ video {
   z-index: 30;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .z-\[100\] {
   z-index: 100;
 }
@@ -744,20 +740,8 @@ video {
   z-index: 6;
 }
 
-.z-\[50\] {
-  z-index: 50;
-}
-
-.z-\[70\] {
-  z-index: 70;
-}
-
 .z-\[90\] {
   z-index: 90;
-}
-
-.z-\[120\] {
-  z-index: 120;
 }
 
 .mx-4 {
@@ -950,18 +934,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.h-\[50vh\] {
-  height: 50vh;
-}
-
-.h-\[80vh\] {
-  height: 80vh;
 }
 
 .min-h-\[6rem\] {
@@ -1283,10 +1255,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-scroll {
-  overflow: scroll;
 }
 
 .rounded-3xl {
