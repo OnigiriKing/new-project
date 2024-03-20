@@ -35,7 +35,10 @@ export default function Header() {
         }  text-white z-[100]`}
       >
         {loginWindow ? (
-          <div class="bg-black absolute w-[100vw] opacity-[20%] h-[100vh] z-[90]"></div>
+          <div
+            class="bg-black absolute w-[100vw] opacity-[20%] h-[100vh] z-[90]"
+            onClick={() => dispatch(setLogin(false))}
+          ></div>
         ) : (
           ""
         )}
@@ -62,9 +65,12 @@ export default function Header() {
             </Link>
           </div>
           <div class="flex gap-3 items-center">
-            <Link class="group" onClick={() => dispatch(setLogin(true))}>
+            <div
+              class="group cursor-pointer"
+              onClick={() => dispatch(setLogin(true))}
+            >
               {allSvg(25).user}
-            </Link>
+            </div>
             <div class="group cursor-pointer">{allSvg(25).about}</div>
             <Link class="group ml-4 flex gap-2 items-center p-[.4rem] border-[1px] border-solid border-[rgb(255,255,255,0.6)]">
               <div class="duration-0 group-hover:rotate-180 group-hover:duration-500">
