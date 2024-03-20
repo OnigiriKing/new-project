@@ -1,6 +1,6 @@
 
 
-export default function LoginFooter({ state }) {
+export default function LoginFooter({ state, setLoginState }) {
   if (state === "Sign In") {
     return (
       <div>

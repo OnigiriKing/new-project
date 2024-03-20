@@ -46,7 +46,7 @@ export default function Login() {
           </div>
           <button class="bg-red-600 text-white py-[.6rem]">{lognState}</button>
           <div class="">
-          <LoginFooter state={lognState} />
+            <LoginFooter state={lognState} setLoginState={setLoginState} />
           </div>
         </div>
       </div>
