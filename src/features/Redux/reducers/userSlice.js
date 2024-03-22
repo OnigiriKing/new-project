@@ -8,14 +8,9 @@ const userInfoSlice = createSlice({
   initialState,
   reducers: {
     registerUser: (state, action) => {
-        const [login, password] = action.payload;
-
+      const [login, password] = action.payload;
+      return { ...state, login: { email: login, password: password } };
     },
-    logInUser: (state, action) => {
-        const [login, password] = action.payload;
-        
-    }
-    
   },
 });
 

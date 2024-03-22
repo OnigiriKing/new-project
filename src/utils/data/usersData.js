@@ -1,6 +1,6 @@
 const usersData = {
   admin: {
-    name: "admin",
+    email: "admin@bbkmail.com",
     password: "admin12",
   },
 };
