@@ -1,16 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
 import usersData from "utils/data/usersData";
 
-const initialState = usersData;
+const initialState = JSON.parse(localStorage.getItem("users")) || usersData;
+
 
 const userInfoSlice = createSlice({
   name: "userInfo",
   initialState,
   reducers: {
     registerUser: (state, action) => {
-      const [login, password] = action.payload;
-      return { ...state, login: { email: login, password: password } };
-    },
+      const { email, password } = action.payload;
+      if (!state[email]) { 
+        state[email] = { email, password };
+        localStorage.setItem("users", JSON.stringify(current(state))); 
+      }
   },
 });
 
