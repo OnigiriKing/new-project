@@ -1,5 +1,5 @@
 const usersData = {
-  admin: {
+  "admin@bbkmail.com": {
     email: "admin@bbkmail.com",
     password: "admin12",
   },

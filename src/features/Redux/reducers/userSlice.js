@@ -15,7 +15,7 @@ const userInfoSlice = createSlice({
         localStorage.setItem("users", JSON.stringify(current(state))); 
       }
   },
-});
+}});
 
 export const { setLogin } = userInfoSlice.actions;
 export default userInfoSlice.reducer;
