@@ -10,11 +10,19 @@ const userInfoSlice = createSlice({
   reducers: {
     registerUser: (state, action) => {
       const { email, password } = action.payload;
-      if (!state[email]) { 
-        state[email] = { email, password };
+      if (!state.users[email]) { 
+        state.users[email] = { email, password };
         localStorage.setItem("users", JSON.stringify(current(state))); 
       }
   },
+  loginUser: (state, action) => {
+      const { email, password } = action.payload;
+      if (state.users[email] && state.users[email].password === password) {
+        state.currentUser = email;
+        state.isLoggedIn = true;
+        localStorage.setItem("users", JSON.stringify(current(state)));
+      }
+      }
 }});
 
 export const { setLogin } = userInfoSlice.actions;
