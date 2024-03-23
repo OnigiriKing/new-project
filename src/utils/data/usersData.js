@@ -1,7 +1,11 @@
 const usersData = {
-  "admin@bbkmail.com": {
-    email: "admin@bbkmail.com",
-    password: "admin12",
+  currentUser: "",
+  isLoggedIn: false,
+  users: {
+    "admin@bbkmail.com": {
+      email: "admin@bbkmail.com",
+      password: "admin12",
+    },
   },
 };
 
