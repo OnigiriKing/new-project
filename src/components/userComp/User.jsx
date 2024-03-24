@@ -3,14 +3,13 @@ import allSvg from "svg/allSvg";
 import { useDispatch, useSelector } from "react-redux";
 import { setLogin } from "features/Redux/reducers/loginWindowSlice";
 
-
 export default function User() {
   const dispatch = useDispatch();
   const loginWindow = useSelector((state) => state.loginWindow);
 
   return (
     <div
-      class={`w-[30rem] flex flex-col items-center absolute h-[100vh] bg-white duration-[.5s] ease-in-out z-[100] ${
+      class={`w-[30rem] flex flex-col items-center fixed h-[100vh] bg-white duration-[.5s] ease-in-out z-[100] ${
         loginWindow ? "right-0" : "right-[-100%]"
       } `}
     >
