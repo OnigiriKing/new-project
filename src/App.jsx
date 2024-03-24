@@ -1,4 +1,5 @@
-import Header from "components/headerComp";
+
+import HeaderPage from "pages/Header/HeaderPage";
 import HomePage from "pages/Body/HomePage";
 import FooterPage from "pages/Footer/FooterPage";
 import { Route, Routes } from "react-router-dom";
@@ -11,7 +12,7 @@ import User from "pages/User/UserPage";
 export default function App() {
   return (
     <div>
-      <Header />
+      <HeaderPage />
       <User />
       <Routes>
         <Route path="/" element={<HomePage />} />

@@ -1,9 +1,10 @@
-import Login from "components/headerComp/Header.Login/Login";
 
-export default function User() {
+import User from "components/userComp/User";
+
+export default function UserPage() {
   return (
     <>
-      <Login />
+      <User />
     </>
   );
 }
