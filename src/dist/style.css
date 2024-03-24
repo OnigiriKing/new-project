@@ -584,10 +584,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.pointer-events-none {
-  pointer-events: none;
-}
-
 .fixed {
   position: fixed;
 }
@@ -746,10 +742,6 @@ video {
 
 .z-\[90\] {
   z-index: 90;
-}
-
-.z-\[-1\] {
-  z-index: -1;
 }
 
 .mx-4 {
@@ -1076,14 +1068,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[80\%\] {
-  width: 80%;
 }
 
 .max-w-\[60rem\] {

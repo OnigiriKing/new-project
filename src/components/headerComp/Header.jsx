@@ -16,10 +16,8 @@ export default function Header() {
     const handleScroll = () => {
       if (window.scrollY < 80) {
         setScroll(true);
-        console.log(scrolled);
       } else {
         setScroll(false);
-        console.log(scrolled);
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -42,7 +40,7 @@ export default function Header() {
         ) : (
           ""
         )}
-        <Login />
+        {/* <Login /> */}
         <div class="justify-between  common-wrapper items-center flex py-2">
           <Link to="/">
             <img src={logo} alt="logo" class="w-20" />
