@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import logo from "utils/img/logo.png";
 import allSvg from "svg/allSvg";
 import React from "react";
-import Login from "./Header.Login/Login";
 import { useDispatch, useSelector } from "react-redux";
 import { setLogin } from "features/Redux/reducers/loginWindowSlice";
 
@@ -40,7 +39,6 @@ export default function Header() {
         ) : (
           ""
         )}
-        {/* <Login /> */}
         <div class="justify-between  common-wrapper items-center flex py-2">
           <Link to="/">
             <img src={logo} alt="logo" class="w-20" />
