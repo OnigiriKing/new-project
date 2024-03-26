@@ -1,4 +1,5 @@
 import Login from "./User.Login/Login";
+import LoggedIn from "./User.LoggedIn/LoggedIn";
 import allSvg from "svg/allSvg";
 import { useDispatch, useSelector } from "react-redux";
 import { setLogin } from "features/Redux/reducers/loginWindowSlice";
@@ -21,7 +22,7 @@ export default function User() {
         {allSvg(35).close}
       </div>
       <div class=" pt-[6rem] text-black w-[90%]">
-        {logInStatus ? "" : <Login />}
+        {logInStatus ? <LoggedIn /> : <Login />}
       </div>
     </div>
   );

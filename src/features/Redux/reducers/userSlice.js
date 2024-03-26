@@ -12,7 +12,7 @@ const userInfoSlice = createSlice({
       const { email, password } = action.payload;
       if (!state.users[email]) { 
         state.users[email] = { email, password };
-        localStorage.setItem("users", JSON.stringify(current(state))); 
+        localStorage.setItem("users", JSON.stringify(state)); 
       }
   },
   loginUser: (state, action) => {
@@ -20,7 +20,7 @@ const userInfoSlice = createSlice({
       if (state.users[email] && state.users[email].password === password) {
         state.currentUser = email;
         state.isLoggedIn = true;
-        localStorage.setItem("users", JSON.stringify(current(state)));
+        localStorage.setItem("users", JSON.stringify(state))
       }
       }
 }});
