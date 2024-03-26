@@ -8,15 +8,21 @@ export default function Login() {
   const loginWindow = useSelector((state) => state.loginWindow);
   const dispatch = useDispatch();
 
-  const [lognState, setLoginState] = useState("Sign Up");
+  const [loginState, setLoginState] = useState("Sign Up");
 
+function loginAction() {
+  if (loginState == "Sign Up") {
+    dispatch()
+  } else {
 
+  }
+}
 
 
   return (
     <>
       <h3 class="text-black text-center font-bold text-2xl mb-[2rem]">
-        {lognState}
+        {loginState}
       </h3>
       <div class="flex flex-col gap-[1.5rem]">
         <div class="flex flex-col">
@@ -30,9 +36,9 @@ export default function Login() {
           <label class="text-lg">Password</label>
           <input placeholder="Password" class="input-style mt-[0.4rem]"></input>
         </div>
-        <button class="bg-red-600 text-white py-[.6rem]">{lognState}</button>
+        <button class="bg-red-600 text-white py-[.6rem]" onClick={()=>loginAction()}></button>
         <div class="">
-          <LoginFooter state={lognState} setLoginState={setLoginState} />
+          <LoginFooter state={loginState} setLoginState={setLoginState} />
         </div>
       </div>
     </>
