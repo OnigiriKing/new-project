@@ -25,5 +25,5 @@ const userInfoSlice = createSlice({
       }
 }});
 
-export const { setLogin } = userInfoSlice.actions;
+export const { registerUser, loginUser } = userInfoSlice.actions;
 export default userInfoSlice.reducer;

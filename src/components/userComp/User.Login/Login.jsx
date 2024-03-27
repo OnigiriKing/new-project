@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import allSvg from "svg/allSvg";
 import { useState } from "react";
 import LoginFooter from "./Login.LoginFooter";
+import { loginUser, registerUser } from "features/Redux/reducers/userSlice";
 
 export default function Login() {
   const loginWindow = useSelector((state) => state.loginWindow);
@@ -10,11 +11,11 @@ export default function Login() {
 
   const [loginState, setLoginState] = useState("Sign Up");
 
-function loginAction() {
+function loginAction(email, password) {
   if (loginState == "Sign Up") {
-    dispatch()
+    dispatch(registerUser({ email, password }));
   } else {
-
+    dispatch(loginUser({ email, password }));
   }
 }
 
