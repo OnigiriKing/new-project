@@ -9,10 +9,14 @@ export default function Login() {
   const loginWindow = useSelector((state) => state.loginWindow);
   const dispatch = useDispatch();
 
-  const [loginState, setLoginState] = useState("Sign Up");
+  const [loginState, setLoginState] = useState({
+    type: "Sign Up",
+    login: "correct",
+    password: "correct",
+  });
 
 function loginAction(email, password) {
-  if (loginState == "Sign Up") {
+  if (loginState.type == "Sign Up") {
     dispatch(registerUser({ email, password }));
   } else {
     dispatch(loginUser({ email, password }));
@@ -23,7 +27,7 @@ function loginAction(email, password) {
   return (
     <>
       <h3 class="text-black text-center font-bold text-2xl mb-[2rem]">
-        {loginState}
+        {loginState.type}
       </h3>
       <div class="flex flex-col gap-[1.5rem]">
         <div class="flex flex-col">
@@ -37,9 +41,14 @@ function loginAction(email, password) {
           <label class="text-lg">Password</label>
           <input placeholder="Password" class="input-style mt-[0.4rem]"></input>
         </div>
-        <button class="bg-red-600 text-white py-[.6rem]" onClick={()=>loginAction()}></button>
+        <button
+          class="bg-red-600 text-white py-[.6rem]"
+          onClick={() => loginAction()}
+        >
+          {loginState.type}
+        </button>
         <div class="">
-          <LoginFooter state={loginState} setLoginState={setLoginState} />
+          <LoginFooter state={loginState.type} setLoginState={setLoginState} />
         </div>
       </div>
     </>

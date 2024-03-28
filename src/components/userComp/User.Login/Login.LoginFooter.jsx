@@ -1,5 +1,3 @@
-
-
 export default function LoginFooter({ state, setLoginState }) {
   if (state === "Sign In") {
     return (
@@ -8,7 +6,9 @@ export default function LoginFooter({ state, setLoginState }) {
           Create a new account:{" "}
           <b
             class="text-red-600 cursor-pointer"
-            onClick={() => setLoginState("Sign Up")}
+            onClick={() =>
+              setLoginState((prevState) => ({ ...prevState, type: "Sign Up" }))
+            }
           >
             Sign Up
           </b>
@@ -25,7 +25,9 @@ export default function LoginFooter({ state, setLoginState }) {
           Already have account?{" "}
           <b
             class="text-red-600 cursor-pointer"
-            onClick={() => setLoginState("Sign In")}
+            onClick={() =>
+              setLoginState((prevState) => ({ ...prevState, type: "Sign In" }))
+            }
           >
             Sign In
           </b>
@@ -34,7 +36,9 @@ export default function LoginFooter({ state, setLoginState }) {
           (Make <p class="text-red-600 cursor-pointer">new Accout</p> or go to
           <p
             class="text-red-600 cursor-pointer"
-            onClick={() => setLoginState("Sign In")}
+            onClick={() =>
+              setLoginState((prevState) => ({ ...prevState, type: "Sign In" }))
+            }
           >
             Sign In
           </p>
@@ -44,5 +48,3 @@ export default function LoginFooter({ state, setLoginState }) {
     );
   }
 }
-
-
