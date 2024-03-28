@@ -3,6 +3,7 @@ import reviewSlice from "./reducers/reviewSlice";
 import indexSlice from "./reducers/indexSlice";
 import loginWindowSlice from "./reducers/loginWindowSlice";
 import userSlice from "./reducers/userSlice";
+import loginStatusSlice from "./reducers/loginStatusSlice";
 
 
 const store = configureStore({
@@ -11,6 +12,7 @@ const store = configureStore({
     bodyIndex: indexSlice,
     loginWindow: loginWindowSlice,
     userInfo: userSlice,
+    loginStatus: loginStatusSlice,
   },
 });
 
