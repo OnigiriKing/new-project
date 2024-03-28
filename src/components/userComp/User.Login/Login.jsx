@@ -7,16 +7,12 @@ import { loginUser, registerUser } from "features/Redux/reducers/userSlice";
 
 export default function Login() {
   const loginWindow = useSelector((state) => state.loginWindow);
+  const loginStatus = useSelector((state)=> state.loginStatus)
   const dispatch = useDispatch();
 
-  const [loginState, setLoginState] = useState({
-    type: "Sign Up",
-    login: "correct",
-    password: "correct",
-  });
 
 function loginAction(email, password) {
-  if (loginState.type == "Sign Up") {
+  if (loginStatus.type == "Sign Up") {
     dispatch(registerUser({ email, password }));
   } else {
     dispatch(loginUser({ email, password }));
@@ -27,7 +23,7 @@ function loginAction(email, password) {
   return (
     <>
       <h3 class="text-black text-center font-bold text-2xl mb-[2rem]">
-        {loginState.type}
+        {loginStatus.type}
       </h3>
       <div class="flex flex-col gap-[1.5rem]">
         <div class="flex flex-col">
@@ -45,10 +41,10 @@ function loginAction(email, password) {
           class="bg-red-600 text-white py-[.6rem]"
           onClick={() => loginAction()}
         >
-          {loginState.type}
+          {loginStatus.type}
         </button>
         <div class="">
-          <LoginFooter state={loginState.type} setLoginState={setLoginState} />
+          <LoginFooter />
         </div>
       </div>
     </>

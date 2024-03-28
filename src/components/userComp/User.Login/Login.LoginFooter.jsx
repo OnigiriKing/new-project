@@ -1,14 +1,19 @@
-export default function LoginFooter({ state, setLoginState }) {
-  if (state === "Sign In") {
+import { useDispatch, useSelector } from "react-redux";
+
+
+export default function LoginFooter() {
+
+  const loginWindow = useSelector((state) => state.loginWindow);
+  const dispatch = useDispatch();
+
+  if (loginWindow.type === "Sign In") {
     return (
       <div>
         <h3>
-          Create a new account:{" "}
+          Create a new account:
           <b
             class="text-red-600 cursor-pointer"
-            onClick={() =>
-              setLoginState((prevState) => ({ ...prevState, type: "Sign Up" }))
-            }
+            onClick={() => dispatch()}
           >
             Sign Up
           </b>
@@ -25,9 +30,7 @@ export default function LoginFooter({ state, setLoginState }) {
           Already have account?{" "}
           <b
             class="text-red-600 cursor-pointer"
-            onClick={() =>
-              setLoginState((prevState) => ({ ...prevState, type: "Sign In" }))
-            }
+            onClick={() => dispatch()}
           >
             Sign In
           </b>
@@ -36,9 +39,7 @@ export default function LoginFooter({ state, setLoginState }) {
           (Make <p class="text-red-600 cursor-pointer">new Accout</p> or go to
           <p
             class="text-red-600 cursor-pointer"
-            onClick={() =>
-              setLoginState((prevState) => ({ ...prevState, type: "Sign In" }))
-            }
+            onClick={() => dispatch()}
           >
             Sign In
           </p>
