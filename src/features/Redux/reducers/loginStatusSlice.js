@@ -10,7 +10,12 @@ const loginStatusSlice = createSlice({
   name: "loginStatus",
   initialState,
   reducers: {
-    setLoginStatus: (state, action) => action.payload,
+    setLoginStatus: (state, action) => {
+      return {
+        ...state,
+        ...action.payload,
+      };
+    },
   },
 });
 
