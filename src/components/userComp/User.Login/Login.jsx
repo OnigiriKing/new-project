@@ -7,18 +7,25 @@ import { loginUser, registerUser } from "features/Redux/reducers/userSlice";
 
 export default function Login() {
   const loginWindow = useSelector((state) => state.loginWindow);
-  const loginStatus = useSelector((state)=> state.loginStatus)
+  const loginStatus = useSelector((state) => state.loginStatus);
+  const userInfo = useSelector((state) => state.userInfo);
   const dispatch = useDispatch();
 
+  function loginAction(email, password) {
+    if (loginStatus.type == "Sign Up") {
 
-function loginAction(email, password) {
-  if (loginStatus.type == "Sign Up") {
-    dispatch(registerUser({ email, password }));
-  } else {
-    dispatch(loginUser({ email, password }));
+    if (!userInfo.users[email]) {
+      dispatch(registerUser({ email, password }));
+    }
+
+    } if (loginStatus.type == "Sign In") {
+      if (userInfo.users[email].password === password) {
+        dispatch(loginUser({ email, password }));
+      } else {
+        dispatch(loginStatus({}));
+      }
+    }
   }
-}
-
 
   return (
     <>
