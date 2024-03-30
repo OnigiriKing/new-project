@@ -4,7 +4,6 @@ import allSvg from "svg/allSvg";
 import { useState } from "react";
 import LoginFooter from "./Login.LoginFooter";
 import { loginUser, registerUser } from "features/Redux/reducers/userSlice";
-import loginAction from "./Login.loginAction";
 
 export default function Login() {
   const loginWindow = useSelector((state) => state.loginWindow);
@@ -12,7 +11,23 @@ export default function Login() {
   const userInfo = useSelector((state) => state.userInfo);
   const dispatch = useDispatch();
 
+  function loginAction(email, password) {
+    if (loginStatus.type == "Sign Up") {
 
+    if (!userInfo.users[email]) {
+      dispatch(registerUser({ email, password }));
+    } else {
+      dispatch(loginStatus({ login: "this email was already registered" }));
+    }
+
+    } if (loginStatus.type == "Sign In") {
+      if (userInfo.users[email].password === password) {
+        dispatch(loginUser({ email, password }));
+      } else {
+        dispatch(loginStatus({password: "incorrect password"}));
+      }
+    }
+  }
 
   return (
     <>
