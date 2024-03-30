@@ -12,19 +12,18 @@ export default function Login() {
   const dispatch = useDispatch();
 
   function loginAction(email, password) {
-    if (loginStatus.type == "Sign Up") {
-
-    if (!userInfo.users[email]) {
-      dispatch(registerUser({ email, password }));
-    } else {
-      dispatch(loginStatus({ login: "this email was already registered" }));
+    if (loginStatus.type === "Sign Up") {
+      if (!userInfo.users[email]) {
+        dispatch(registerUser({ email, password }));
+      } else {
+        dispatch(loginStatus({ login: "this email was already registered" }));
+      }
     }
-
-    } if (loginStatus.type == "Sign In") {
+    if (loginStatus.type === "Sign In") {
       if (userInfo.users[email].password === password) {
         dispatch(loginUser({ email, password }));
       } else {
-        dispatch(loginStatus({password: "incorrect password"}));
+        dispatch(loginStatus({ password: "incorrect password" }));
       }
     }
   }
