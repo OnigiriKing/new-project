@@ -11,6 +11,18 @@ export default function Login() {
   const userInfo = useSelector((state) => state.userInfo);
   const dispatch = useDispatch();
 
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+   const handlePasswordChange = (event) => {
+     setPassword(event.target.value);
+   };
+
+
   function loginAction(email, password) {
     if (loginStatus.type === "Sign Up") {
       if (!userInfo.users[email]) {
