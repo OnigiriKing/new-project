@@ -34,7 +34,7 @@ export default function Login() {
       }
     }
     if (loginStatus.type === "Sign In") {
-      if (userInfo.users[email].password === password) {
+      if (userInfo.users[email] && userInfo.users[email].password === password) {
         dispatch(loginUser({ email, password }));
       } else {
         dispatch(setLoginStatus({ password: "incorrect password" }));
@@ -66,7 +66,7 @@ export default function Login() {
         </div>
         <button
           class="bg-red-600 text-white py-[.6rem]"
-          onClick={() => loginAction({email:email, password:password})}
+          onClick={() => loginAction(email, password)}
         >
           {loginStatus.type}
         </button>
