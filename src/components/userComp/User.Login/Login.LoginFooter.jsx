@@ -45,7 +45,7 @@ export default function LoginFooter() {
           </b>
         </h3>
         <h4 class="flex gap-[.3rem] mt-[0.5rem]">
-          Test account: (Login: admin, password: admin12)
+          Test account: (Login: admin@bbkmail.com, password: admin12)
         </h4>
       </div>
     );

@@ -35,6 +35,7 @@ export default function Login() {
     }
     if (loginStatus.type === "Sign In") {
       if (userInfo.users[email] && userInfo.users[email].password === password) {
+        console.log(userInfo.users[email], "||", userInfo.users);
         dispatch(loginUser({ email, password }));
       } else {
         dispatch(setLoginStatus({ password: "incorrect password" }));
