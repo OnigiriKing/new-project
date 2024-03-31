@@ -24,22 +24,39 @@ export default function Login() {
   };
 
   function loginAction(email, password) {
-    if (loginStatus.type === "Sign Up") {
-      if (!userInfo.users[email]) {
-        dispatch(registerUser({ email, password }));
-      } else {
-        dispatch(
-          setLoginStatus({ login: "this email was already registered" })
-        );
+    if (password.length >= 6 && email.includes("@")) {
+      dispatch(setLoginStatus({ login: "" }));
+      dispatch(setLoginStatus({ password: "" }));
+      if (loginStatus.type === "Sign Up") {
+        if (!userInfo.users[email]) {
+          dispatch(registerUser({ email, password }));
+        } else {
+          dispatch(
+            setLoginStatus({ login: "this email was already registered" })
+          );
+        }
+      }
+      if (loginStatus.type === "Sign In") {
+        if (
+          userInfo.users[email] &&
+          userInfo.users[email].password === password
+        ) {
+          console.log(userInfo.users[email], "||", userInfo.users);
+          dispatch(loginUser({ email, password }));
+        } else {
+          dispatch(setLoginStatus({ password: "incorrect password" }));
+        }
       }
     }
-    if (loginStatus.type === "Sign In") {
-      if (userInfo.users[email] && userInfo.users[email].password === password) {
-        console.log(userInfo.users[email], "||", userInfo.users);
-        dispatch(loginUser({ email, password }));
-      } else {
-        dispatch(setLoginStatus({ password: "incorrect password" }));
-      }
+     if (!email.includes("@")) {
+       dispatch(
+         setLoginStatus({
+           login: "Invalid Email",
+         })
+       );
+     }
+    if (password.length >= 6) {
+      dispatch(setLoginStatus({ password: "Password should be at least 6 Characters or Numbers long" }));
     }
   }
 
