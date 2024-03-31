@@ -4,6 +4,7 @@ import allSvg from "svg/allSvg";
 import { useState } from "react";
 import LoginFooter from "./Login.LoginFooter";
 import { loginUser, registerUser } from "features/Redux/reducers/userSlice";
+import { setLoginStatus } from "features/Redux/reducers/loginStatusSlice";
 
 export default function Login() {
   const loginWindow = useSelector((state) => state.loginWindow);
@@ -27,14 +28,16 @@ export default function Login() {
       if (!userInfo.users[email]) {
         dispatch(registerUser({ email, password }));
       } else {
-        dispatch(loginStatus({ login: "this email was already registered" }));
+        dispatch(
+          setLoginStatus({ login: "this email was already registered" })
+        );
       }
     }
     if (loginStatus.type === "Sign In") {
       if (userInfo.users[email].password === password) {
         dispatch(loginUser({ email, password }));
       } else {
-        dispatch(loginStatus({ password: "incorrect password" }));
+        dispatch(setLoginStatus({ password: "incorrect password" }));
       }
     }
   }
@@ -63,7 +66,7 @@ export default function Login() {
         </div>
         <button
           class="bg-red-600 text-white py-[.6rem]"
-          onClick={() => loginAction()}
+          onClick={() => loginAction({email:email, password:password})}
         >
           {loginStatus.type}
         </button>
