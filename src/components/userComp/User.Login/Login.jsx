@@ -18,10 +18,9 @@ export default function Login() {
     setEmail(event.target.value);
   };
 
-   const handlePasswordChange = (event) => {
-     setPassword(event.target.value);
-   };
-
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
 
   function loginAction(email, password) {
     if (loginStatus.type === "Sign Up") {
@@ -49,13 +48,18 @@ export default function Login() {
         <div class="flex flex-col">
           <label class="text-lg">Email</label>
           <input
+            onChange={(e) => handleEmailChange(e)}
             placeholder="BbkGym@gmail.com"
             class="input-style mt-[0.4rem]"
           ></input>
         </div>
         <div class="flex flex-col">
           <label class="text-lg">Password</label>
-          <input placeholder="Password" class="input-style mt-[0.4rem]"></input>
+          <input
+            onChange={(e) => handlePasswordChange(e)}
+            placeholder="Password"
+            class="input-style mt-[0.4rem]"
+          ></input>
         </div>
         <button
           class="bg-red-600 text-white py-[.6rem]"
