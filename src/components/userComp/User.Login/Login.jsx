@@ -68,6 +68,7 @@ export default function Login() {
       <div class="flex flex-col gap-[1.5rem]">
         <div class="flex flex-col">
           <label class="text-lg">Email</label>
+          <p class="text-red-600">{loginStatus.login}</p>
           <input
             onChange={(e) => handleEmailChange(e)}
             placeholder="BbkGym@gmail.com"
@@ -76,6 +77,7 @@ export default function Login() {
         </div>
         <div class="flex flex-col">
           <label class="text-lg">Password</label>
+          <p class="text-red-600">{loginStatus.password}</p>
           <input
             onChange={(e) => handlePasswordChange(e)}
             placeholder="Password"
