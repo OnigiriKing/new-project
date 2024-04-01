@@ -24,7 +24,7 @@ export default function Login() {
   };
 
   function loginAction(email, password) {
-    if (password.length >= 6 && email.includes("@")) {
+    if (password.length <= 6 && email.includes("@")) {
       dispatch(setLoginStatus({ login: "" }));
       dispatch(setLoginStatus({ password: "" }));
       if (loginStatus.type === "Sign Up") {
@@ -55,7 +55,7 @@ export default function Login() {
          })
        );
      }
-    if (password.length >= 6) {
+    if (password.length <= 6) {
       dispatch(setLoginStatus({ password: "Password should be at least 6 Characters or Numbers long" }));
     }
   }
