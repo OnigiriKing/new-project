@@ -15,6 +15,12 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const mailTypes = [
+    "@gmail.com",
+    "@protonmail.com",
+    "@hotmail.com",
+  ];
+
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
   };
@@ -33,7 +39,7 @@ export default function Login() {
       passwordError = "";
     }
 
-    if (!email.includes("@")) {
+    if (!mailTypes.some((mailType) => email.includes(mailType))) {
       loginError = "Invalid Email";
       if (password.length >= 6) {
         passwordError = "";
@@ -61,7 +67,6 @@ export default function Login() {
       }
     }
   }
-
 
   // function loginAction(email, password) {
   //   if (password.length >= 6 && email.includes("@")) {
