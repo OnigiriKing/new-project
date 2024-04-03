@@ -61,8 +61,11 @@ export default function Login() {
         const user = userInfo.users[email];
         if (user && user.password === password) {
           dispatch(loginUser({ email, password }));
-        } else {
+        } if (user && user.password !== password) {
           dispatch(setLoginStatus({ password: "Incorrect password" }));
+        }
+        if (!user) {
+          dispatch(setLoginStatus({ login: "This account does not exist" }));
         }
       }
     }
