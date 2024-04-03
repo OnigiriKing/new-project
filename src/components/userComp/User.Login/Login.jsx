@@ -19,6 +19,7 @@ export default function Login() {
     "@gmail.com",
     "@protonmail.com",
     "@hotmail.com",
+    "@bbkmail.com",
   ];
 
   const handleEmailChange = (event) => {
