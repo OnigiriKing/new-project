@@ -38,6 +38,14 @@ export default function Login() {
     let userNameError = "";
     let loginError = "";
     let passwordError = "";
+    
+    if (loginStatus.type === "Sign Up") {
+      if (userName.length < 4) {
+        userNameError = "Name must be 4+ characters";
+      } else {
+        passwordError = "";
+      }
+    }
 
     if (password.length < 6) {
       passwordError = "Password must be 6+ characters";
