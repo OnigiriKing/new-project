@@ -45,7 +45,8 @@ export default function Login() {
       } 
       if (!/^[^\d]+$/.test(userName)) {
         userNameError = "Names must not include numbers";
-      } else {
+      } 
+      if (/^[^\d]+$/.test(userName) && userName.length >= 4) {
         userNameError = "";
       }
     }
