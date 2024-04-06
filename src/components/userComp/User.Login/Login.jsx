@@ -42,8 +42,11 @@ export default function Login() {
     if (loginStatus.type === "Sign Up") {
       if (userName.length < 4) {
         userNameError = "Name must be 4+ characters";
+      } 
+      if (!/^[^\d]+$/.test(userName)) {
+        userNameError = "Names must not include numbers";
       } else {
-        passwordError = "";
+        userNameError = "";
       }
     }
 
@@ -62,13 +65,13 @@ export default function Login() {
 
     dispatch(
       setLoginStatus({
+        userName: userNameError,
         login: loginError,
         password: passwordError,
-        userName: userNameError,
       })
     );
 
-    if (!loginError && !passwordError) {
+    if (!userNameError && !loginError && !passwordError) {
       if (loginStatus.type === "Sign Up") {
         if (!userInfo.users[email]) {
           dispatch(registerUser({ email, password }));
@@ -81,7 +84,8 @@ export default function Login() {
         const user = userInfo.users[email];
         if (user && user.password === password) {
           dispatch(loginUser({ email, password }));
-        } if (user && user.password !== password) {
+        }
+        if (user && user.password !== password) {
           dispatch(setLoginStatus({ password: "Incorrect password" }));
         }
         if (!user) {
@@ -104,7 +108,7 @@ export default function Login() {
             <p class="text-red-600">{loginStatus.userName}</p>
             <input
               onChange={(e) => handleUserNameChange(e)}
-              placeholder="Gym User"
+              placeholder="First Name"
               class="input-style mt-[0.4rem]"
             ></input>
           </div>
