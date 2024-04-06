@@ -34,7 +34,8 @@ export default function Login() {
     setUserName(event.target.value);
   };
 
-  function loginAction(email, password) {
+  function loginAction(userName, email, password) {
+    let userNameError = "";
     let loginError = "";
     let passwordError = "";
 
@@ -51,7 +52,13 @@ export default function Login() {
       }
     }
 
-    dispatch(setLoginStatus({ login: loginError, password: passwordError }));
+    dispatch(
+      setLoginStatus({
+        login: loginError,
+        password: passwordError,
+        userName: userNameError,
+      })
+    );
 
     if (!loginError && !passwordError) {
       if (loginStatus.type === "Sign Up") {
@@ -86,7 +93,7 @@ export default function Login() {
         {loginStatus.type === "Sign Up" ? (
           <div class="flex flex-col">
             <label class="text-lg">Name</label>
-            <p class="text-red-600">{loginStatus.login}</p>
+            <p class="text-red-600">{loginStatus.userName}</p>
             <input
               onChange={(e) => handleUserNameChange(e)}
               placeholder="Gym User"
@@ -116,7 +123,7 @@ export default function Login() {
         </div>
         <button
           class="bg-red-600 text-white py-[.6rem]"
-          onClick={() => loginAction(email, password)}
+          onClick={() => loginAction(userName, email, password)}
         >
           {loginStatus.type}
         </button>
