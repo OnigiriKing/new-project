@@ -14,6 +14,7 @@ export default function Login() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [userName, setUserName] = useState("");
 
   const mailTypes = [
     "@gmail.com",
@@ -28,6 +29,9 @@ export default function Login() {
 
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
+  };
+  const handleUserNameChange = (event) => {
+    setUserName(event.target.value);
   };
 
   function loginAction(email, password) {
@@ -72,42 +76,6 @@ export default function Login() {
     }
   }
 
-  // function loginAction(email, password) {
-  //   if (password.length >= 6 && email.includes("@")) {
-  //     dispatch(setLoginStatus({ login: "" }));
-  //     dispatch(setLoginStatus({ password: "" }));
-  //     if (loginStatus.type === "Sign Up") {
-  //       if (!userInfo.users[email]) {
-  //         dispatch(registerUser({ email, password }));
-  //       } else {
-  //         dispatch(
-  //           setLoginStatus({ login: "this email was already registered" })
-  //         );
-  //       }
-  //     }
-  //     if (loginStatus.type === "Sign In") {
-  //       if (
-  //         userInfo.users[email] &&
-  //         userInfo.users[email].password === password
-  //       ) {
-  //         console.log(userInfo.users[email], "||", userInfo.users);
-  //         dispatch(loginUser({ email, password }));
-  //       } else {
-  //         dispatch(setLoginStatus({ password: "incorrect password" }));
-  //       }
-  //     }
-  //   }
-  //    if (!email.includes("@")) {
-  //      dispatch(
-  //        setLoginStatus({
-  //          login: "Invalid Email",
-  //        })
-  //      );
-  //    }
-  //   if (password.length <= 6) {
-  //     dispatch(setLoginStatus({ password: "Password should be at least 6 Characters or Numbers long" }));
-  //   }
-  // }
 
   return (
     <>
@@ -115,6 +83,19 @@ export default function Login() {
         {loginStatus.type}
       </h3>
       <div class="flex flex-col gap-[1.5rem]">
+        {loginStatus.type === "Sign Up" ? (
+          <div class="flex flex-col">
+            <label class="text-lg">Name</label>
+            <p class="text-red-600">{loginStatus.login}</p>
+            <input
+              onChange={(e) => handleUserNameChange(e)}
+              placeholder="Gym User"
+              class="input-style mt-[0.4rem]"
+            ></input>
+          </div>
+        ) : (
+          ""
+        )}
         <div class="flex flex-col">
           <label class="text-lg">Email</label>
           <p class="text-red-600">{loginStatus.login}</p>
