@@ -8,9 +8,9 @@ const userInfoSlice = createSlice({
   initialState,
   reducers: {
     registerUser: (state, action) => {
-      const { email, password } = action.payload;
+      const { name, email, password } = action.payload;
       if (!state.users[email]) {
-        state.users[email] = { email, password };
+        state.users[email] = { name, email, password };
         localStorage.setItem("users", JSON.stringify(state));
       }
     },
