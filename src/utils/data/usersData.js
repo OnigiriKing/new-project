@@ -1,5 +1,5 @@
 const usersData = {
-  currentUser: "",
+  currentUser: {},
   isLoggedIn: false,
   users: {
     "admin@bbkmail.com": {
