@@ -75,7 +75,7 @@ export default function Login() {
     if (!userNameError && !loginError && !passwordError) {
       if (loginStatus.type === "Sign Up") {
         if (!userInfo.users[email]) {
-          dispatch(registerUser({ email, password }));
+          dispatch(registerUser({ userName, email, password }));
         } else {
           dispatch(
             setLoginStatus({ login: "This email was already registered" })

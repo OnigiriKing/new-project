@@ -5,7 +5,8 @@ import allSvg from "svg/allSvg";
 export default function LoggedIn() {
 
   const dispatch = useDispatch()
-  const userName = useSelector((state) => state.userInfo.currentUser);
+  const curentUser = useSelector((state) => state.userInfo.currentUser);
+  const userName = useSelector((state) => state.userInfo[curentUser].name);
 
 
 
