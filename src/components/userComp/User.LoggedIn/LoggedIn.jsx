@@ -20,8 +20,9 @@ export default function LoggedIn() {
 
     return (
       <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg shadow-md justify-center">
           <p className="mb-4">Are you sure you want to log out?</p>
+          <div class="flex justify-center">
           <button
             className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mr-2"
             onClick={() => logOutHandler()}
@@ -34,6 +35,7 @@ export default function LoggedIn() {
           >
             No
           </button>
+          </div>
         </div>
       </div>
     );
@@ -57,6 +59,7 @@ export default function LoggedIn() {
       >
         Log Out
       </button>
+      {logOutConfirm? <LogOutWindow /> : ""}
     </>
   );
 }
