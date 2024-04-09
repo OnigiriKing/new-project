@@ -13,11 +13,11 @@ export default function LoggedIn() {
 
   return (
     <>
-      <div>
-        <div>{allSvg(20).userIcon}</div>
+      <div class="flex gap-[1rem] items-center">
+        <div class="border-solid border-[1px] border-black rounded-full p-[.3rem]">{allSvg(20).userIcon}</div>
         <h3>{userName}</h3>
       </div>
-      <button onClick={() => dispatch(logOut())}>Log Out</button>
+      <button onClick={() => dispatch(logOut())} class="hover:text-red-600 duration-[.4s]">Log Out</button>
     </>
   );
 }
