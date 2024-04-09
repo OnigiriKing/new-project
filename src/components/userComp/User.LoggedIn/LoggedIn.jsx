@@ -7,6 +7,13 @@ export default function LoggedIn() {
   const dispatch = useDispatch()
   const userName = useSelector((state) => state.userInfo.currentUser.name);
 
+  function logOutHandler() {
+    const isConfirmed = window.confirm("Are you sure you want to log out?");
+    if (isConfirmed) {
+      dispatch(logOut());
+    }
+  }
+
 
 
 
@@ -14,10 +21,17 @@ export default function LoggedIn() {
   return (
     <>
       <div class="flex gap-[1rem] items-center">
-        <div class="border-solid border-[1px] border-black rounded-full p-[.3rem]">{allSvg(20).userIcon}</div>
+        <div class="border-solid border-[1px] border-black rounded-full p-[.3rem]">
+          {allSvg(20).userIcon}
+        </div>
         <h3>{userName}</h3>
       </div>
-      <button onClick={() => dispatch(logOut())} class="hover:text-red-600 duration-[.4s]">Log Out</button>
+      <button
+        onClick={() => logOutHandler()}
+        class="hover:text-red-600 duration-[.4s]"
+      >
+        Log Out
+      </button>
     </>
   );
 }
