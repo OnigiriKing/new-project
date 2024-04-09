@@ -21,7 +21,7 @@ export default function LoggedIn() {
       <div className="bg-white p-6 rounded-lg shadow-md">
         <p className="mb-4">Are you sure you want to log out?</p>
         <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"
+          className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mr-2"
         >
           Yes
         </button>
