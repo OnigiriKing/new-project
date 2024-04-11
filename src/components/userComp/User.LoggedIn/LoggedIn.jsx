@@ -23,18 +23,18 @@ export default function LoggedIn() {
         <div className="bg-white p-6 rounded-lg shadow-md justify-center">
           <p className="mb-4">Are you sure you want to log out?</p>
           <div class="flex justify-center">
-          <button
-            className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mr-2"
-            onClick={() => logOutHandler()}
-          >
-            Yes
-          </button>
-          <button
-            className="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded"
-            onClick={() => setlogOutConfirm(false)}
-          >
-            No
-          </button>
+            <button
+              className=" hover:bg-red-600 hover:text-white text-black font-bold py-2 px-4 rounded mr-2 border-black bg-gray-300"
+              onClick={() => logOutHandler()}
+            >
+              Yes
+            </button>
+            <button
+              className="bg-gray-300 hover:bg-red-600 hover:text-white text-black font-bold py-2 px-4 rounded"
+              onClick={() => setlogOutConfirm(false)}
+            >
+              No
+            </button>
           </div>
         </div>
       </div>
