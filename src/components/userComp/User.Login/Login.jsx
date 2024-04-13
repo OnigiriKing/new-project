@@ -14,7 +14,7 @@ export default function Login() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [userName, setUserName] = useState("");
+  const [name, setUserName] = useState("");
 
   const mailTypes = [
     "@gmail.com",
@@ -34,18 +34,20 @@ export default function Login() {
     setUserName(event.target.value);
   };
 
-  function loginAction(name, email, password) {
-    let userNameError = "";
-    let loginError = "";
-    let passwordError = "";
-    
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    let userNameError = "",
+      loginError = "",
+      passwordError = "";
+
     if (loginStatus.type === "Sign Up") {
       if (name.length < 4) {
         userNameError = "Name must be 4+ characters";
-      } 
+      }
       if (!/^[^\d]+$/.test(name)) {
         userNameError = "Names must not include numbers";
-      } 
+      }
       if (/^[^\d]+$/.test(name) && name.length >= 4) {
         userNameError = "";
       }
@@ -105,7 +107,7 @@ export default function Login() {
       <div class="flex flex-col gap-[1.5rem]">
         <form
           class="flex flex-col gap-[1.5rem]"
-          onSubmit={() => loginAction(userName, email, password)}
+          onSubmit={() => handleSubmit()}
         >
           {loginStatus.type === "Sign Up" ? (
             <div class="flex flex-col">
