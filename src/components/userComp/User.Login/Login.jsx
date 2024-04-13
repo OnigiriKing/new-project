@@ -34,19 +34,19 @@ export default function Login() {
     setUserName(event.target.value);
   };
 
-  function loginAction(userName, email, password) {
+  function loginAction(name, email, password) {
     let userNameError = "";
     let loginError = "";
     let passwordError = "";
     
     if (loginStatus.type === "Sign Up") {
-      if (userName.length < 4) {
+      if (name.length < 4) {
         userNameError = "Name must be 4+ characters";
       } 
-      if (!/^[^\d]+$/.test(userName)) {
+      if (!/^[^\d]+$/.test(name)) {
         userNameError = "Names must not include numbers";
       } 
-      if (/^[^\d]+$/.test(userName) && userName.length >= 4) {
+      if (/^[^\d]+$/.test(name) && name.length >= 4) {
         userNameError = "";
       }
     }
@@ -75,7 +75,7 @@ export default function Login() {
     if (!userNameError && !loginError && !passwordError) {
       if (loginStatus.type === "Sign Up") {
         if (!userInfo.users[email]) {
-          dispatch(registerUser({ userName, email, password }));
+          dispatch(registerUser({ name, email, password }));
         } else {
           dispatch(
             setLoginStatus({ login: "This email was already registered" })
