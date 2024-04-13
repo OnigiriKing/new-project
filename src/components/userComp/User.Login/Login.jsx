@@ -103,45 +103,47 @@ export default function Login() {
         {loginStatus.type}
       </h3>
       <div class="flex flex-col gap-[1.5rem]">
-        {loginStatus.type === "Sign Up" ? (
+        <form
+          class="flex flex-col gap-[1.5rem]"
+          onSubmit={() => loginAction(userName, email, password)}
+        >
+          {loginStatus.type === "Sign Up" ? (
+            <div class="flex flex-col">
+              <label class="text-lg">Name</label>
+              <p class="text-red-600">{loginStatus.userName}</p>
+              <input
+                onChange={(e) => handleUserNameChange(e)}
+                placeholder="First Name"
+                class="input-style mt-[0.4rem]"
+              ></input>
+            </div>
+          ) : (
+            ""
+          )}
           <div class="flex flex-col">
-            <label class="text-lg">Name</label>
-            <p class="text-red-600">{loginStatus.userName}</p>
+            <label class="text-lg">Email</label>
+            <p class="text-red-600">{loginStatus.login}</p>
             <input
-              onChange={(e) => handleUserNameChange(e)}
-              placeholder="First Name"
+              onChange={(e) => handleEmailChange(e)}
+              placeholder="BbkGym@gmail.com"
+              class="input-style mt-[0.4rem]"
+              type="email"
+            ></input>
+          </div>
+          <div class="flex flex-col">
+            <label class="text-lg">Password</label>
+            <p class="text-red-600">{loginStatus.password}</p>
+            <input
+              onChange={(e) => handlePasswordChange(e)}
+              placeholder="Password"
+              type="password"
               class="input-style mt-[0.4rem]"
             ></input>
           </div>
-        ) : (
-          ""
-        )}
-        <div class="flex flex-col">
-          <label class="text-lg">Email</label>
-          <p class="text-red-600">{loginStatus.login}</p>
-          <input
-            onChange={(e) => handleEmailChange(e)}
-            placeholder="BbkGym@gmail.com"
-            class="input-style mt-[0.4rem]"
-            type="email"
-          ></input>
-        </div>
-        <div class="flex flex-col">
-          <label class="text-lg">Password</label>
-          <p class="text-red-600">{loginStatus.password}</p>
-          <input
-            onChange={(e) => handlePasswordChange(e)}
-            placeholder="Password"
-            type="password"
-            class="input-style mt-[0.4rem]"
-          ></input>
-        </div>
-        <button
-          class="bg-red-600 text-white py-[.6rem]"
-          onClick={() => loginAction(userName, email, password)}
-        >
-          {loginStatus.type}
-        </button>
+          <button class="bg-red-600 text-white py-[.6rem]" type="submit">
+            {loginStatus.type}
+          </button>
+        </form>
         <div class="">
           <LoginFooter />
         </div>
