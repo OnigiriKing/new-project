@@ -123,6 +123,7 @@ export default function Login() {
             onChange={(e) => handleEmailChange(e)}
             placeholder="BbkGym@gmail.com"
             class="input-style mt-[0.4rem]"
+            type="email"
           ></input>
         </div>
         <div class="flex flex-col">
@@ -131,6 +132,7 @@ export default function Login() {
           <input
             onChange={(e) => handlePasswordChange(e)}
             placeholder="Password"
+            type="password"
             class="input-style mt-[0.4rem]"
           ></input>
         </div>
