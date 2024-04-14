@@ -35,7 +35,7 @@ export default function Login() {
   };
 
   function handleSubmit(event) {
-    event.preventDefault();
+    // event.preventDefault();
 
     let userNameError = "",
       loginError = "",
@@ -107,7 +107,7 @@ export default function Login() {
       <div class="flex flex-col gap-[1.5rem]">
         <form
           class="flex flex-col gap-[1.5rem]"
-          onSubmit={() => handleSubmit()}
+          onSubmit={handleSubmit}
         >
           {loginStatus.type === "Sign Up" ? (
             <div class="flex flex-col">
