@@ -5,6 +5,7 @@ const initialState = {
   userName: "",
   login: "",
   password: "",
+  reg: "",
 };
 
 const loginStatusSlice = createSlice({
