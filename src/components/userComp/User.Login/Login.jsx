@@ -15,6 +15,7 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setUserName] = useState("");
+  const [reg, setReg] = useState("")
 
   const mailTypes = [
     "@gmail.com",
@@ -78,6 +79,7 @@ export default function Login() {
       if (loginStatus.type === "Sign Up") {
         if (!userInfo.users[email]) {
           dispatch(registerUser({ name, email, password }));
+          setReg("Your account has been succesfully registered")
         } else {
           dispatch(
             setLoginStatus({ login: "This email was already registered" })
@@ -104,11 +106,9 @@ export default function Login() {
       <h3 class="text-black text-center font-bold text-2xl mb-[2rem]">
         {loginStatus.type}
       </h3>
+      <h4>{reg}</h4>
       <div class="flex flex-col gap-[1.5rem]">
-        <form
-          class="flex flex-col gap-[1.5rem]"
-          onSubmit={handleSubmit}
-        >
+        <form class="flex flex-col gap-[1.5rem]" onSubmit={handleSubmit}>
           {loginStatus.type === "Sign Up" ? (
             <div class="flex flex-col">
               <label class="text-lg">Name</label>
