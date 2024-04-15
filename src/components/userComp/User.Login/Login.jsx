@@ -35,8 +35,6 @@ export default function Login() {
   };
 
   function handleSubmit(event) {
-    // event.preventDefault();
-
     let userNameError = "",
       loginError = "",
       passwordError = "";
@@ -44,9 +42,11 @@ export default function Login() {
     if (loginStatus.type === "Sign Up") {
       if (name.length < 4) {
         userNameError = "Name must be 4+ characters";
+        event.preventDefault();
       }
       if (!/^[^\d]+$/.test(name)) {
         userNameError = "Names must not include numbers";
+        event.preventDefault();
       }
       if (/^[^\d]+$/.test(name) && name.length >= 4) {
         userNameError = "";
@@ -55,12 +55,15 @@ export default function Login() {
 
     if (password.length < 6) {
       passwordError = "Password must be 6+ characters";
+      event.preventDefault();
     } else {
       passwordError = "";
     }
 
     if (!mailTypes.some((mailType) => email.includes(mailType))) {
       loginError = "Invalid Email";
+      event.preventDefault();
+
       if (password.length >= 6) {
         passwordError = "";
       }
@@ -78,7 +81,11 @@ export default function Login() {
       if (loginStatus.type === "Sign Up") {
         if (!userInfo.users[email]) {
           dispatch(registerUser({ name, email, password }));
-          dispatch(setLoginStatus({reg: "Your account has been succesfully registered!"}));
+          dispatch(
+            setLoginStatus({
+              reg: "Your account has been succesfully registered!",
+            })
+          );
         } else {
           dispatch(
             setLoginStatus({ login: "This email was already registered" })
