@@ -2,6 +2,7 @@ import { logOut } from "features/Redux/reducers/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import allSvg from "svg/allSvg";
 import { useState } from "react";
+import textImg from "utils/img/profilePics/ppDef.png"
 
 export default function LoggedIn() {
 
@@ -47,23 +48,25 @@ export default function LoggedIn() {
 
   return (
     <>
-    <div class="flex flex-col">
-      <div class="flex gap-[1rem] items-center flex-col mb-[1rem]">
-        <div class="border-solid border-[1px] border-black rounded-full p-[3rem]">
-        <div></div>
-        <img></img>
-        <div></div>
+      <div class="flex flex-col">
+        <div class="flex gap-[1rem] items-center flex-col mb-[1rem]">
+          <div class="border-solid border-[1px] border-black rounded-full p-[4rem] relative justify-center items-center overflow-hidden flex bg-black group cursor-pointer">
+            <img
+              src={textImg}
+              class="flex absolute top-0 right-0 z-[2] group-hover:opacity-90"
+            ></img>
+            <div class="z-[3] absolute"></div>
+          </div>
+          <h3>{userName}</h3>
         </div>
-        <h3>{userName}</h3>
+        <button
+          onClick={() => setlogOutConfirm(true)}
+          class="hover:text-red-600 duration-[.4s]"
+        >
+          Log Out
+        </button>
       </div>
-      <button
-        onClick={() => setlogOutConfirm(true)}
-        class="hover:text-red-600 duration-[.4s]"
-      >
-        Log Out
-      </button>
-    </div>
-      {logOutConfirm? <LogOutWindow /> : ""}
+      {logOutConfirm ? <LogOutWindow /> : ""}
     </>
   );
 }
