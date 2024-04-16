@@ -48,20 +48,22 @@ export default function LoggedIn() {
 
   return (
     <>
-      <div class="flex flex-col">
+      <div class="flex flex-col items-center justify-center">
         <div class="flex gap-[1rem] items-center flex-col mb-[1rem]">
           <div class="border-solid border-[1px] border-black rounded-full p-[4rem] relative justify-center items-center overflow-hidden flex bg-black group cursor-pointer">
             <img
               src={textImg}
               class="flex absolute top-0 right-0 z-[2] group-hover:opacity-90"
             ></img>
-            <div class="z-[3] absolute"></div>
+            <div class="z-[3] absolute bottom-0 hidden group-hover:flex">
+              {allSvg(25).changeIcon}
+            </div>
           </div>
           <h3>{userName}</h3>
         </div>
         <button
           onClick={() => setlogOutConfirm(true)}
-          class="hover:text-red-600 duration-[.4s]"
+          class="hover:text-red-600 duration-[.4s] w-fit"
         >
           Log Out
         </button>
