@@ -47,9 +47,12 @@ export default function LoggedIn() {
 
   return (
     <>
-      <div class="flex gap-[1rem] items-center">
-        <div class="border-solid border-[1px] border-black rounded-full p-[.3rem]">
-          {allSvg(20).userIcon}
+    <div class="flex flex-col">
+      <div class="flex gap-[1rem] items-center flex-col mb-[1rem]">
+        <div class="border-solid border-[1px] border-black rounded-full p-[3rem]">
+        <div></div>
+        <img></img>
+        <div></div>
         </div>
         <h3>{userName}</h3>
       </div>
@@ -59,6 +62,7 @@ export default function LoggedIn() {
       >
         Log Out
       </button>
+    </div>
       {logOutConfirm? <LogOutWindow /> : ""}
     </>
   );
