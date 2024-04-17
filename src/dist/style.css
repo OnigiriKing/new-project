@@ -748,6 +748,14 @@ video {
   z-index: 90;
 }
 
+.z-\[\FF11\] {
+  z-index: １;
+}
+
+.z-\[0\] {
+  z-index: 0;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -1426,6 +1434,10 @@ video {
 
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
+}
+
+.bg-opacity-100 {
+  --tw-bg-opacity: 1;
 }
 
 .bg-bg-class-1 {
