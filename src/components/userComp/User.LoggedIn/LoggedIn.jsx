@@ -10,6 +10,7 @@ export default function LoggedIn() {
   const userName = useSelector((state) => state.userInfo.currentUser.name);
 
   const [logOutConfirm, setlogOutConfirm] = useState(false)
+  const [chooseIcon, setChooseIcon] = useState(false);
 
   function logOutHandler() {
       dispatch(logOut());
@@ -71,7 +72,10 @@ export default function LoggedIn() {
     <>
       <div class="flex flex-col items-center justify-center">
         <div class="flex gap-[1rem] items-center flex-col mb-[1rem]">
-          <div class="border-solid border-[1px] border-black rounded-full p-[4rem] relative justify-center items-center overflow-hidden flex bg-black group cursor-pointer">
+          <div
+            class="border-solid border-[1px] border-black rounded-full p-[4rem] relative justify-center items-center overflow-hidden flex bg-black group cursor-pointer"
+            onClick={() => setChooseIcon(true)}
+          >
             <img
               src={textImg}
               class="flex absolute top-0 right-0 z-[2] group-hover:opacity-90"
