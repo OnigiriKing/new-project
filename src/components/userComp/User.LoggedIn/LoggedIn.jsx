@@ -50,10 +50,10 @@ export default function LoggedIn() {
     return (
     <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
       <div className="bg-white p-6 rounded-lg shadow-md justify-center">
-        <div class="flex justify-center">
-          <img src={textImg} className="w-[1rem]"></img>
-          <img src={textImg} className="w-[1rem]"></img>
-          <img src={textImg} className="w-[1rem]"></img>
+        <div class="flex justify-center gap-[2rem]">
+          <img src={textImg} className="w-[3rem]"></img>
+          <img src={textImg} className="w-[3rem]"></img>
+          <img src={textImg} className="w-[3rem]"></img>
         </div>
       </div>
     </div>
