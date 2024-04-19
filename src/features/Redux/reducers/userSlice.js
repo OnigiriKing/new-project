@@ -10,7 +10,7 @@ const userInfoSlice = createSlice({
     registerUser: (state, action) => {
       const { name, email, password } = action.payload;
       if (!state.users[email]) {
-        state.users[email] = { name, email, password };
+        state.users[email] = { name, email, password, img: "ppDefault" };
         localStorage.setItem("users", JSON.stringify(state));
       }
     },
@@ -20,6 +20,7 @@ const userInfoSlice = createSlice({
         state.currentUser = {
           name: state.users[email].name,
           email: state.users[email].email,
+          img: state.users[email].img,
         };
         state.isLoggedIn = true;
         localStorage.setItem("users", JSON.stringify(state));

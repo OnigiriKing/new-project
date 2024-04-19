@@ -6,6 +6,7 @@ const usersData = {
       name: "admin",
       email: "admin@bbkmail.com",
       password: "admin12",
+      img:"ppAdmin"
     },
   },
 };
