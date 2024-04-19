@@ -46,24 +46,18 @@ export default function LoggedIn() {
   };
 
   function IconChangeWindow() {
+
+    return (
     <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
       <div className="bg-white p-6 rounded-lg shadow-md justify-center">
         <div class="flex justify-center">
-          <img 
-            className=""
-          >
-          </img>
-          <img
-            className=""
-          >
-          </img>
-          <img
-            className=""
-          >
-          </img>
+          <img src={textImg} className="w-[1rem]"></img>
+          <img src={textImg} className="w-[1rem]"></img>
+          <img src={textImg} className="w-[1rem]"></img>
         </div>
       </div>
-    </div>;
+    </div>
+    )
   }
 
 
