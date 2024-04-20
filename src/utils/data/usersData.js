@@ -1,3 +1,5 @@
+import profilePics from "./profilePics";
+
 const usersData = {
   currentUser: {},
   isLoggedIn: false,

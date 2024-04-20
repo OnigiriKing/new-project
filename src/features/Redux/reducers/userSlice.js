@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import usersData from "utils/data/usersData";
+import profilePics from "./profilePics";
 
 const initialState = JSON.parse(localStorage.getItem("users")) || usersData;
 
@@ -10,7 +11,12 @@ const userInfoSlice = createSlice({
     registerUser: (state, action) => {
       const { name, email, password } = action.payload;
       if (!state.users[email]) {
-        state.users[email] = { name, email, password, img: "ppDefault" };
+        state.users[email] = {
+          name,
+          email,
+          password,
+          img: profilePics.ppDef,
+        };
         localStorage.setItem("users", JSON.stringify(state));
       }
     },
