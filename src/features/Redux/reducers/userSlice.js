@@ -28,6 +28,7 @@ const userInfoSlice = createSlice({
           email: state.users[email].email,
           img: state.users[email].img,
         };
+
         state.isLoggedIn = true;
         localStorage.setItem("users", JSON.stringify(state));
       }

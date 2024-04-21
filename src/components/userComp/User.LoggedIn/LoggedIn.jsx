@@ -10,6 +10,7 @@ export default function LoggedIn() {
   const userName = useSelector((state) => state.userInfo.currentUser.name);
   const userPic = useSelector((state) => state.userInfo.currentUser.img);
 
+
   const [logOutConfirm, setlogOutConfirm] = useState(false)
   const [chooseIcon, setChooseIcon] = useState(false);
 
