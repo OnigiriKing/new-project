@@ -8,6 +8,7 @@ export default function LoggedIn() {
 
   const dispatch = useDispatch()
   const userName = useSelector((state) => state.userInfo.currentUser.name);
+  const userPic = useSelector((state) => state.userInfo.currentUser.img);
 
   const [logOutConfirm, setlogOutConfirm] = useState(false)
   const [chooseIcon, setChooseIcon] = useState(false);
@@ -73,7 +74,7 @@ export default function LoggedIn() {
             onClick={() => setChooseIcon(true)}
           >
             <img
-              src={textImg}
+              src={userPic}
               class="flex absolute top-0 right-0 z-[2] group-hover:opacity-90"
             ></img>
             <div class="z-[3] absolute bottom-0 hidden group-hover:flex">
@@ -90,7 +91,7 @@ export default function LoggedIn() {
         </button>
       </div>
       {logOutConfirm ? <LogOutWindow /> : ""}
-      {chooseIcon? <IconChangeWindow /> : ""}
+      {chooseIcon ? <IconChangeWindow /> : ""}
     </>
   );
 }
