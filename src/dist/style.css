@@ -1024,6 +1024,10 @@ video {
   width: 35rem;
 }
 
+.w-\[3rem\] {
+  width: 3rem;
+}
+
 .w-\[40\%\] {
   width: 40%;
 }
@@ -1080,18 +1084,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[1rem\] {
-  width: 1rem;
-}
-
-.w-\[2rem\] {
-  width: 2rem;
-}
-
-.w-\[3rem\] {
-  width: 3rem;
 }
 
 .max-w-\[60rem\] {

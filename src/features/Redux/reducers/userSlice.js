@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import usersData from "utils/data/usersData";
-import profilePics from "./profilePics";
+import profilePics from "utils/data/profilePics";
 
 const initialState = JSON.parse(localStorage.getItem("users")) || usersData;
 
