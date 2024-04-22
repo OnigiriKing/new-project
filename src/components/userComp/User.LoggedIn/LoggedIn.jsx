@@ -2,7 +2,7 @@ import { logOut } from "features/Redux/reducers/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import allSvg from "svg/allSvg";
 import { useState } from "react";
-import textImg from "utils/img/profilePics/ppDef.png"
+import profilePics from "utils/data/profilePics";
 
 export default function LoggedIn() {
 
@@ -50,16 +50,16 @@ export default function LoggedIn() {
   function IconChangeWindow() {
 
     return (
-    <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
-      <div className="bg-white p-6 rounded-lg shadow-md justify-center">
-        <div class="flex justify-center gap-[2rem]">
-          <img src={textImg} className="w-[3rem]"></img>
-          <img src={textImg} className="w-[3rem]"></img>
-          <img src={textImg} className="w-[3rem]"></img>
+      <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
+        <div className="bg-white p-6 rounded-lg shadow-md justify-center">
+          <div class="flex justify-center gap-[2rem]">
+            <img src={profilePics.pp1} className="w-[3rem]"></img>
+            <img src={profilePics.pp2} className="w-[3rem]"></img>
+            <img src={profilePics.pp3} className="w-[3rem]"></img>
+          </div>
         </div>
       </div>
-    </div>
-    )
+    );
   }
 
 
