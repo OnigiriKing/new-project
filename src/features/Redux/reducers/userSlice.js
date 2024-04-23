@@ -40,6 +40,12 @@ const userInfoSlice = createSlice({
         localStorage.setItem("users", JSON.stringify(state));
       }
     },
+    changePic: (state, action) => {
+      const { newPic } = action.payload;
+        state.currentUser.img = newPic;
+        state.users[state.currentUser.email].img = newPic;
+        localStorage.setItem("users", JSON.stringify(state));
+    },
   },
 });
 
