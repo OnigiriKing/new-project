@@ -53,9 +53,21 @@ export default function LoggedIn() {
       <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
         <div className="bg-white p-6 rounded-lg shadow-md justify-center">
           <div class="flex justify-center gap-[2rem]">
-            <img src={profilePics.pp1} className="w-[3rem]"></img>
-            <img src={profilePics.pp2} className="w-[3rem]"></img>
-            <img src={profilePics.pp3} className="w-[3rem]"></img>
+            <img
+              src={profilePics.pp1}
+              onClick={() => dispatch(changePic(profilePics.pp1))}
+              className="w-[3rem]"
+            ></img>
+            <img
+              src={profilePics.pp2}
+              onClick={() => dispatch(changePic(profilePics.pp2))}
+              className="w-[3rem]"
+            ></img>
+            <img
+              src={profilePics.pp3}
+              onClick={() => dispatch(changePic(profilePics.pp3))}
+              className="w-[3rem]"
+            ></img>
           </div>
         </div>
       </div>

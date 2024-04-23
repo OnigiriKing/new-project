@@ -49,5 +49,5 @@ const userInfoSlice = createSlice({
   },
 });
 
-export const { registerUser, loginUser, logOut } = userInfoSlice.actions;
+export const { registerUser, loginUser, logOu, changePic } = userInfoSlice.actions;
 export default userInfoSlice.reducer;
