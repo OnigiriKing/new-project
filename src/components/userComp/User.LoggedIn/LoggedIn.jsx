@@ -1,4 +1,4 @@
-import { logOut } from "features/Redux/reducers/userSlice";
+import { logOut, changePic } from "features/Redux/reducers/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import allSvg from "svg/allSvg";
 import { useState } from "react";
