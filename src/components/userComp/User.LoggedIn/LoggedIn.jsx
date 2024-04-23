@@ -55,18 +55,27 @@ export default function LoggedIn() {
           <div class="flex justify-center gap-[2rem]">
             <img
               src={profilePics.pp1}
-              onClick={() => dispatch(changePic(profilePics.pp1))}
-              className="w-[3rem]"
+              onClick={() => {
+                dispatch(changePic({ newPic: profilePics.pp1 }));
+                setChooseIcon(false);
+              }}
+              className="w-[5rem] cursor-pointer"
             ></img>
             <img
               src={profilePics.pp2}
-              onClick={() => dispatch(changePic(profilePics.pp2))}
-              className="w-[3rem]"
+              onClick={() => {
+                dispatch(changePic({ newPic: profilePics.pp2 }));
+                setChooseIcon(false);
+              }}
+              className="w-[5rem] cursor-pointer"
             ></img>
             <img
               src={profilePics.pp3}
-              onClick={() => dispatch(changePic(profilePics.pp3))}
-              className="w-[3rem]"
+              onClick={() => {
+                dispatch(changePic({ newPic: profilePics.pp3 }));
+                setChooseIcon(false);
+              }}
+              className="w-[5rem] cursor-pointer"
             ></img>
           </div>
         </div>

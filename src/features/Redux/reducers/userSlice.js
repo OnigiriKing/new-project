@@ -44,6 +44,7 @@ const userInfoSlice = createSlice({
       const { newPic } = action.payload;
         state.currentUser.img = newPic;
         state.users[state.currentUser.email].img = newPic;
+        console.log(state.currentUser.img, "+", newPic);
         localStorage.setItem("users", JSON.stringify(state));
     },
   },
