@@ -1102,6 +1102,14 @@ video {
   width: 2rem;
 }
 
+.w-\[fit\] {
+  width: fit;
+}
+
+.w-\[6rem\] {
+  width: 6rem;
+}
+
 .max-w-\[60rem\] {
   max-width: 60rem;
 }
@@ -1169,6 +1177,10 @@ video {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -1191,6 +1203,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-end {
@@ -1279,6 +1295,10 @@ video {
 
 .gap-\[2rem\] {
   gap: 2rem;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .self-center {
@@ -1814,6 +1834,14 @@ video {
 
 .duration-\[0\.5s\] {
   transition-duration: 0.5s;
+}
+
+.duration-\[\.2s\] {
+  transition-duration: .2s;
+}
+
+.duration-\[2s\] {
+  transition-duration: 2s;
 }
 
 .ease-in-out {
