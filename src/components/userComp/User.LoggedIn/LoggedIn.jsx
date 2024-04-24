@@ -5,25 +5,19 @@ import { useState } from "react";
 import profilePics from "utils/data/profilePics";
 
 export default function LoggedIn() {
-
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const userName = useSelector((state) => state.userInfo.currentUser.name);
   const userPic = useSelector((state) => state.userInfo.currentUser.img);
 
-
-  const [logOutConfirm, setlogOutConfirm] = useState(false)
+  const [logOutConfirm, setlogOutConfirm] = useState(false);
   const [chooseIcon, setChooseIcon] = useState(false);
 
   function logOutHandler() {
-      dispatch(logOut());
-      setlogOutConfirm(false)
+    dispatch(logOut());
+    setlogOutConfirm(false);
   }
 
-  
-
-
   function LogOutWindow() {
-
     return (
       <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
         <div className="bg-white p-6 rounded-lg shadow-md justify-center">
@@ -45,47 +39,48 @@ export default function LoggedIn() {
         </div>
       </div>
     );
-  };
+  }
 
   function IconChangeWindow() {
-
     return (
       <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
         <div className="bg-white p-6 rounded-lg shadow-md justify-center">
           <div class="flex justify-center gap-[2rem]">
-            <img
-              src={profilePics.pp1}
-              onClick={() => {
-                dispatch(changePic({ newPic: profilePics.pp1 }));
-                setChooseIcon(false);
-              }}
-              className="w-[5rem] cursor-pointer"
-            ></img>
-            <img
-              src={profilePics.pp2}
-              onClick={() => {
-                dispatch(changePic({ newPic: profilePics.pp2 }));
-                setChooseIcon(false);
-              }}
-              className="w-[5rem] cursor-pointer"
-            ></img>
-            <img
-              src={profilePics.pp3}
-              onClick={() => {
-                dispatch(changePic({ newPic: profilePics.pp3 }));
-                setChooseIcon(false);
-              }}
-              className="w-[5rem] cursor-pointer"
-            ></img>
+            <div className="w-[5rem] cursor-pointer">
+              <img
+                src={profilePics.pp1}
+                onClick={() => {
+                  dispatch(changePic({ newPic: profilePics.pp1 }));
+                  setChooseIcon(false);
+                }}
+                className="w-fit"
+              ></img>
+            </div>
+            <div className="w-[5rem] cursor-pointer">
+              <img
+                src={profilePics.pp2}
+                onClick={() => {
+                  dispatch(changePic({ newPic: profilePics.pp2 }));
+                  setChooseIcon(false);
+                }}
+                className="w-fit"
+              ></img>
+            </div>
+            <div className="w-[5rem] cursor-pointer">
+              <img
+                src={profilePics.pp3}
+                onClick={() => {
+                  dispatch(changePic({ newPic: profilePics.pp3 }));
+                  setChooseIcon(false);
+                }}
+                className="w-fit"
+              ></img>
+            </div>
           </div>
         </div>
       </div>
     );
   }
-
-
-
-
 
   return (
     <>
