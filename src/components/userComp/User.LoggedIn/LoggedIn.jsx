@@ -9,19 +9,19 @@ export default function LoggedIn() {
   const userName = useSelector((state) => state.userInfo.currentUser.name);
   const userPic = useSelector((state) => state.userInfo.currentUser.img);
 
-  const [logOutConfirm, setlogOutConfirm] = useState(false);
-  const [chooseIcon, setChooseIcon] = useState(false);
-  const [changePass, setChangePass] = useState(false);
+
   const [confirmWindow, setConfirmWindow] = useState({
     logOut: false,
     chooseIcon: false,
-    changePass: false
+    changePass: false,
   });
-
 
   function logOutHandler() {
     dispatch(logOut());
-    setlogOutConfirm(false);
+    setConfirmWindow((prevState) => ({
+      ...prevState,
+      logOut: !prevState.logOut,
+    }));
   }
 
   function LogOutWindow() {
@@ -38,7 +38,12 @@ export default function LoggedIn() {
             </button>
             <button
               className="bg-gray-300 hover:bg-red-600 hover:text-white text-black font-bold py-2 px-4 rounded"
-              onClick={() => setlogOutConfirm(false)}
+              onClick={() =>
+                setConfirmWindow((prevState) => ({
+                  ...prevState,
+                  logOut: !prevState.logOut,
+                }))
+              }
             >
               No
             </button>
@@ -50,14 +55,16 @@ export default function LoggedIn() {
 
   function IconChangeWindow() {
     return (
-      <div
-        className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]"
-
-      >
+      <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
         <div className="bg-white p-6 rounded-lg shadow-md justify-center">
           <div class="flex gap-[1rem] flex-col">
             <div
-              onClick={() => setChooseIcon(false)}
+              onClick={() =>
+                setConfirmWindow((prevState) => ({
+                  ...prevState,
+                  chooseIcon: !prevState.chooseIcon,
+                }))
+              }
               class="self-end cursor-pointer hover:text-red-600 duration-[.3s]"
             >
               {allSvg(30).close}
@@ -68,7 +75,10 @@ export default function LoggedIn() {
                   src={profilePics.pp1}
                   onClick={() => {
                     dispatch(changePic({ newPic: profilePics.pp1 }));
-                    setChooseIcon(false);
+                    setConfirmWindow((prevState) => ({
+                      ...prevState,
+                      chooseIcon: !prevState.chooseIcon,
+                    }));
                   }}
                   className="w-fit"
                 ></img>
@@ -78,7 +88,10 @@ export default function LoggedIn() {
                   src={profilePics.pp2}
                   onClick={() => {
                     dispatch(changePic({ newPic: profilePics.pp2 }));
-                    setChooseIcon(false);
+                    setConfirmWindow((prevState) => ({
+                      ...prevState,
+                      chooseIcon: !prevState.chooseIcon,
+                    }));
                   }}
                   className="w-fit"
                 ></img>
@@ -88,7 +101,10 @@ export default function LoggedIn() {
                   src={profilePics.pp3}
                   onClick={() => {
                     dispatch(changePic({ newPic: profilePics.pp3 }));
-                    setChooseIcon(false);
+                    setConfirmWindow((prevState) => ({
+                      ...prevState,
+                      chooseIcon: !prevState.chooseIcon,
+                    }));
                   }}
                   className="w-fit"
                 ></img>
@@ -106,7 +122,12 @@ export default function LoggedIn() {
         <div class="flex gap-[1rem] items-center flex-col mb-[1rem]">
           <div
             class="border-solid border-[1px] border-black rounded-full p-[4rem] relative justify-center items-center overflow-hidden flex bg-black group cursor-pointer"
-            onClick={() => setChooseIcon(true)}
+            onClick={() =>
+              setConfirmWindow((prevState) => ({
+                ...prevState,
+                chooseIcon: !prevState.chooseIcon,
+              }))
+            }
           >
             <img
               src={userPic}
@@ -125,14 +146,19 @@ export default function LoggedIn() {
           </h3>
         </div>
         <button
-          onClick={() => setlogOutConfirm(true)}
+          onClick={() =>
+            setConfirmWindow((prevState) => ({
+              ...prevState,
+              logOut: !prevState.logOut,
+            }))
+          }
           class="hover:text-red-600 duration-[.4s] w-fit"
         >
           Log Out
         </button>
       </div>
-      {logOutConfirm ? <LogOutWindow /> : ""}
-      {chooseIcon ? <IconChangeWindow /> : ""}
+      {confirmWindow.logOut ? <LogOutWindow /> : ""}
+      {confirmWindow.chooseIcon ? <IconChangeWindow /> : ""}
     </>
   );
 }
