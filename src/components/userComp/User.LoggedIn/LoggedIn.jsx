@@ -12,6 +12,11 @@ export default function LoggedIn() {
   const [logOutConfirm, setlogOutConfirm] = useState(false);
   const [chooseIcon, setChooseIcon] = useState(false);
   const [changePass, setChangePass] = useState(false);
+  const [confirmWindow, setConfirmWindow] = useState({
+    logOut: false,
+    chooseIcon: false,
+    changePass: false
+  });
 
 
   function logOutHandler() {
