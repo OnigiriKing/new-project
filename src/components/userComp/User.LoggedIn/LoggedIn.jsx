@@ -116,6 +116,16 @@ export default function LoggedIn() {
     );
   }
 
+  function ChangeSettingsWindow() {
+    return (
+      <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
+        <div className="bg-white p-6 rounded-lg shadow-md justify-center">
+          
+        </div>
+      </div>
+    );
+  }
+
   return (
     <>
       <div class="flex flex-col items-center justify-center">
@@ -159,6 +169,7 @@ export default function LoggedIn() {
       </div>
       {confirmWindow.logOut ? <LogOutWindow /> : ""}
       {confirmWindow.chooseIcon ? <IconChangeWindow /> : ""}
+      {confirmWindow.changePass ? <ChangeSettingsWindow /> : ""}
     </>
   );
 }
