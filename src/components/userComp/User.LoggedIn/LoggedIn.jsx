@@ -16,6 +16,10 @@ export default function LoggedIn() {
     changePass: false,
   });
 
+  const [changePassword, setChangePassword] = useState({
+    newPass: "",
+    oldPass: "",
+  })
 
   function logOutHandler() {
     dispatch(logOut());
