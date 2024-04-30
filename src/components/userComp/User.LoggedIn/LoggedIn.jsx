@@ -17,8 +17,8 @@ export default function LoggedIn() {
   });
 
   const [changePassword, setChangePassword] = useState({
-    newPass: "",
     oldPass: "",
+    newPass: "",
   })
 
   function logOutHandler() {
@@ -125,8 +125,26 @@ export default function LoggedIn() {
     return (
       <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
         <div className="bg-white p-6 rounded-lg shadow-md justify-center">
-          <input placeholder="Old password" type="password"></input>
-          <input placeholder="New password" type="password"></input>
+          <input
+            placeholder="Old password"
+            onChange={(e) =>
+              setChangePassword((prevState) => ({
+                ...prevState,
+                oldPass: e.target.value,
+              }))
+            }
+            type="password"
+          ></input>
+          <input
+            placeholder="New password"
+            onChange={(e) =>
+              setChangePassword((prevState) => ({
+                ...prevState,
+                newPass: e.target.value,
+              }))
+            }
+            type="password"
+          ></input>
         </div>
       </div>
     );
