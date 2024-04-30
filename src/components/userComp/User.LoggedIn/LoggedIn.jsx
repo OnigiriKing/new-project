@@ -124,7 +124,18 @@ export default function LoggedIn() {
   function ChangeSettingsWindow() {
     return (
       <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
-        <div className="bg-white p-6 rounded-lg shadow-md justify-center">
+        <div className="bg-white flex flex-col p-6 rounded-lg shadow-md justify-center">
+          <div
+            onClick={() =>
+              setConfirmWindow((prevState) => ({
+                ...prevState,
+                changePass: !prevState.changePass,
+              }))
+            }
+            class="self-end cursor-pointer hover:text-red-600 duration-[.3s]"
+          >
+            {allSvg(30).close}
+          </div>
           <input
             placeholder="Old password"
             onChange={(e) =>
@@ -172,7 +183,15 @@ export default function LoggedIn() {
             </div>
           </div>
           <h3>Hello, {userName}!</h3>
-          <h3 class="hover:text-red-600 duration-[.4s] cursor-pointer">
+          <h3
+            class="hover:text-red-600 duration-[.4s] cursor-pointer"
+            onClick={() =>
+              setConfirmWindow((prevState) => ({
+                ...prevState,
+                changePass: !prevState.changePass,
+              }))
+            }
+          >
             Change password
           </h3>
           <h3 class="hover:text-red-600 duration-[.4s] cursor-pointer">
