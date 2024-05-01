@@ -139,22 +139,25 @@ export default function LoggedIn() {
           <label>Verify your old password</label>
           <input
             placeholder="Old password"
-            onChange={(e) =>
+            onChange={(e) => {
+            const value = e.target.value
               setChangePassword((prevState) => ({
                 ...prevState,
                 oldPass: e.target.value,
-              }))
+              }))}
             }
             type="password"
           ></input>
           <label>Please enter your new password</label>
           <input
             placeholder="New password"
-            onChange={(e) =>
+            onChange={(e) => {
+              const value = e.target.value
+            
               setChangePassword((prevState) => ({
                 ...prevState,
-                newPass: e.target.value,
-              }))
+                newPass: value,
+              }))}
             }
             type="password"
           ></input>
