@@ -21,6 +21,21 @@ export default function LoggedIn() {
     newPass: "",
   })
 
+  const handleOldPassChange = (event) => {
+     const value = event.target.value;
+     setChangePassword((prevState) => ({
+       ...prevState,
+       oldPass: value,
+     }));
+  };
+  const handleNewPassChange = (event) => {
+    const value = event.target.value;
+    setChangePassword((prevState) => ({
+      ...prevState,
+      newPass: value,
+    }));
+  };
+
   function logOutHandler() {
     dispatch(logOut());
     setConfirmWindow((prevState) => ({
@@ -140,25 +155,16 @@ export default function LoggedIn() {
           <input
             placeholder="Old password"
             onChange={(e) => {
-            const value = e.target.value
-              setChangePassword((prevState) => ({
-                ...prevState,
-                oldPass: e.target.value,
-              }))}
-            }
+             
+            }}
             type="password"
           ></input>
           <label>Please enter your new password</label>
           <input
             placeholder="New password"
             onChange={(e) => {
-              const value = e.target.value
-            
-              setChangePassword((prevState) => ({
-                ...prevState,
-                newPass: value,
-              }))}
-            }
+              
+            }}
             type="password"
           ></input>
           <button class="mt-[1rem]">Submit</button>
