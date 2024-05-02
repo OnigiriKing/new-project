@@ -154,17 +154,13 @@ export default function LoggedIn() {
           <label>Verify your old password</label>
           <input
             placeholder="Old password"
-            onChange={(e) => {
-             
-            }}
+            onChange={(e) => handleOldPassChange(e)}
             type="password"
           ></input>
           <label>Please enter your new password</label>
           <input
             placeholder="New password"
-            onChange={(e) => {
-              
-            }}
+            onChange={(e) => handleNewPassChange(e)}
             type="password"
           ></input>
           <button class="mt-[1rem]">Submit</button>
