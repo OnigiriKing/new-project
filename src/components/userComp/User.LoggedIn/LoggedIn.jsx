@@ -156,14 +156,12 @@ export default function LoggedIn() {
             placeholder="Old password"
             onChange={(e) => handleOldPassChange(e)}
             type="password"
-            value={changePassword.oldPass}
           ></input>
           <label>Please enter your new password</label>
           <input
             placeholder="New password"
             onChange={(e) => handleNewPassChange(e)}
             type="password"
-            value={changePassword.newPass}
           ></input>
           <button class="mt-[1rem]">Submit</button>
         </div>
