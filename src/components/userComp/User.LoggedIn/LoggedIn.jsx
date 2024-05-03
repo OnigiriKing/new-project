@@ -9,7 +9,6 @@ export default function LoggedIn() {
   const userName = useSelector((state) => state.userInfo.currentUser.name);
   const userPic = useSelector((state) => state.userInfo.currentUser.img);
 
-
   const [confirmWindow, setConfirmWindow] = useState({
     logOut: false,
     chooseIcon: false,
@@ -19,15 +18,16 @@ export default function LoggedIn() {
   const [changePassword, setChangePassword] = useState({
     oldPass: "",
     newPass: "",
-  })
+  });
 
   const handleOldPassChange = (event) => {
-     const value = event.target.value;
-     setChangePassword((prevState) => ({
-       ...prevState,
-       oldPass: value,
-     }));
+    const value = event.target.value;
+    setChangePassword((prevState) => ({
+      ...prevState,
+      oldPass: value,
+    }));
   };
+
   const handleNewPassChange = (event) => {
     const value = event.target.value;
     setChangePassword((prevState) => ({
@@ -156,12 +156,14 @@ export default function LoggedIn() {
             placeholder="Old password"
             onChange={(e) => handleOldPassChange(e)}
             type="password"
+            value={changePassword.oldPass}
           ></input>
           <label>Please enter your new password</label>
           <input
             placeholder="New password"
             onChange={(e) => handleNewPassChange(e)}
             type="password"
+            value={changePassword.newPass}
           ></input>
           <button class="mt-[1rem]">Submit</button>
         </div>
