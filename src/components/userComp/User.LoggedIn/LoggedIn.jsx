@@ -140,34 +140,38 @@ export default function LoggedIn() {
     return (
       <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
         <div className="bg-white flex flex-col p-6 rounded-lg shadow-md justify-center gap-[.5rem]">
-          <div
-            onClick={() =>
-              setConfirmWindow((prevState) => ({
-                ...prevState,
-                changePass: !prevState.changePass,
-              }))
-            }
-            class="self-end cursor-pointer hover:text-red-600 duration-[.3s]"
-          >
-            {allSvg(30).close}
+          <div class="justify-center gap-[.5rem] flex flex-col">
+            <div
+              onClick={() =>
+                setConfirmWindow((prevState) => ({
+                  ...prevState,
+                  changePass: !prevState.changePass,
+                }))
+              }
+              class="self-end cursor-pointer hover:text-red-600 duration-[.3s]"
+            >
+              {allSvg(30).close}
+            </div>
+            <label>Verify your old password</label>
+            <input
+              placeholder="Old password"
+              onChange={(e) => handleOldPassChange(e)}
+              type="password"
+            ></input>
+            <label>Please enter your new password</label>
+            <input
+              placeholder="New password"
+              onChange={(e) => handleNewPassChange(e)}
+              type="password"
+            ></input>
+            <button class="mt-[1rem]">Submit</button>
           </div>
-          <label>Verify your old password</label>
-          <input
-            placeholder="Old password"
-            onChange={(e) => handleOldPassChange(e)}
-            type="password"
-          ></input>
-          <label>Please enter your new password</label>
-          <input
-            placeholder="New password"
-            onChange={(e) => handleNewPassChange(e)}
-            type="password"
-          ></input>
-          <button class="mt-[1rem]">Submit</button>
         </div>
       </div>
     );
   }
+
+  
 
   return (
     <>
