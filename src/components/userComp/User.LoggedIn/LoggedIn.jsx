@@ -13,6 +13,7 @@ export default function LoggedIn() {
     logOut: false,
     chooseIcon: false,
     changePass: false,
+    changeName: false,
   });
 
   const [changePassword, setChangePassword] = useState({
@@ -144,32 +145,53 @@ export default function LoggedIn() {
             onClick={() =>
               setConfirmWindow((prevState) => ({
                 ...prevState,
-                changePass: !prevState.changePass,
+                changePass: false,
+                changeName: false,
               }))
             }
             class="self-end cursor-pointer hover:text-red-600 duration-[.3s]"
           >
             {allSvg(30).close}
           </div>
-          {prevState.changePass?(<div class="justify-center gap-[.5rem] flex flex-col">
-            
-            <label>Verify your old password</label>
-            <input
-              placeholder="Old password"
-              onChange={(e) => handleOldPassChange(e)}
-              type="password"
-            ></input>
-            <label>Please enter your new password</label>
-            <input
-              placeholder="New password"
-              onChange={(e) => handleNewPassChange(e)}
-              type="password"
-            ></input>
-            <button class="mt-[1rem]">Submit</button>
-          </div>):""}
+          {prevState.changePass ? (
+            <div class="justify-center gap-[.5rem] flex flex-col">
+              <label>Verify your old password</label>
+              <input
+                placeholder="Old password"
+                onChange={(e) => handleOldPassChange(e)}
+                type="password"
+              ></input>
+              <label>Please enter your new password</label>
+              <input
+                placeholder="New password"
+                onChange={(e) => handleNewPassChange(e)}
+                type="password"
+              ></input>
+              <button class="mt-[1rem]">Submit</button>
+            </div>
+          ) : (
+            ""
+          )}
 
-          
-          
+          {prevState.changeName ? (
+            <div class="justify-center gap-[.5rem] flex flex-col">
+              <label>Verify your old password</label>
+              <input
+                placeholder="Old password"
+                onChange={(e) => handleOldPassChange(e)}
+                type="password"
+              ></input>
+              <label>Please enter your new password</label>
+              <input
+                placeholder="New password"
+                onChange={(e) => handleNewPassChange(e)}
+                type="password"
+              ></input>
+              <button class="mt-[1rem]">Submit</button>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     );
@@ -228,7 +250,11 @@ export default function LoggedIn() {
       </div>
       {confirmWindow.logOut ? <LogOutWindow /> : ""}
       {confirmWindow.chooseIcon ? <IconChangeWindow /> : ""}
-      {confirmWindow.changePass ? <ChangeSettingsWindow /> : ""}
+      {confirmWindow.changePass || confirmWindow.changeName ? (
+        <ChangeSettingsWindow />
+      ) : (
+        ""
+      )}
     </>
   );
 }
