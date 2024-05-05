@@ -140,18 +140,19 @@ export default function LoggedIn() {
     return (
       <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
         <div className="bg-white flex flex-col p-6 rounded-lg shadow-md justify-center gap-[.5rem]">
-          <div class="justify-center gap-[.5rem] flex flex-col">
-            <div
-              onClick={() =>
-                setConfirmWindow((prevState) => ({
-                  ...prevState,
-                  changePass: !prevState.changePass,
-                }))
-              }
-              class="self-end cursor-pointer hover:text-red-600 duration-[.3s]"
-            >
-              {allSvg(30).close}
-            </div>
+          <div
+            onClick={() =>
+              setConfirmWindow((prevState) => ({
+                ...prevState,
+                changePass: !prevState.changePass,
+              }))
+            }
+            class="self-end cursor-pointer hover:text-red-600 duration-[.3s]"
+          >
+            {allSvg(30).close}
+          </div>
+          {prevState.changePass?(<div class="justify-center gap-[.5rem] flex flex-col">
+            
             <label>Verify your old password</label>
             <input
               placeholder="Old password"
@@ -165,7 +166,10 @@ export default function LoggedIn() {
               type="password"
             ></input>
             <button class="mt-[1rem]">Submit</button>
-          </div>
+          </div>):""}
+
+          
+          
         </div>
       </div>
     );
