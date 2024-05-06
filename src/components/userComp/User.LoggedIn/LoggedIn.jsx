@@ -175,17 +175,11 @@ export default function LoggedIn() {
 
           {prevState.changeName ? (
             <div class="justify-center gap-[.5rem] flex flex-col">
-              <label>Verify your old password</label>
+              <label>Enter your new name</label>
               <input
-                placeholder="Old password"
+                placeholder="Name"
                 onChange={(e) => handleOldPassChange(e)}
-                type="password"
-              ></input>
-              <label>Please enter your new password</label>
-              <input
-                placeholder="New password"
-                onChange={(e) => handleNewPassChange(e)}
-                type="password"
+                type="text"
               ></input>
               <button class="mt-[1rem]">Submit</button>
             </div>
