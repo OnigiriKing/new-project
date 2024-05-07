@@ -153,7 +153,7 @@ export default function LoggedIn() {
           >
             {allSvg(30).close}
           </div>
-          {prevState.changePass ? (
+          {confirmWindow.changePass ? (
             <div class="justify-center gap-[.5rem] flex flex-col">
               <label>Verify your old password</label>
               <input
@@ -173,7 +173,7 @@ export default function LoggedIn() {
             ""
           )}
 
-          {prevState.changeName ? (
+          {confirmWindow.changeName ? (
             <div class="justify-center gap-[.5rem] flex flex-col">
               <label>Enter your new name</label>
               <input
