@@ -226,7 +226,15 @@ export default function LoggedIn() {
           >
             Change password
           </h3>
-          <h3 class="hover:text-red-600 duration-[.4s] cursor-pointer">
+          <h3
+            class="hover:text-red-600 duration-[.4s] cursor-pointer"
+            onClick={() =>
+              setConfirmWindow((prevState) => ({
+                ...prevState,
+                changeName: !prevState.changeName,
+              }))
+            }
+          >
             Change email
           </h3>
         </div>
