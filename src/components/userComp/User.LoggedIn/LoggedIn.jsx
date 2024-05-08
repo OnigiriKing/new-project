@@ -20,6 +20,7 @@ export default function LoggedIn() {
     oldPass: "",
     newPass: "",
   });
+  const [changeName, setChangeName] = useState("");
 
   const handleOldPassChange = (event) => {
     const value = event.target.value;
@@ -178,7 +179,7 @@ export default function LoggedIn() {
               <label>Enter your new name</label>
               <input
                 placeholder="Name"
-                onChange={(e) => handleOldPassChange(e)}
+                onChange={(e) => setChangeName(e)}
                 type="text"
               ></input>
               <button class="mt-[1rem]">Submit</button>
