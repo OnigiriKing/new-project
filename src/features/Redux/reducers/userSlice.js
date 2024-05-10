@@ -44,13 +44,13 @@ const userInfoSlice = createSlice({
       const { newPic } = action.payload;
       state.currentUser.img = newPic;
       state.users[state.currentUser.email].img = newPic;
-      console.log(state.currentUser.img, "+", newPic);
       localStorage.setItem("users", JSON.stringify(state));
     },
     changePassword: (state, action) => {
       const { oldPass, newPass } = action.payload;
       if (oldPass == state.currentUser.password) {
-        
+        state.currentUser.password = newPass;
+        state.users[state.currentUser.email].password = newPass; 
       }
     }
   },
