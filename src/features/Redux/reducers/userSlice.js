@@ -52,6 +52,11 @@ const userInfoSlice = createSlice({
         state.currentUser.password = newPass;
         state.users[state.currentUser.email].password = newPass; 
       }
+    },
+    changeName: (state, action) => {
+      const { newName } = action.payload;
+        state.currentUser.name = newName;
+        state.users[state.currentUser.email].name = newName; 
     }
   },
 });
