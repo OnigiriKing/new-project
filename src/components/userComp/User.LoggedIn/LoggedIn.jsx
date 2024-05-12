@@ -23,6 +23,20 @@ export default function LoggedIn() {
   const [changeName, setChangeName] = useState("");
 
 
+
+  function changeNewName() {
+    dispatch(changeName(changeName));
+  }
+
+  function changeNewPassword() {
+    dispatch(
+      changePassword({
+        oldPass: changePassword.oldPass,
+        newPass: changePassword.newPass})
+    );
+  }
+
+
   const handleOldPassChange = (event) => {
     const value = event.target.value;
     setChangePassword((prevState) => ({
