@@ -183,7 +183,9 @@ export default function LoggedIn() {
                 onChange={(e) => handleNewPassChange(e)}
                 type="password"
               ></input>
-              <button class="mt-[1rem]">Submit</button>
+              <button class="mt-[1rem]" onClick={() => changeNewPassword()}>
+                Submit
+              </button>
             </div>
           ) : (
             ""
@@ -197,7 +199,9 @@ export default function LoggedIn() {
                 onChange={(e) => setChangeName(e)}
                 type="text"
               ></input>
-              <button class="mt-[1rem]">Submit</button>
+              <button class="mt-[1rem]" onClick={() => changeNewName()}>
+                Submit
+              </button>
             </div>
           ) : (
             ""
