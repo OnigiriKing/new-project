@@ -25,7 +25,9 @@ export default function LoggedIn() {
 
 
   function changeNewName() {
-    dispatch(changeName(changeName));
+    if (changeName != userName && changeName != "" && changeName.length >= 4) {
+      dispatch(changeName(changeName));
+    }
   }
 
   function changeNewPassword() {
@@ -47,10 +49,10 @@ export default function LoggedIn() {
 
   const handleNewPassChange = (event) => {
     const value = event.target.value;
-    setChangePassword((prevState) => ({
-      ...prevState,
-      newPass: value,
-    }));
+      setChangePassword((prevState) => ({
+        ...prevState,
+        newPass: value,
+      }));
   };
 
   function logOutHandler() {
