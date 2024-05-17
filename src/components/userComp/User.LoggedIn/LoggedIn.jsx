@@ -31,11 +31,19 @@ export default function LoggedIn() {
   }
 
   function changeNewPassword() {
-    dispatch(
-      changePassword({
-        oldPass: changePassword.oldPass,
-        newPass: changePassword.newPass})
-    );
+    if (
+      changePassword.newPass != changePassword.oldPass &&
+      changePassword.newPass != "" &&
+      changePassword.newPass.length >= 6
+    ) {
+      dispatch(
+        changePassword({
+          oldPass: changePassword.oldPass,
+          newPass: changePassword.newPass,
+        })
+      );
+    }
+
   }
 
 
