@@ -48,16 +48,20 @@ const userInfoSlice = createSlice({
     },
     changePassword: (state, action) => {
       const { oldPass, newPass } = action.payload;
-      if (oldPass == state.currentUser.password) {
+      if (
+        oldPass === state.currentUser.password &&
+        newPass.length >= 4 &&
+        newPass
+      !== "") {
         state.currentUser.password = newPass;
-        state.users[state.currentUser.email].password = newPass; 
+        state.users[state.currentUser.email].password = newPass;
       }
     },
     changeName: (state, action) => {
       const { newName } = action.payload;
       if (
-        newName != state.currentUser.name ||
-        newName != "" ||
+        newName != state.currentUser.name &&
+        newName != "" &&
         newName.length >= 4
       ) {
         state.currentUser.name = newName;
