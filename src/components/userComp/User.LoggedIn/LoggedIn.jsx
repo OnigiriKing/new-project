@@ -27,6 +27,12 @@ export default function LoggedIn() {
   function changeNewName() {
     if (changeName != userName && changeName != "" && changeName.length >= 4) {
       dispatch(changeName(changeName));
+    } else {
+      dispatch(
+        setLoginStatus({
+          userName: "Name Error",
+        })
+      );
     }
   }
 
@@ -42,6 +48,12 @@ export default function LoggedIn() {
           newPass: changePassword.newPass,
         })
       );
+    } else {
+dispatch(
+  setLoginStatus({
+    password: "Password Error",
+  })
+);
     }
 
   }
