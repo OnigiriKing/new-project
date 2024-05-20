@@ -8,6 +8,8 @@ export default function LoggedIn() {
   const dispatch = useDispatch();
   const userName = useSelector((state) => state.userInfo.currentUser.name);
   const userPic = useSelector((state) => state.userInfo.currentUser.img);
+  const loginStatus = useSelector((state) => state.loginStatus);
+
 
   const [confirmWindow, setConfirmWindow] = useState({
     logOut: false,
@@ -216,6 +218,7 @@ dispatch(
           {confirmWindow.changeName ? (
             <div class="justify-center gap-[.5rem] flex flex-col">
               <label>Enter your new name</label>
+              {loginStatus.userName !== "" ?<p class="text-red-600">{loginStatus.userName}</p>: ""}
               <input
                 placeholder="Name"
                 onChange={(e) => setChangeName(e)}
