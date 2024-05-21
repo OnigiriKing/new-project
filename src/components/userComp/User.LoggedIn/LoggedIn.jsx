@@ -202,6 +202,11 @@ dispatch(
                 type="password"
               ></input>
               <label>Please enter your new password</label>
+              {loginStatus.password !== "" ? (
+                <p class="text-red-600">{loginStatus.password}</p>
+              ) : (
+                ""
+              )}
               <input
                 placeholder="New password"
                 onChange={(e) => handleNewPassChange(e)}
@@ -218,7 +223,11 @@ dispatch(
           {confirmWindow.changeName ? (
             <div class="justify-center gap-[.5rem] flex flex-col">
               <label>Enter your new name</label>
-              {loginStatus.userName !== "" ?<p class="text-red-600">{loginStatus.userName}</p>: ""}
+              {loginStatus.userName !== "" ? (
+                <p class="text-red-600">{loginStatus.userName}</p>
+              ) : (
+                ""
+              )}
               <input
                 placeholder="Name"
                 onChange={(e) => setChangeName(e)}
