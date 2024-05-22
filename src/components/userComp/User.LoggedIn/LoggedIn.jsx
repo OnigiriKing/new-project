@@ -50,15 +50,23 @@ export default function LoggedIn() {
           newPass: changePassword.newPass,
         })
       );
-    } else {
+    } 
+    if (changePassword.newPass == changePassword.oldPass) {
 dispatch(
   setLoginStatus({
-    password: "Password Error",
+    password: "Same as old password",
   })
 );
     }
+    if (changePassword.newPass.length < 6) {
+dispatch(
+  setLoginStatus({
+    password: "Password should be 6 simbols",
+  })
+);
+    }
+    }
 
-  }
 
 
   const handleOldPassChange = (event) => {
