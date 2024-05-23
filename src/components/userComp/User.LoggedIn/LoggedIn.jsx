@@ -29,10 +29,16 @@ export default function LoggedIn() {
   function changeNewName() {
     if (changeName != userName && changeName != "" && changeName.length >= 4) {
       dispatch(changeName(changeName));
-    } else {
+    } if (changeName === userName) {
       dispatch(
         setLoginStatus({
-          userName: "Name Error",
+          userName: "Same as the old name",
+        })
+      );
+    } if (changeName.length < 4) {
+      dispatch(
+        setLoginStatus({
+          userName: "Name is too short",
         })
       );
     }
