@@ -11,7 +11,6 @@ export default function LoggedIn() {
   const userPic = useSelector((state) => state.userInfo.currentUser.img);
   const loginStatus = useSelector((state) => state.loginStatus);
 
-
   const [confirmWindow, setConfirmWindow] = useState({
     logOut: false,
     chooseIcon: false,
@@ -25,18 +24,18 @@ export default function LoggedIn() {
   });
   const [changeName, setChangeName] = useState("");
 
-
-
   function changeNewName() {
     if (changeName != userName && changeName != "" && changeName.length >= 4) {
       dispatch(changeName(changeName));
-    } if (changeName === userName) {
+    }
+    if (changeName === userName) {
       dispatch(
         setLoginStatus({
           userName: "Same as the old name",
         })
       );
-    } if (changeName.length < 4) {
+    }
+    if (changeName.length < 4) {
       dispatch(
         setLoginStatus({
           userName: "Name is too short",
@@ -57,24 +56,22 @@ export default function LoggedIn() {
           newPass: changePassword.newPass,
         })
       );
-    } 
+    }
     if (changePassword.newPass == changePassword.oldPass) {
-dispatch(
-  setLoginStatus({
-    password: "Same as old password",
-  })
-);
+      dispatch(
+        setLoginStatus({
+          password: "Same as old password",
+        })
+      );
     }
     if (changePassword.newPass.length < 6) {
-dispatch(
-  setLoginStatus({
-    password: "Password should be 6 simbols",
-  })
-);
+      dispatch(
+        setLoginStatus({
+          password: "Password should be 6 simbols",
+        })
+      );
     }
-    }
-
-
+  }
 
   const handleOldPassChange = (event) => {
     const value = event.target.value;
@@ -86,10 +83,10 @@ dispatch(
 
   const handleNewPassChange = (event) => {
     const value = event.target.value;
-      setChangePassword((prevState) => ({
-        ...prevState,
-        newPass: value,
-      }));
+    setChangePassword((prevState) => ({
+      ...prevState,
+      newPass: value,
+    }));
   };
 
   function logOutHandler() {
@@ -197,12 +194,19 @@ dispatch(
       <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
         <div className="bg-white flex flex-col p-6 rounded-lg shadow-md justify-center gap-[.5rem]">
           <div
-            onClick={() =>
-              setConfirmWindow((prevState) => ({
-                ...prevState,
-                changePass: false,
-                changeName: false,
-              }))
+            onClick={
+              (() =>
+                setConfirmWindow((prevState) => ({
+                  ...prevState,
+                  changePass: false,
+                  changeName: false,
+                })),
+              dispatch(
+                setLoginStatus({
+                  password: "",
+                  userName: "",
+                })
+              ))
             }
             class="self-end cursor-pointer hover:text-red-600 duration-[.3s]"
           >
@@ -259,8 +263,6 @@ dispatch(
       </div>
     );
   }
-
-  
 
   return (
     <>
