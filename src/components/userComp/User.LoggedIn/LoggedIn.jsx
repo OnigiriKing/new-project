@@ -200,13 +200,8 @@ export default function LoggedIn() {
                   ...prevState,
                   changePass: false,
                   changeName: false,
-                })),
-              dispatch(
-                setLoginStatus({
-                  password: "",
-                  userName: "",
-                })
-              ))
+                }))
+              )
             }
             class="self-end cursor-pointer hover:text-red-600 duration-[.3s]"
           >
