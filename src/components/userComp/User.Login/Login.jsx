@@ -1,13 +1,10 @@
-import { setLogin } from "features/Redux/reducers/loginWindowSlice";
 import { useSelector, useDispatch } from "react-redux";
-import allSvg from "svg/allSvg";
 import { useState } from "react";
 import LoginFooter from "./Login.LoginFooter";
 import { loginUser, registerUser } from "features/Redux/reducers/userSlice";
 import { setLoginStatus } from "features/Redux/reducers/loginStatusSlice";
 
 export default function Login() {
-  const loginWindow = useSelector((state) => state.loginWindow);
   const loginStatus = useSelector((state) => state.loginStatus);
   const userInfo = useSelector((state) => state.userInfo);
   const dispatch = useDispatch();
