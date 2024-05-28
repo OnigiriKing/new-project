@@ -281,8 +281,8 @@ export default function LoggedIn() {
             </div>
           </div>
           <h3>Hello, {userName}!</h3>
-          <h3
-            class="hover:text-red-600 duration-[.4s] cursor-pointer"
+          <div
+            class="hover:text-white duration-[.4s] cursor-pointer border-black border-[1px] rounded-full px-[.5rem] py-[.2rem] hover:bg-red-600"
             onClick={() =>
               setConfirmWindow((prevState) => ({
                 ...prevState,
@@ -291,9 +291,9 @@ export default function LoggedIn() {
             }
           >
             Change password
-          </h3>
-          <h3
-            class="hover:text-red-600 duration-[.4s] cursor-pointer"
+          </div>
+          <div
+            class="hover:text-white duration-[.4s] cursor-pointer border-black border-[1px] rounded-full px-[.5rem] py-[.2rem] hover:bg-red-600"
             onClick={() =>
               setConfirmWindow((prevState) => ({
                 ...prevState,
@@ -302,7 +302,7 @@ export default function LoggedIn() {
             }
           >
             Change email
-          </h3>
+          </div>
         </div>
         <button
           onClick={() =>
