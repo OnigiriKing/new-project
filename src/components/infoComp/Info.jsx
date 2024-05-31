@@ -3,7 +3,7 @@ import allSvg from "svg/allSvg";
 import { useDispatch, useSelector } from "react-redux";
 import { setLogin } from "features/Redux/reducers/loginWindowSlice";
 
-export default function User() {
+export default function Info() {
   const dispatch = useDispatch();
   const infoWindow = useSelector((state) => state.infoWindow);
   const logInStatus = useSelector((state) => state.userInfo.isLoggedIn);
