@@ -9,8 +9,12 @@ const loginWindowSlice = createSlice({
   name: "loginWindow",
   initialState,
   reducers: {
-    setLogin: (state, action) => action.payload,
-    setInfo: (state, action) => action.payload,
+    setLogin: (state, action) => {
+      return {
+        ...state,
+        ...action.payload,
+      };
+    },
   },
 });
 
