@@ -12,7 +12,13 @@ const loginWindowSlice = createSlice({
     setLogin: (state, action) => {
       return {
         ...state,
-        ...action.payload,
+        login: !state.login,
+      };
+    },
+    setInfo: (state, action) => {
+      return {
+        ...state,
+        info: !state.info,
       };
     },
   },
