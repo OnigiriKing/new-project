@@ -3,7 +3,7 @@ import logo from "utils/img/logo.png";
 import allSvg from "svg/allSvg";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setLogin } from "features/Redux/reducers/loginWindowSlice";
+import { setLogin, setInfo } from "features/Redux/reducers/loginWindowSlice";
 
 export default function Header() {
   const [scrolled, setScroll] = React.useState(false);
@@ -34,7 +34,7 @@ export default function Header() {
         {loginWindow ? (
           <div
             class="bg-black absolute w-[100vw] opacity-[20%] h-[100vh] z-[90]"
-            onClick={() => dispatch(setLogin(false))}
+            onClick={() => dispatch(setLogin())}
           ></div>
         ) : (
           ""
@@ -63,7 +63,7 @@ export default function Header() {
           <div class="flex gap-3 items-center">
             <div
               class="group cursor-pointer"
-              onClick={() => dispatch(setLogin(true))}
+              onClick={() => dispatch(setLogin())}
             >
               {allSvg(25).user}
             </div>

@@ -24,7 +24,7 @@ const loginWindowSlice = createSlice({
   },
 });
 
-export const { setLogin } = loginWindowSlice.actions;
+export const { setLogin, setInfo } = loginWindowSlice.actions;
 export default loginWindowSlice.reducer;
 
 

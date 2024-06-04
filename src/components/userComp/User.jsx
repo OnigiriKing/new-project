@@ -17,7 +17,7 @@ export default function User() {
     >
       <div
         class="cursor-pointer hover:text-red-600 duration-[.3s] ease-in-out text-black absolute left-[1.5rem] top-[1.5rem]"
-        onClick={() => dispatch(setLogin(false))}
+        onClick={() => dispatch(setLogin())}
       >
         {allSvg(35).close}
       </div>
