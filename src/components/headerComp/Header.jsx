@@ -67,7 +67,12 @@ export default function Header() {
             >
               {allSvg(25).user}
             </div>
-            <div class="group cursor-pointer">{allSvg(25).about}</div>
+            <div
+              class="group cursor-pointer"
+              onClick={() => dispatch(setInfo())}
+            >
+              {allSvg(25).about}
+            </div>
             <Link class="group ml-4 flex gap-2 items-center p-[.4rem] border-[1px] border-solid border-[rgb(255,255,255,0.6)]">
               <div class="duration-0 group-hover:rotate-180 group-hover:duration-500">
                 {allSvg(30).add}
