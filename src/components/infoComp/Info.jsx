@@ -5,8 +5,9 @@ import { setLogin } from "features/Redux/reducers/loginWindowSlice";
 
 export default function Info() {
   const dispatch = useDispatch();
-  const infoWindow = useSelector((state) => state.infoWindow);
   const logInStatus = useSelector((state) => state.userInfo.isLoggedIn);
+  const infoWindow = useSelector((state) => state.loginWindow.info);
+
 
   return (
     <div
@@ -20,9 +21,7 @@ export default function Info() {
       >
         {allSvg(35).close}
       </div>
-      <div class=" pt-[6rem] text-black w-[90%]">
-
-      </div>
+      <div class=" pt-[6rem] text-black w-[90%]"></div>
     </div>
   );
 }
