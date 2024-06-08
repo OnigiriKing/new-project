@@ -704,8 +704,8 @@ video {
   top: 35%;
 }
 
-.right-10 {
-  right: 2.5rem;
+.left-\[-100\%\] {
+  left: -100%;
 }
 
 .z-10 {
