@@ -652,6 +652,10 @@ video {
   left: 1rem;
 }
 
+.left-\[-100\%\] {
+  left: -100%;
+}
+
 .left-\[1\.5rem\] {
   left: 1.5rem;
 }
@@ -704,8 +708,8 @@ video {
   top: 35%;
 }
 
-.left-\[-100\%\] {
-  left: -100%;
+.right-\[1\.5rem\] {
+  right: 1.5rem;
 }
 
 .z-10 {
