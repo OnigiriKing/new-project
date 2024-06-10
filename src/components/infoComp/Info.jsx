@@ -5,7 +5,6 @@ import { setInfo } from "features/Redux/reducers/loginWindowSlice";
 
 export default function Info() {
   const dispatch = useDispatch();
-  const logInStatus = useSelector((state) => state.userInfo.isLoggedIn);
   const infoWindow = useSelector((state) => state.loginWindow.info);
 
 
