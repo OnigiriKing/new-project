@@ -10,6 +10,7 @@ export default function Header() {
 
   const dispatch = useDispatch();
   const loginWindow = useSelector((store) => store.loginWindow.login);
+  const infoWindow = useSelector((store) => store.loginWindow.info);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -35,6 +36,14 @@ export default function Header() {
           <div
             class="bg-black absolute w-[100vw] opacity-[20%] h-[100vh] z-[90]"
             onClick={() => dispatch(setLogin())}
+          ></div>
+        ) : (
+          ""
+        )}
+        {infoWindow ? (
+          <div
+            class="bg-black absolute w-[100vw] opacity-[20%] h-[100vh] z-[90]"
+            onClick={() => dispatch(setInfo())}
           ></div>
         ) : (
           ""
