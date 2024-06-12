@@ -9,7 +9,7 @@ export default function Header() {
   const [scrolled, setScroll] = React.useState(false);
 
   const dispatch = useDispatch();
-  const loginWindow = useSelector((store) => store.loginWindow);
+  const loginWindow = useSelector((store) => store.loginWindow.login);
 
   React.useEffect(() => {
     const handleScroll = () => {

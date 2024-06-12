@@ -680,6 +680,10 @@ video {
   right: -100%;
 }
 
+.right-\[1\.5rem\] {
+  right: 1.5rem;
+}
+
 .right-\[1\.8rem\] {
   right: 1.8rem;
 }
@@ -706,10 +710,6 @@ video {
 
 .top-\[35\%\] {
   top: 35%;
-}
-
-.right-\[1\.5rem\] {
-  right: 1.5rem;
 }
 
 .z-10 {
@@ -1450,6 +1450,10 @@ video {
 
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
+}
+
+.bg-opacity-100 {
+  --tw-bg-opacity: 1;
 }
 
 .bg-bg-class-1 {
