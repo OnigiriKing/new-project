@@ -20,7 +20,30 @@ export default function Info() {
       >
         {allSvg(35).close}
       </div>
-      <div class=" pt-[6rem] text-black w-[90%]"></div>
+      <div class=" pt-[6rem] text-black w-[90%]">
+        <div>
+          <h3>About Us</h3>
+          <p></p>
+        </div>
+        <div>
+          <h3>Gallery</h3>
+          <div></div>
+        </div>
+        <div>
+          <h3>Contact Info</h3>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div>
+          <h3>Follow Us</h3>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
