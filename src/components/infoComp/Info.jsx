@@ -23,7 +23,12 @@ export default function Info() {
       <div class=" pt-[6rem] text-black w-[90%]">
         <div>
           <h3>About Us</h3>
-          <p></p>
+          <p>
+            Welcome to BKK Gym, your premier fitness destination in Bangkok! We
+            offer state-of-the-art facilities, diverse classes, and expert
+            trainers to help you achieve your health goals. Join our vibrant
+            community and let’s reach new heights together!
+          </p>
         </div>
         <div>
           <h3>Gallery</h3>
