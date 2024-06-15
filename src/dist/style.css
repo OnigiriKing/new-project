@@ -1452,10 +1452,6 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-opacity-100 {
-  --tw-bg-opacity: 1;
-}
-
 .bg-bg-class-1 {
   background-image: url('utils/img/classesImg/class-1.png');
 }

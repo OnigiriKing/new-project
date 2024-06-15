@@ -42,10 +42,16 @@ export default function Info() {
         </div>
         <div>
           <h3>Follow Us</h3>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div class="flex items-center gap-2">
+            <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">
+              {allSvg(25).linkedin}
+            </a>
+            <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">
+              {allSvg(25).twitter}
+            </a>
+            <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">
+              {allSvg(25).facebook}
+            </a>
           </div>
         </div>
       </div>
