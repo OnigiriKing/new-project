@@ -21,8 +21,8 @@ export default function Info() {
         {allSvg(35).close}
       </div>
       <div class=" pt-[6rem] text-black w-[90%]">
-        <div>
-          <h3>About Us</h3>
+        <div class="flex flex-col gap-[.5rem] mb-[.5rem]">
+          <h3 class="font-bold text-lg">About Us</h3>
           <p>
             Welcome to BKK Gym, your premier fitness destination in Bangkok! We
             offer state-of-the-art facilities, diverse classes, and expert
@@ -30,18 +30,20 @@ export default function Info() {
             community and let’s reach new heights together!
           </p>
         </div>
-        <div>
-          <h3>Gallery</h3>
+        <div class="flex flex-col gap-[.5rem] mb-[.5rem]">
+          <h3 class="font-bold text-lg">Gallery</h3>
           <div></div>
         </div>
-        <div>
-          <h3>Contact Info</h3>
-          <p></p>
-          <p></p>
-          <p></p>
+        <div class="flex flex-col gap-[.5rem] mb-[.5rem]">
+          <h3 class="font-bold text-lg">Contact Info</h3>
+          <div class="flex flex-col">
+            <p>100 Sathon Rd, Khwaeng Silom, Bangkok</p>
+            <p>+66-000-000</p>
+            <p>bbkgym@gmail.com</p>
+          </div>
         </div>
-        <div>
-          <h3>Follow Us</h3>
+        <div class="flex flex-col gap-[.5rem] mb-[.5rem]">
+          <h3 class="font-bold text-lg">Follow Us</h3>
           <div class="flex items-center gap-2">
             <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">
               {allSvg(25).linkedin}
