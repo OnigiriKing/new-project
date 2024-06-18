@@ -2,6 +2,12 @@
 import allSvg from "svg/allSvg";
 import { useDispatch, useSelector } from "react-redux";
 import { setInfo } from "features/Redux/reducers/loginWindowSlice";
+import infoImg1 from "utils/img/infoImg1"
+import infoImg2 from "utils/img/infoImg2"
+import infoImg3 from "utils/img/infoImg3"
+import infoImg4 from "utils/img/infoImg4"
+import infoImg5 from "utils/img/infoImg5"
+import infoImg6 from "utils/img/infoImg6"
 
 export default function Info() {
   const dispatch = useDispatch();
@@ -32,7 +38,12 @@ export default function Info() {
         </div>
         <div class="flex flex-col gap-[.5rem] mb-[.5rem]">
           <h3 class="font-bold text-lg">Gallery</h3>
-          <div></div>
+          <img src={infoImg1}></img>
+          <img src={infoImg2}></img>
+          <img src={infoImg3}></img>
+          <img src={infoImg4}></img>
+          <img src={infoImg5}></img>
+          <img src={infoImg6}></img>
         </div>
         <div class="flex flex-col gap-[.5rem] mb-[.5rem]">
           <h3 class="font-bold text-lg">Contact Info</h3>
