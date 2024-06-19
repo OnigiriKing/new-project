@@ -16,7 +16,7 @@ export default function Info() {
 
   return (
     <div
-      class={`w-[30rem] flex flex-col items-center fixed h-[100vh] bg-white duration-[.5s] ease-in-out z-[100] overflow-scroll ${
+      class={`w-[30rem] flex flex-col items-center fixed h-[100vh] bg-white duration-[.5s] ease-in-out z-[100] ${
         infoWindow ? "left-0" : "left-[-100%]"
       } `}
     >
