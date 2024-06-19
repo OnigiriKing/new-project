@@ -2,12 +2,12 @@
 import allSvg from "svg/allSvg";
 import { useDispatch, useSelector } from "react-redux";
 import { setInfo } from "features/Redux/reducers/loginWindowSlice";
-import infoImg1 from "utils/img/infoImg1"
-import infoImg2 from "utils/img/infoImg2"
-import infoImg3 from "utils/img/infoImg3"
-import infoImg4 from "utils/img/infoImg4"
-import infoImg5 from "utils/img/infoImg5"
-import infoImg6 from "utils/img/infoImg6"
+import infoImg1 from "utils/img/infoImg/infoImg1.png"
+import infoImg2 from "utils/img/infoImg/infoImg2.png"
+import infoImg3 from "utils/img/infoImg/infoImg3.png"
+import infoImg4 from "utils/img/infoImg/infoImg4.png"
+import infoImg5 from "utils/img/infoImg/infoImg5.png"
+import infoImg6 from "utils/img/infoImg/infoImg6.png"
 
 export default function Info() {
   const dispatch = useDispatch();
@@ -16,7 +16,7 @@ export default function Info() {
 
   return (
     <div
-      class={`w-[30rem] flex flex-col items-center fixed h-[100vh] bg-white duration-[.5s] ease-in-out z-[100] ${
+      class={`w-[30rem] flex flex-col items-center fixed h-[100vh] bg-white duration-[.5s] ease-in-out z-[100] overflow-scroll ${
         infoWindow ? "left-0" : "left-[-100%]"
       } `}
     >
