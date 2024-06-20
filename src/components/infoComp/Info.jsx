@@ -38,12 +38,14 @@ export default function Info() {
         </div>
         <div class="flex flex-col gap-[.5rem] mb-[.5rem]">
           <h3 class="font-bold text-lg">Gallery</h3>
+          <div class="grid-cols-3 grid">
           <img src={infoImg1}></img>
           <img src={infoImg2}></img>
           <img src={infoImg3}></img>
           <img src={infoImg4}></img>
           <img src={infoImg5}></img>
           <img src={infoImg6}></img>
+          </div>
         </div>
         <div class="flex flex-col gap-[.5rem] mb-[.5rem]">
           <h3 class="font-bold text-lg">Contact Info</h3>
