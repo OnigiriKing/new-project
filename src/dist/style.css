@@ -1281,6 +1281,10 @@ video {
   gap: 2rem;
 }
 
+.gap-\[\.4rem\] {
+  gap: .4rem;
+}
+
 .self-end {
   align-self: flex-end;
 }
@@ -1291,10 +1295,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-scroll {
-  overflow: scroll;
 }
 
 .rounded {
