@@ -16,10 +16,13 @@ export default function Info() {
 
   return (
     <div
-      class={`w-[30rem] flex flex-col items-center fixed h-[100vh] bg-white duration-[.5s] ease-in-out z-[100] ${
+      class={`w-[30rem] flex flex-col items-center fixed h-[100vh] bg-white duration-[.5s] ease-in-out z-[100] overflow-scroll ${
         infoWindow ? "left-0" : "left-[-100%]"
       } `}
     >
+    <div>
+      
+    </div>
       <div
         class="cursor-pointer hover:text-red-600 duration-[.3s] ease-in-out text-black absolute right-[1.5rem] top-[1.5rem]"
         onClick={() => dispatch(setInfo())}
