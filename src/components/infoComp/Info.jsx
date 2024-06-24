@@ -21,7 +21,7 @@ export default function Info() {
       } `}
     >
     <div>
-      
+      Icon
     </div>
       <div
         class="cursor-pointer hover:text-red-600 duration-[.3s] ease-in-out text-black absolute right-[1.5rem] top-[1.5rem]"
