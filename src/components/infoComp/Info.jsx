@@ -8,6 +8,8 @@ import infoImg3 from "utils/img/infoImg/infoImg3.png"
 import infoImg4 from "utils/img/infoImg/infoImg4.png"
 import infoImg5 from "utils/img/infoImg/infoImg5.png"
 import infoImg6 from "utils/img/infoImg/infoImg6.png"
+import logo from "utils/img/logo.png";
+
 
 export default function Info() {
   const dispatch = useDispatch();
@@ -20,9 +22,7 @@ export default function Info() {
         infoWindow ? "left-0" : "left-[-100%]"
       } `}
     >
-    <div>
-      Icon
-    </div>
+      <img src={logo} alt="logo" class="w-20" />
       <div
         class="cursor-pointer hover:text-red-600 duration-[.3s] ease-in-out text-black absolute right-[1.5rem] top-[1.5rem]"
         onClick={() => dispatch(setInfo())}
@@ -42,12 +42,12 @@ export default function Info() {
         <div class="flex flex-col gap-[.5rem] mb-[.5rem]">
           <h3 class="font-bold text-lg">Gallery</h3>
           <div class="grid-cols-3 grid gap-[.5rem]">
-          <img src={infoImg1}></img>
-          <img src={infoImg3}></img>
-          <img src={infoImg4}></img>
-          <img src={infoImg5}></img>
-          <img src={infoImg6}></img>
-          <img src={infoImg2}></img>
+            <img src={infoImg1}></img>
+            <img src={infoImg3}></img>
+            <img src={infoImg4}></img>
+            <img src={infoImg5}></img>
+            <img src={infoImg6}></img>
+            <img src={infoImg2}></img>
           </div>
         </div>
         <div class="flex flex-col gap-[.5rem] mb-[.5rem]">
