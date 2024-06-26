@@ -22,14 +22,14 @@ export default function Info() {
         infoWindow ? "left-0" : "left-[-100%]"
       } `}
     >
-      <img src={logo} alt="logo" class="w-20" />
+      <img src={logo} alt="logo" class="w-20 self-start mt-[2rem] ml-[2rem]" />
       <div
         class="cursor-pointer hover:text-red-600 duration-[.3s] ease-in-out text-black absolute right-[1.5rem] top-[1.5rem]"
         onClick={() => dispatch(setInfo())}
       >
         {allSvg(35).close}
       </div>
-      <div class=" pt-[6rem] text-black w-[90%]">
+      <div class=" pt-[3rem] text-black w-[90%]">
         <div class="flex flex-col gap-[.5rem] mb-[.5rem]">
           <h3 class="font-bold text-lg">About Us</h3>
           <p>
