@@ -22,7 +22,7 @@ export default function Info() {
         infoWindow ? "left-0" : "left-[-100%]"
       } `}
     >
-      <img src={logo} alt="logo" class="w-20" />
+      <img src={logo} alt="logo" class="w-20 self-start mt-[2rem] ml-[2rem]" />
       <div
         class="cursor-pointer hover:text-red-600 duration-[.3s] ease-in-out text-black absolute right-[1.5rem] top-[1.5rem]"
         onClick={() => dispatch(setInfo())}
