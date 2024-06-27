@@ -29,7 +29,7 @@ export default function Info() {
       >
         {allSvg(35).close}
       </div>
-      <div class=" pt-[6rem] text-black w-[90%]">
+      <div class=" pt-[1rem] text-black w-[90%]">
         <div class="flex flex-col gap-[.5rem] mb-[.5rem]">
           <h3 class="font-bold text-lg">About Us</h3>
           <p>
