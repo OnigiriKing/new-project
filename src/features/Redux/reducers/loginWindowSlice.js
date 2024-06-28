@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  login: true,
-  info: true,
+  login: false,
+  info: false,
 };
 
 const loginWindowSlice = createSlice({
