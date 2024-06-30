@@ -10,7 +10,7 @@ export default function Recent() {
           return (
             <div class="h-[8rem] flex items-center gap-[1rem]">
               <div class="w-[10rem] cursor-pointer">
-                <img src={post.img}></img>
+                <img src={post.img} alt="img"></img>
               </div>
               <div class="flex flex-col gap-[.5rem] h-full w-full justify-center">
                 <p class="text-gray-600">{post.date}</p>

@@ -39,6 +39,7 @@ export default function Blog() {
             <img
               src={discount}
               class="absolute object-center object-cover w-full h-full z-10"
+              alt="img"
             ></img>
           </div>
         </div>

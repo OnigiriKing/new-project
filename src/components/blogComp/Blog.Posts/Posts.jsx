@@ -9,7 +9,7 @@ export default function Posts() {
         return (
           <div class="flex flex-col gap-[1rem]">
             <div class="h-[25rem]">
-              <img class="h-full object-cover w-full" src={post.img}></img>
+              <img class="h-full object-cover w-full" alt="img" src={post.img}></img>
             </div>
             <p class="text-gray-600 flex items-center gap-[.2rem]">
               <i class="text-red-600 mr-[.1rem]">{allSvg(20).post}</i> By
