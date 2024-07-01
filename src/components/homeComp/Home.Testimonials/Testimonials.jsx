@@ -13,7 +13,7 @@ export default function Testimonials() {
       <div class="flex flex-col common-wrapper items-center gap-8  h-[100vh] py-2">
         <div class="mb-4 mt-[5rem] relative w-[13rem] flex flex-col items-center">
           <p class="z-[6] font-bold text-white">TESTIMONIALS</p>
-          <img class="absolute -top-[1rem]  z-[5] " src={redBrush} />
+          <img class="absolute -top-[1rem]  z-[5] " alt="img" src={redBrush} />
         </div>
         <div class="w-[85%]">
           <div></div>
@@ -23,6 +23,7 @@ export default function Testimonials() {
                 <img
                   class="w-[15rem] absolute z-[5] top-[2.4rem]"
                   src={reviews["person" + review].img}
+                  alt="img"
                 ></img>
                 <div class=" w-[20rem] h-[30rem]  bg-red-800 rounded-tr-[15rem]" />
               </div>

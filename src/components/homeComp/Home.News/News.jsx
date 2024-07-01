@@ -9,7 +9,7 @@ export default function News() {
       <div class="flex flex-col common-wrapper items-center gap-8 text-center py-[4rem]">
         <div class="mb-4 mt-[5rem] relative w-[13rem] flex flex-col items-center">
           <p class="z-[6] font-bold text-white">LATEST BLOG</p>
-          <img class="absolute -top-[1rem]  z-[5] " src={redBrush} />
+          <img class="absolute -top-[1rem]  z-[5] " alt="img"  src={redBrush} />
         </div>
         <div class="flex flex-col items-center">
           <h3 class="text-3xl font-bold mb-3">Our Recent News</h3>

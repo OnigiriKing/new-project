@@ -75,7 +75,7 @@ export default function Calculator() {
           </div>
         </div>
         <div class="w-[50%] flex justify-end ">
-          <img class="h-[25rem] absolute top-0" src={bmi}></img>
+          <img class="h-[25rem] absolute top-0" src={bmi} alt="img"></img>
         </div>
       </div>
     </div>

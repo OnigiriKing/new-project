@@ -50,7 +50,7 @@ export default function Header() {
         )}
         <div class="justify-between  common-wrapper items-center flex py-2">
           <Link to="/">
-            <img src={logo} alt="logo" class="w-20" />
+            <img src={logo} alt="logo" class="w-20"/>
           </Link>
           <div class="flex gap-6">
             <Link to="/" class="duration-500 hover:text-red-600 ">

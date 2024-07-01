@@ -13,7 +13,7 @@ export default function Call() {
           <Link class="button-class mt-4">PURCHASE NOW</Link>
         </div>
         <div class="overflow-hidden h-[20rem] w-[55rem] absolute -right-[9rem]">
-          <img class="relative bottom-[19rem]" src={ropes}></img>
+          <img class="relative bottom-[19rem]" src={ropes} alt="img"></img>
         </div>
       </div>
     </div>

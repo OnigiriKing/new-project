@@ -7,7 +7,7 @@ export default function Classes() {
       <div class="flex flex-col common-wrapper items-center gap-8 py-2">
         <div class="relative w-[11rem] flex flex-col items-center">
           <h3 class="text-white relative z-[10] font-bold ">CLASSES</h3>
-          <img class="absolute -top-3  z-[5] " src={redBrush} />
+          <img class="absolute -top-3  z-[5] " src={redBrush} alt="img" />
         </div>
         <h3 class="text-2xl font-bold">We Offer Top-notch Flexible Classes</h3>
         <div class="relative grid grid-cols-4 grid-flow-row grid-rows-2 gap-4 w-full h-full mb-[6rem]">

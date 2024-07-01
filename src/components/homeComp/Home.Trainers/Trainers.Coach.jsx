@@ -4,7 +4,7 @@ export function Coach({ img, name, des, width }) {
   return (
     <div class="group">
       <div class="flex justify-center grayscale group-hover:grayscale-[0] duration-[0.4s]">
-        <img class={width} src={img}></img>
+        <img class={width} src={img} alt="img"></img>
         <div></div>
       </div>
       <div class="flex flex-col gap-1 py-[2rem] px-[6rem] shadow-lg relative ">

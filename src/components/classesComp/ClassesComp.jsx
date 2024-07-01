@@ -17,6 +17,7 @@ export default function ClassesComp() {
                 <img
                   src={gymClass.img}
                   class="absolute object-center object-cover w-full h-full"
+                  alt="img"
                 ></img>
                 <div class="flex flex-col p-[2rem] justify-end gap-[1rem] z-20">
                   <div class="gap-[1rem] bg-opacity-30 bg-black w-fit">

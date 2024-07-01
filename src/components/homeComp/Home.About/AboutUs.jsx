@@ -66,7 +66,7 @@ export default function About() {
             <Link class="button-class">TAKE A TOUR {allSvg(20).arrow}</Link>
           </div>
           <div class="w-[70rem] flex items-center">
-            <img src={run} />
+            <img src={run} alt="img" />
           </div>
         </div>
       </div>

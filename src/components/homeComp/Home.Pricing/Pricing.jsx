@@ -7,7 +7,11 @@ export default function Pricing() {
         <div>
           <div class="mb-4 mt-[5rem] relative w-[13rem] flex flex-col items-center">
             <p class="z-[6] font-bold text-white">PRICING</p>
-            <img class="absolute -top-[1rem]  z-[5] " src={redBrush} />
+            <img
+              class="absolute -top-[1rem]  z-[5] "
+              alt="img"
+               src={redBrush}
+            />
           </div>
           <h3>Pricing Plan</h3>
           <p>
