@@ -1,5 +1,4 @@
 import logo from "utils/img/logo.png";
-import allSvg from "svg/allSvg";
 import Links from "components/shared/Links";
 
 export default function Footer() {
@@ -7,7 +6,8 @@ export default function Footer() {
     <div class="page-class flex">
       <div class="flex justify-between w-full max-w-[60rem] items-center mx-[2rem] py-[4rem]">
         <div class="flex flex-col w-[20rem] gap-4 items-center text-center text-gray-500">
-          <img src={logo} class="w-28 flex" />
+          <img src={logo} class="w-28 flex"
+          alt="img" />
           <div>
             Revitalize your health journey on our one-year anniversary! Unleash
             your full fitness potential with our tailored program.

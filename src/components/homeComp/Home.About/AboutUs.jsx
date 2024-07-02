@@ -40,6 +40,7 @@ export default function About() {
               <img
                 class="absolute w-[12rem] -top-[.9rem] -left-[2.3rem] z-[5]"
                 src={redBrush}
+                alt="img"
               />
             </div>
             <h3 class="text-3xl font-bold">
