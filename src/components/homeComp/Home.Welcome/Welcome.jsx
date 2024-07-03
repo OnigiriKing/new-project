@@ -28,7 +28,7 @@ export default function Welcome() {
               <b>MAKE YOUR BODY</b>
               <h2>FIT & PERFECT</h2>
             </div>
-            <Link class="button-class-light">
+            <Link class="button-class-light" to={"/"}>
               OUR CLASSES {allSvg(20).arrow}
             </Link>
           </div>

@@ -42,12 +42,12 @@ export default function Info() {
         <div class="flex flex-col gap-[.5rem] mb-[.5rem]">
           <h3 class="font-bold text-lg">Gallery</h3>
           <div class="grid-cols-3 grid gap-[.5rem]">
-            <img src={infoImg1}></img>
-            <img src={infoImg3}></img>
-            <img src={infoImg4}></img>
-            <img src={infoImg5}></img>
-            <img src={infoImg6}></img>
-            <img src={infoImg2}></img>
+            <img src={infoImg1} alt="logo"></img>
+            <img src={infoImg3} alt="logo"></img>
+            <img src={infoImg4} alt="logo"></img>
+            <img src={infoImg5} alt="logo"></img>
+            <img src={infoImg6} alt="logo"></img>
+            <img src={infoImg2} alt="logo"></img>
           </div>
         </div>
         <div class="flex flex-col gap-[.5rem] mb-[.5rem]">
