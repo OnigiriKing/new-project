@@ -36,13 +36,22 @@ export default function Welcome() {
             <h3 class=" -rotate-[90deg] font-bold text-[1.2rem]">SHARE</h3>
             <div class=" w-[2.1rem] h-10 border-red-500 border-r-2"></div>
             <div class="flex flex-col items-center gap-2">
-              <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">
+              <a
+                class="cursor-pointer hover:text-red-600 duration-[.4s]"
+                href="#"
+              >
                 {allSvg(25).linkedin}
               </a>
-              <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">
+              <a
+                class="cursor-pointer hover:text-red-600 duration-[.4s] "
+                href="#"
+              >
                 {allSvg(25).twitter}
               </a>
-              <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">
+              <a
+                class="cursor-pointer hover:text-red-600 duration-[.4s] "
+                href="#"
+              >
                 {allSvg(25).facebook}
               </a>
             </div>
