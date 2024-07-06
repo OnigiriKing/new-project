@@ -61,13 +61,22 @@ export default function Info() {
         <div class="flex flex-col gap-[.5rem] mb-[.5rem]">
           <h3 class="font-bold text-lg">Follow Us</h3>
           <div class="flex items-center gap-2">
-            <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">
+            <a
+              class="cursor-pointer hover:text-red-600 duration-[.4s] "
+              href="#"
+            >
               {allSvg(25).linkedin}
             </a>
-            <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">
+            <a
+              class="cursor-pointer hover:text-red-600 duration-[.4s] "
+              href="#"
+            >
               {allSvg(25).twitter}
             </a>
-            <a class="cursor-pointer hover:text-red-600 duration-[.4s] ">
+            <a
+              class="cursor-pointer hover:text-red-600 duration-[.4s] "
+              href="#"
+            >
               {allSvg(25).facebook}
             </a>
           </div>
