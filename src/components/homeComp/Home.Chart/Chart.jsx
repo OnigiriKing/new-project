@@ -14,8 +14,8 @@ export default function Chart() {
           <p class="z-[6] font-bold text-white">PRICING CHART</p>
           <img class="absolute -top-[1rem]  z-[5] " src={redBrush} alt="img" />
         </div>
-        <h3>Your Pricing Plan</h3>
-        <p>
+        <h3 class="text-4xl text-black font-bold">Your Pricing Plan</h3>
+        <p class="text-gray-600 mb-[1rem]">
           Join Gymat today and start your journey to a healthier, stronger you.
         </p>
         {/* Price */}
