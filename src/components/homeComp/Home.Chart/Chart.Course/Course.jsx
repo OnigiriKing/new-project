@@ -9,6 +9,7 @@ export default function Course({ img, level, price, des }) {
           src={img}
           class=" grayscale-[1] duration-[.4s]
             bg-bg-class-4 group-hover:grayscale-[0] "
+            alt="img"
         ></img>
       </div>
       <div class="flex flex-col w-full p-2 mt-5">
