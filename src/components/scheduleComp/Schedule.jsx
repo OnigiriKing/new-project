@@ -16,7 +16,7 @@ export default function Schedule() {
             return (
               <div
                 class={
-                  date == day ? "button-class-day-active" : "button-class-day"
+                  date === day ? "button-class-day-active" : "button-class-day"
                 }
                 onClick={() => {
                   setDay(date);
