@@ -25,7 +25,7 @@ export default function LoggedIn() {
   const [changeName, setChangeName] = useState("");
 
   function changeNewName() {
-    if (changeName != userName && changeName != "" && changeName.length >= 4) {
+    if (changeName !== userName && changeName !== "" && changeName.length >= 4) {
       dispatch(changeName(changeName));
     }
     if (changeName === userName) {
@@ -46,8 +46,8 @@ export default function LoggedIn() {
 
   function changeNewPassword() {
     if (
-      changePassword.newPass != changePassword.oldPass &&
-      changePassword.newPass != "" &&
+      changePassword.newPass !== changePassword.oldPass &&
+      changePassword.newPass !== "" &&
       changePassword.newPass.length >= 6
     ) {
       dispatch(
@@ -57,7 +57,7 @@ export default function LoggedIn() {
         })
       );
     }
-    if (changePassword.newPass == changePassword.oldPass) {
+    if (changePassword.newPass === changePassword.oldPass) {
       dispatch(
         setLoginStatus({
           password: "Same as old password",
