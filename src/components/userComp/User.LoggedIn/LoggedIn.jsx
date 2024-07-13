@@ -154,6 +154,7 @@ export default function LoggedIn() {
                     }));
                   }}
                   className="w-fit"
+                  alt="img"
                 ></img>
               </div>
               <div className="w-[6rem] cursor-pointer">
@@ -167,6 +168,7 @@ export default function LoggedIn() {
                     }));
                   }}
                   className="w-fit"
+                  alt="img"
                 ></img>
               </div>
               <div className="w-[5rem] cursor-pointer">
@@ -180,6 +182,7 @@ export default function LoggedIn() {
                     }));
                   }}
                   className="w-fit"
+                  alt="img"
                 ></img>
               </div>
             </div>
@@ -275,6 +278,7 @@ export default function LoggedIn() {
             <img
               src={userPic}
               class="flex absolute top-0 right-0 z-[2] group-hover:opacity-90"
+              alt="img"
             ></img>
             <div class="z-[3] absolute bottom-0 hidden group-hover:flex">
               {allSvg(25).changeIcon}
