@@ -60,8 +60,8 @@ const userInfoSlice = createSlice({
     changeName: (state, action) => {
       const { newName } = action.payload;
       if (
-        newName != state.currentUser.name &&
-        newName != "" &&
+        newName !== state.currentUser.name &&
+        newName !== "" &&
         newName.length >= 4
       ) {
         state.currentUser.name = newName;
