@@ -45,7 +45,7 @@
   width: 8rem;
   top: 5.5rem;
   left: -3rem;
-  justify-content: end;
+  justify-content: flex-end;
   border-radius: 9999px;
   transform: rotate(30deg);
 }
