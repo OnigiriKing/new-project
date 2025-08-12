@@ -21,7 +21,7 @@ export default function Testimonials() {
             <div>
               <div class="flex relative items-center justify-center left-4">
                 <img
-                  class="w-[15rem] absolute z-[5] top-[2.4rem]"
+                  class="w-[20rem] absolute z-[5] top-[2.2rem]"
                   src={reviews["person" + review].img}
                   alt="img"
                 ></img>
@@ -55,7 +55,6 @@ export default function Testimonials() {
             </div>
           </div>
         </div>
-        <div class="flex w-[4rem] gap-6"></div>
       </div>
     </div>
   );
