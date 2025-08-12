@@ -10,7 +10,7 @@ const reviews = {
     img: person1,
   },
   person2: {
-    name: "Yumi Nakamura",
+    name: "Nataly Smith",
     text: "This gym is truly wonderful! With its state-of-the-art facilities and friendly staff, I can recommend it to people of all levels. Personally, I love the Body Combat classes.",
     img: person2,
   },
