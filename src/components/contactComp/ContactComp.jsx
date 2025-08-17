@@ -5,65 +5,65 @@ import classesList from "utils/data/classes";
 
 export default function ContactComp() {
   return (
-    <div class="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center">
       <TopComp des="Contact Us" />
-      <div class="common-wrapper pt-[4rem]">
-        <div class="flex justify-center mb-[6rem]">
-          <div class="w-[50%]">
+      <div className="common-wrapper pt-[4rem]">
+        <div className="flex justify-center mb-[6rem]">
+          <div className="w-[50%]">
             <div>
-              <h3 class="mb-[2rem] font-bold text-3xl">
+              <h3 className="mb-[2rem] font-bold text-3xl">
                 We're here to assist you in sculpting your body!
               </h3>
-              <p class="mb-[2rem] contact-page-text">
+              <p className="mb-[2rem] contact-page-text">
                 At BBKgym, we're committed to guiding you towards your ideal
                 physique. Our team of seasoned trainers and nutritionists will
                 collaborate closely with you to devise a customized fitness and
                 nutrition strategy tailored to your unique objectives.
               </p>
             </div>
-            <div class="grid gap-5 grid-cols-2">
+            <div className="grid gap-5 grid-cols-2">
               {/* 1 */}
               <div>
-                <h4 class="contact-page-header text-[1.3rem]">
+                <h4 className="contact-page-header text-[1.3rem]">
                   Bangkok, Thailand
                 </h4>
-                <div class="contact-page-text">
+                <div className="contact-page-text">
                   <p>100 N Sathon Rd, Khwaeng Silom, Bang Rak, Bangkok 10500</p>
                 </div>
               </div>
               {/* 2 */}
               <div>
-                <h4 class="contact-page-header text-[1.3rem]">Opening Hours</h4>
-                <div class="contact-page-text">
+                <h4 className="contact-page-header text-[1.3rem]">Opening Hours</h4>
+                <div className="contact-page-text">
                   <p>Mon to Fri: 7:30 am — 10:00 pm</p>
                   <p>Sat to Sun: 9:30 am — 11:00 pm</p>
                 </div>
               </div>
               {/* 3 */}
               <div>
-                <h4 class="contact-page-header text-[1.3rem]">Information</h4>
-                <div class="contact-page-text">
+                <h4 className="contact-page-header text-[1.3rem]">Information</h4>
+                <div className="contact-page-text">
                   <p>+66-000-000</p>
                   <p>bbkgym@gmail.com</p>
                 </div>
               </div>
               {/* 4 */}
               <div>
-                <h4 class="contact-page-header text-[1.3rem]">Follow Us On</h4>
+                <h4 className="contact-page-header text-[1.3rem]">Follow Us On</h4>
                 <div>
                   <Links />
                 </div>
               </div>
             </div>
           </div>
-          <div class="w-[50%] bg-gray-100">
-            <form class="flex flex-col p-[2rem] gap-[1rem]">
-              <h3 class="contact-page-header text-[1.4rem]">
+          <div className="w-[50%] bg-gray-100">
+            <form className="flex flex-col p-[2rem] gap-[1rem]">
+              <h3 className="contact-page-header text-[1.4rem]">
                 Provide Us With Your Details
               </h3>
-              <input placeholder="Full Name*" class="input-style"></input>
-              <input placeholder="Email Address*" class="input-style"></input>
-              <select class="input-style h-[3rem] w-full">
+              <input placeholder="Full Name*" className="input-style"></input>
+              <input placeholder="Email Address*" className="input-style"></input>
+              <select className="input-style h-[3rem] w-full">
                 <option>Select Class</option>
                 {Object.keys(classesList).map((el) => {
                   const element = classesList[el];
@@ -73,9 +73,9 @@ export default function ContactComp() {
               </select>
               <textarea
                 placeholder="Comment"
-                class="h-[8rem] p-[1rem] border-gray-200 border-[1px]"
+                className="h-[8rem] p-[1rem] border-gray-200 border-[1px]"
               ></textarea>
-              <buttom class="button-class cursor-pointer self-center">
+              <buttom className="button-class cursor-pointer self-center">
                 SUBMIT NOW
               </buttom>
             </form>

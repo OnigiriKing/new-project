@@ -6,18 +6,18 @@ import { Coach } from "./Trainers.Coach";
 
 export default function Trainers() {
   return (
-    <div class="flex justify-center items-center  bg-white  my-6">
-      <div class="flex flex-col common-wrapper items-center gap-8 text-center py-2">
-        <div class="mb-4 mt-[5rem] relative w-[13rem] flex flex-col items-center">
-          <p class="z-[6] font-bold text-white">OUR TRAINERS</p>
-          <img class="absolute -top-[1rem]  z-[5] " alt="img"  src={redBrush} />
+    <div className="flex justify-center items-center  bg-white  my-6">
+      <div className="flex flex-col common-wrapper items-center gap-8 text-center py-2">
+        <div className="mb-4 mt-[5rem] relative w-[13rem] flex flex-col items-center">
+          <p className="z-[6] font-bold text-white">OUR TRAINERS</p>
+          <img className="absolute -top-[1rem]  z-[5] " alt="img"  src={redBrush} />
         </div>
-        <h2 class="text-3xl font-bold">Team of Professional Gym Trainers</h2>
-        <p class="w-[40%] text-gray-500">
+        <h2 className="text-3xl font-bold">Team of Professional Gym Trainers</h2>
+        <p className="w-[40%] text-gray-500">
           A dedicated team of professional gym trainers committed to assisting
           you in achieving your fitness goals.
         </p>
-        <div class="grid justify-center grid-flow-col gap-4">
+        <div className="grid justify-center grid-flow-col gap-4">
           <Coach
             img={trainer2}
             name={"Yuki Tanaka"}

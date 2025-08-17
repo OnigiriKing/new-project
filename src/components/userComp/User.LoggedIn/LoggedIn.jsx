@@ -102,7 +102,7 @@ export default function LoggedIn() {
       <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
         <div className="bg-white p-6 rounded-lg shadow-md justify-center">
           <p className="mb-4">Are you sure you want to log out?</p>
-          <div class="flex justify-center">
+          <div className="flex justify-center">
             <button
               className=" hover:bg-red-600 hover:text-white text-black font-bold py-2 px-4 rounded mr-2 border-black bg-gray-300"
               onClick={() => logOutHandler()}
@@ -130,7 +130,7 @@ export default function LoggedIn() {
     return (
       <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[10]">
         <div className="bg-white p-6 rounded-lg shadow-md justify-center">
-          <div class="flex gap-[1rem] flex-col">
+          <div className="flex gap-[1rem] flex-col">
             <div
               onClick={() =>
                 setConfirmWindow((prevState) => ({
@@ -138,11 +138,11 @@ export default function LoggedIn() {
                   chooseIcon: !prevState.chooseIcon,
                 }))
               }
-              class="self-end cursor-pointer hover:text-red-600 duration-[.3s]"
+              className="self-end cursor-pointer hover:text-red-600 duration-[.3s]"
             >
               {allSvg(30).close}
             </div>
-            <div class="flex flex-row gap-[1rem]">
+            <div className="flex flex-row gap-[1rem]">
               <div className="w-[6rem] cursor-pointer">
                 <img
                   src={profilePics.pp1}
@@ -206,12 +206,12 @@ export default function LoggedIn() {
                 }))
               )
             }
-            class="self-end cursor-pointer hover:text-red-600 duration-[.3s]"
+            className="self-end cursor-pointer hover:text-red-600 duration-[.3s]"
           >
             {allSvg(30).close}
           </div>
           {confirmWindow.changePass ? (
-            <div class="justify-center gap-[.5rem] flex flex-col">
+            <div className="justify-center gap-[.5rem] flex flex-col">
               <label>Verify your old password</label>
               <input
                 placeholder="Old password"
@@ -220,7 +220,7 @@ export default function LoggedIn() {
               ></input>
               <label>Please enter your new password</label>
               {loginStatus.password !== "" ? (
-                <p class="text-red-600">{loginStatus.password}</p>
+                <p className="text-red-600">{loginStatus.password}</p>
               ) : (
                 ""
               )}
@@ -229,7 +229,7 @@ export default function LoggedIn() {
                 onChange={(e) => handleNewPassChange(e)}
                 type="password"
               ></input>
-              <button class="mt-[1rem]" onClick={() => changeNewPassword()}>
+              <button className="mt-[1rem]" onClick={() => changeNewPassword()}>
                 Submit
               </button>
             </div>
@@ -238,10 +238,10 @@ export default function LoggedIn() {
           )}
 
           {confirmWindow.changeName ? (
-            <div class="justify-center gap-[.5rem] flex flex-col">
+            <div className="justify-center gap-[.5rem] flex flex-col">
               <label>Enter your new name</label>
               {loginStatus.userName !== "" ? (
-                <p class="text-red-600">{loginStatus.userName}</p>
+                <p className="text-red-600">{loginStatus.userName}</p>
               ) : (
                 ""
               )}
@@ -250,7 +250,7 @@ export default function LoggedIn() {
                 onChange={(e) => setChangeName(e)}
                 type="text"
               ></input>
-              <button class="mt-[1rem]" onClick={() => changeNewName()}>
+              <button className="mt-[1rem]" onClick={() => changeNewName()}>
                 Submit
               </button>
             </div>
@@ -264,10 +264,10 @@ export default function LoggedIn() {
 
   return (
     <>
-      <div class="flex flex-col items-center justify-center">
-        <div class="flex gap-[1rem] items-center flex-col mb-[1rem]">
+      <div className="flex flex-col items-center justify-center">
+        <div className="flex gap-[1rem] items-center flex-col mb-[1rem]">
           <div
-            class="border-solid border-[1px] border-black rounded-full p-[4rem] relative justify-center items-center overflow-hidden flex bg-black group cursor-pointer"
+            className="border-solid border-[1px] border-black rounded-full p-[4rem] relative justify-center items-center overflow-hidden flex bg-black group cursor-pointer"
             onClick={() =>
               setConfirmWindow((prevState) => ({
                 ...prevState,
@@ -277,16 +277,16 @@ export default function LoggedIn() {
           >
             <img
               src={userPic}
-              class="flex absolute top-0 right-0 z-[2] group-hover:opacity-90"
+              className="flex absolute top-0 right-0 z-[2] group-hover:opacity-90"
               alt="img"
             ></img>
-            <div class="z-[3] absolute bottom-0 hidden group-hover:flex">
+            <div className="z-[3] absolute bottom-0 hidden group-hover:flex">
               {allSvg(25).changeIcon}
             </div>
           </div>
           <h3>Hello, {userName}!</h3>
           <div
-            class="hover:text-white duration-[.4s] cursor-pointer border-black border-[1px] rounded-full px-[.5rem] py-[.2rem] hover:bg-red-600"
+            className="hover:text-white duration-[.4s] cursor-pointer border-black border-[1px] rounded-full px-[.5rem] py-[.2rem] hover:bg-red-600"
             onClick={() =>
               setConfirmWindow((prevState) => ({
                 ...prevState,
@@ -297,7 +297,7 @@ export default function LoggedIn() {
             Change password
           </div>
           <div
-            class="hover:text-white duration-[.4s] cursor-pointer border-black border-[1px] rounded-full px-[.5rem] py-[.2rem] hover:bg-red-600"
+            className="hover:text-white duration-[.4s] cursor-pointer border-black border-[1px] rounded-full px-[.5rem] py-[.2rem] hover:bg-red-600"
             onClick={() =>
               setConfirmWindow((prevState) => ({
                 ...prevState,
@@ -315,7 +315,7 @@ export default function LoggedIn() {
               logOut: !prevState.logOut,
             }))
           }
-          class="hover:text-red-600 duration-[.4s] w-fit"
+          className="hover:text-red-600 duration-[.4s] w-fit"
         >
           Log Out
         </button>

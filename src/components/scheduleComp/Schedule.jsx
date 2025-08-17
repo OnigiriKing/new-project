@@ -8,14 +8,14 @@ export default function Schedule() {
   const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
   return (
-    <div class="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center">
       <TopComp des="Schedule" />
-      <div class="common-wrapper pt-[4rem]">
-        <div class="flex gap-[2rem] justify-center">
+      <div className="common-wrapper pt-[4rem]">
+        <div className="flex gap-[2rem] justify-center">
           {daysOfWeek.map((date) => {
             return (
               <div
-                class={
+                className={
                   date === day ? "button-class-day-active" : "button-class-day"
                 }
                 onClick={() => {
@@ -27,23 +27,23 @@ export default function Schedule() {
             );
           })}
         </div>
-        <div class="flex flex-col gap-[.5rem] mt-[2rem]">
+        <div className="flex flex-col gap-[.5rem] mt-[2rem]">
           {Object.entries(scheduleList[day]).map(([key, data]) => (
-            <div key={key} class="bg-gray-200">
-              <div class="flex justify-evenly w-full py-[1.7rem]">
-                <div class="text-center">
-                  <p class="text-gray-500">Name</p>
-                  <p class="font-bold">{data.name}</p>
+            <div key={key} className="bg-gray-200">
+              <div className="flex justify-evenly w-full py-[1.7rem]">
+                <div className="text-center">
+                  <p className="text-gray-500">Name</p>
+                  <p className="font-bold">{data.name}</p>
                 </div>
-                <div class="text-center">
-                  <p class="text-gray-500">Time</p>
-                  <p class="font-bold">{data.time}</p>
+                <div className="text-center">
+                  <p className="text-gray-500">Time</p>
+                  <p className="font-bold">{data.time}</p>
                 </div>
-                <div class="text-center">
-                  <p class="text-gray-500">Trainer</p>
-                  <p class="font-bold">{data.trainer}</p>
+                <div className="text-center">
+                  <p className="text-gray-500">Trainer</p>
+                  <p className="font-bold">{data.trainer}</p>
                 </div>
-                <button class="button-class-schedule">Join Now</button>
+                <button className="button-class-schedule">Join Now</button>
               </div>
             </div>
           ))}

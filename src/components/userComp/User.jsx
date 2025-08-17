@@ -11,17 +11,17 @@ export default function User() {
 
   return (
     <div
-      class={`w-[30rem] flex flex-col items-center fixed h-[100vh] bg-white duration-[.5s] ease-in-out z-[100] ${
+      className={`w-[30rem] flex flex-col items-center fixed h-[100vh] bg-white duration-[.5s] ease-in-out z-[100] ${
         loginWindow ? "right-0" : "right-[-100%]"
       } `}
     >
       <div
-        class="cursor-pointer hover:text-red-600 duration-[.3s] ease-in-out text-black absolute left-[1.5rem] top-[1.5rem]"
+        className="cursor-pointer hover:text-red-600 duration-[.3s] ease-in-out text-black absolute left-[1.5rem] top-[1.5rem]"
         onClick={() => dispatch(setLogin())}
       >
         {allSvg(35).close}
       </div>
-      <div class=" pt-[6rem] text-black w-[90%]">
+      <div className=" pt-[6rem] text-black w-[90%]">
         {logInStatus ? <LoggedIn /> : <Login />}
       </div>
     </div>

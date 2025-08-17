@@ -13,8 +13,9 @@ import News from "./Home.News/News";
 export default function Home() {
 
 
+
   return (
-    <div class="">
+    <div>
       <Welcome />
       <About />
       <Classes />

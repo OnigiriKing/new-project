@@ -7,18 +7,18 @@ export default function Chart() {
 
 
   return (
-    <div class="flex justify-center items-center  bg-white  my-6">
-      <div class="flex flex-col common-wrapper items-center gap-8 text-center py-2">
-        <div class="mb-4 mt-[5rem] relative w-[13rem] flex flex-col items-center">
-          <p class="z-[6] font-bold text-white">PRICING CHART</p>
-          <img class="absolute -top-[1rem]  z-[5] " src={redBrush} alt="img" />
+    <div className="flex justify-center items-center  bg-white  my-6">
+      <div className="flex flex-col common-wrapper items-center gap-8 text-center py-2">
+        <div className="mb-4 mt-[5rem] relative w-[13rem] flex flex-col items-center">
+          <p className="z-[6] font-bold text-white">PRICING CHART</p>
+          <img className="absolute -top-[1rem]  z-[5] " src={redBrush} alt="img" />
         </div>
-        <h3 class="text-4xl text-black font-bold">Your Pricing Plan</h3>
-        <p class="text-gray-600 mb-[1rem]">
+        <h3 className="text-4xl text-black font-bold">Your Pricing Plan</h3>
+        <p className="text-gray-600 mb-[1rem]">
           Join Gymat today and start your journey to a healthier, stronger you.
         </p>
         {/* Price */}
-        <div class="gap-10 grid grid-cols-3 items-center">
+        <div className="gap-10 grid grid-cols-3 items-center">
           {Object.keys(prices).map((key) => {
             const price = prices[key];
 

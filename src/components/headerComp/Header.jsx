@@ -28,13 +28,13 @@ export default function Header() {
   return (
     <div>
       <div
-        class={`fixed flex justify-center w-full top-0 ${
+        className={`fixed flex justify-center w-full top-0 ${
           scrolled ? "bg-transparent" : "bg-black"
         }  text-white z-[100]`}
       >
         {loginWindow ? (
           <div
-            class="bg-black absolute w-[100vw] opacity-[20%] h-[100vh] z-[90]"
+            className="bg-black absolute w-[100vw] opacity-[20%] h-[100vh] z-[90]"
             onClick={() => dispatch(setLogin())}
           ></div>
         ) : (
@@ -42,51 +42,51 @@ export default function Header() {
         )}
         {infoWindow ? (
           <div
-            class="bg-black absolute w-[100vw] opacity-[20%] h-[100vh] z-[90]"
+            className="bg-black absolute w-[100vw] opacity-[20%] h-[100vh] z-[90]"
             onClick={() => dispatch(setInfo())}
           ></div>
         ) : (
           ""
         )}
-        <div class="justify-between  common-wrapper items-center flex py-2">
+        <div className="justify-between  common-wrapper items-center flex py-2">
           <Link to="/">
-            <img src={logo} alt="logo" class="w-20"/>
+            <img src={logo} alt="logo" className="w-20"/>
           </Link>
-          <div class="flex gap-6">
-            <Link to="/" class="duration-500 hover:text-red-600 ">
+          <div className="flex gap-6">
+            <Link to="/" className="duration-500 hover:text-red-600 ">
               Home
             </Link>
-            <Link to="/schedule" class="duration-500 hover:text-red-600">
+            <Link to="/schedule" className="duration-500 hover:text-red-600">
               Schedule
             </Link>
-            <Link to="/blog" class="duration-500 hover:text-red-600">
+            <Link to="/blog" className="duration-500 hover:text-red-600">
               Blog
             </Link>
-            <Link to="/classes" class="duration-500 hover:text-red-600">
+            <Link to="/classes" className="duration-500 hover:text-red-600">
               Classes
             </Link>
-            <Link to="/contact" class="duration-500 hover:text-red-600">
+            <Link to="/contact" className="duration-500 hover:text-red-600">
               Contact
             </Link>
           </div>
-          <div class="flex gap-3 items-center">
+          <div className="flex gap-3 items-center">
             <div
-              class="group cursor-pointer"
+              className="group cursor-pointer"
               onClick={() => dispatch(setLogin())}
             >
               {allSvg(25).user}
             </div>
             <div
-              class="group cursor-pointer"
+              className="group cursor-pointer"
               onClick={() => dispatch(setInfo())}
             >
               {allSvg(25).about}
             </div>
-            <Link class="group ml-4 flex gap-2 items-center p-[.4rem] border-[1px] border-solid border-[rgb(255,255,255,0.6)]">
-              <div class="duration-0 group-hover:rotate-180 group-hover:duration-500">
+            <Link className="group ml-4 flex gap-2 items-center p-[.4rem] border-[1px] border-solid border-[rgb(255,255,255,0.6)]">
+              <div className="duration-0 group-hover:rotate-180 group-hover:duration-500">
                 {allSvg(30).add}
               </div>
-              <p class="text-[.9rem]">JOIN CLASS NOW</p>
+              <p className="text-[.9rem]">JOIN CLASS NOW</p>
             </Link>
           </div>
         </div>

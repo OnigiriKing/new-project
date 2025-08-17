@@ -51,8 +51,8 @@ const userInfoSlice = createSlice({
       if (
         oldPass === state.currentUser.password &&
         newPass.length >= 4 &&
-        newPass
-      !== "") {
+        newPass !== ""
+      ) {
         state.currentUser.password = newPass;
         state.users[state.currentUser.email].password = newPass;
       }
@@ -67,7 +67,7 @@ const userInfoSlice = createSlice({
         state.currentUser.name = newName;
         state.users[state.currentUser.email].name = newName;
       }
-    }
+    },
   },
 });
 
